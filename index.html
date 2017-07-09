@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<!--<meta content="width=device-width, initial-scale=1" name="viewport">-->
+<meta content="width=device-width, initial-scale=1" name="viewport">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script><script type="text/javascript">WebFont.load({
           google: {
               families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
@@ -11,15 +11,7 @@
       });</script>
     <title>UW BioTEC</title>
     <style>
-        @media screen and (max-width:600px) {
-            .mobile-toolbar-wrap {
-                display: block;
-            }
-
-            .toolbar {
-                display: none;
-            }
-        }
+        
 
         body {
             font-family: lato, sans-serif;
@@ -104,7 +96,7 @@
         .image-box {
             float: left;
             max-width: 30%;
-            min-width: 30%;
+            min-width: 200px;
             margin-left: 0px;
             margin-top: 0px;
             margin-right: 2%;
@@ -143,32 +135,35 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 56px;
-            background-color: #5B9BD5;
+            height: 58px;
+            background-color: #fafafa;
+            display: block;
         }
 
-        .button {
-            float: left;
+        .toolbar-block{
+            display: block;
+            margin:auto;
+            width:80%;
+        }
+        .button{
             border-radius: 5px;
-            background-color: #5B9BD5;
-            border-color: #5B9BD5;
+            background-color: #fafafa;
+            border-color: #fafafa;
             border-style: solid;
             border-width: 2px;
-            color: #fff;
+            color: #5B9BD5;
             display: inline-block;
             padding: 10px 36px;
             text-align: center;
             text-decoration: none;
             padding: 10px;
-            margin: 10px;
-            width: 100%;
+            width: 16%;
         }
 
             .button:hover {
-                background-color: #fff;
-                color: #5B9BD5;
-                transition-duration: 300ms;
+                background-color: #fafafa;
                 border-color: #5B9BD5;
+                transition-duration: 300ms;
             }
 
         .section-map {
@@ -176,6 +171,7 @@
             height: 500px;
             background-color: #fafafa;
             display: block;
+            width:100%;
         }
 
         .map {
@@ -183,10 +179,9 @@
             display: block;
             height: 500px;
             width: 50%;
-            top: 500px;
-            margin-top: -500px;
             display: block;
             border: solid;
+            min-width:300px;
         }
 
         .map-description-section {
@@ -195,6 +190,7 @@
             margin-left: 0;
             width: 50%;
             display: block;
+            min-width: 300px;
         }
 
         .map-description {
@@ -224,26 +220,25 @@
             border-bottom: 2px solid #5B9BD5;
         }
         .mobile-menu {
-            display: block;
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #5B9BD5;
-            color: #fff;
+            color: #5B9BD5;
+            background-color: #fafafa;
             padding-bottom: 3px;
             padding-top: 3px;
             padding-right: 10px;
             padding-left: 10px;
-            border: 2px solid #fff;
+            border: 2px solid #fafafa;
             border-radius: 8px;
             text-decoration: none;
         }
         .mobile-menu:hover {
-            background-color: #fff;
-            color: #5B9BD5;
-            border-color: #5B9BD5;
+            background-color: #5B9BD5;
+            color: #fafafa;
+            border-color: #fafafa;
             transition-duration: 300ms;
-            border-radius: 0px;
         }
         /*.mobile-menu:hover .mobile-toolbar{
             display:block;
@@ -287,6 +282,7 @@
             text-decoration: none;
             padding: 10px;
             width: 100%;
+            font-size: 1.3em;
         }
         .mobile-button:hover {
             background-color: #fff;
@@ -309,22 +305,76 @@
             display:block;
             transition-duration:300ms;
         }
+        .homepage-box{
+            width:100%;
+            min-width:300px;
+            height:100%;
+            background-color: #fafafa;
+            padding-bottom: 100px;
+        }
+        .logo{
+            max-width:100%;
+            max-height:100%;
+            margin: auto;
+            padding:5% 10%;
+        }
+        .homepage-description{
+            width:100%;
+            max-width:100%;
+            height:100% 
+        }
+        .homepage-address{
+            height: 100%;
+            display: block;
+            margin: auto;
+            text-align: center;
+            text-decoration: none;
+            font-size:1.5em;
+            color: #242424;
+        }
+        .homepage-address:hover {
+            color: #5B9BD5;
+        }
+        .homepage-date{
+            color:#242424;
+            text-align:center;
+            display:block;
+            height:100%;
+            margin:auto;
+            font-size: 1.25em;
+        }
+        @media screen and (max-width:700px) {
+            .mobile-menu {
+                display: block;
+            }
 
+            .toolbar {
+                display: none;
+            }
+            .image-box{
+            }
+            .map{
+                width: 100%;
+            }
+            .map-description-section{
+                width:100%;
+               
+            }
+        }
     </style>
 </head>
 <body>
-<!--
+
     <div class="toolbar">
-        <a class="button" href="#title">Home</a>
-        <a class="button" href="#schedule">Schedule</a>
-        <a class="button" href="#keynote-speakers">Speakers</a>
-        <a class="button" href="#location">Location</a>
-        <a class="button" href="#sponsors">Sponsors</a>
-        <a class="button" href="#contact">Contact</a>
+        <div class="toolbar-block">
+            <a class="button" href="#title">Home</a>
+            <a class="button" href="#schedule">Schedule</a>
+            <a class="button" href="#keynote-speakers">Speakers</a>
+            <a class="button" href="#location">Location</a>
+            <a class="button" href="#sponsors">Sponsors</a>
+            <a class="button" href="#contact">Contact</a>
+        </div>
     </div>
--->
-    
-    <div class="mobile">
         <div onclick="menuOpen()" class="mobile-menu" >
             &#9776;
             <div class="mobile-background" id="mobile-background">
@@ -339,39 +389,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="title" id="title">
-        UW BioTEC
-    </div>
-    <div class="section-keynote-speakers" ID="keynote-speakers">
-        <div class="section-title"> Keynote Speakers </div>
-        <div class="speaker">
-            <div class="image-box">
-                <img class="img-portrait" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/037/30d/3e8eb50.jpg">
-                <div class="speaker-name"> Frank Baylis </div>
-                <div class="speaker-title"> Founder of Baylis Medical </div>
-            </div>
-            <div class="speaker-description">
-                Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any.
-            </div>
-        </div>
-
-        <div class="speaker">
-            <div class="image-box">
-                <img class="img-portrait" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhiAAAAJDEzMjhkMGUzLWZkM2UtNDMyNC04MTA0LWQwMGZkZDE5YjY3NQ.jpg">
-                <div class="speaker-name"> Alexa Roeper </div>
-                <div class="speaker-title"> CEO, Penta Medical </div>
-            </div>
-            <div class="speaker-description">Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any. </div>
-        </div>
-
-        <div class="speaker">
-            <div class="image-box">
-                <img class="img-portrait" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/000/1ea/3e8/0ed3351.jpg">
-                <div class="speaker-name"> Kris Shah </div>
-                <div class="speaker-title"> President, Baylis Medical </div>
-            </div>
-            <div class="speaker-description"> Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any. </div>
+    <div class="homepage-box" id="title">
+        <img src="Biotec_Vector.svg" class="logo" />
+        <div class="homepage-description">
+            <div class="homepage-date">Saturday, November 25, 2017</div>
+            <a class="homepage-address" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank">Mike & Ophelia Lazaridis Quantum Nano Centre </a>
         </div>
     </div>
     <div class="section-schedule" id="schedule">
@@ -417,13 +439,45 @@
             </table>
         </div>
     </div>
+    <div class="section-keynote-speakers" ID="keynote-speakers">
+        <div class="section-title"> Keynote Speakers </div>
+        <div class="speaker">
+            <div class="image-box">
+                <img class="img-portrait" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/037/30d/3e8eb50.jpg">
+                <div class="speaker-name"> Frank Baylis </div>
+                <div class="speaker-title"> Founder of Baylis Medical </div>
+            </div>
+            <div class="speaker-description">
+                Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any.
+            </div>
+        </div>
+
+        <div class="speaker">
+            <div class="image-box">
+                <img class="img-portrait" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhiAAAAJDEzMjhkMGUzLWZkM2UtNDMyNC04MTA0LWQwMGZkZDE5YjY3NQ.jpg">
+                <div class="speaker-name"> Alexa Roeper </div>
+                <div class="speaker-title"> CEO, Penta Medical </div>
+            </div>
+            <div class="speaker-description">Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any. </div>
+        </div>
+
+        <div class="speaker">
+            <div class="image-box">
+                <img class="img-portrait" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/000/1ea/3e8/0ed3351.jpg">
+                <div class="speaker-name"> Kris Shah </div>
+                <div class="speaker-title"> President, Baylis Medical </div>
+            </div>
+            <div class="speaker-description"> Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any. </div>
+        </div>
+    </div>
     <div class="section-map" id="location">
         <!--<div class="map" id="map"> </div>-->
-        <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.4925986034614!2d-80.54620728401505!3d43.47118927912813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6aa030140c1%3A0x1bc6d1d3667b8e16!2sMike+%26+Ophelia+Lazaridis+Quantum+Nano+Centre!5e0!3m2!1sen!2sca!4v1498422584714" width="50%" height="500" frameborder="0" style="border:0" margin="0px" allowfullscreen></iframe>
         <div class="map-description-section">
             <div class="map-title"> Location</div>
             <a class="map-description map-button" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank">200 University Avenue West, Waterloo, ON N2L 3G1</a>
         </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.4925986034614!2d-80.54620728401505!3d43.47118927912813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6aa030140c1%3A0x1bc6d1d3667b8e16!2sMike+%26+Ophelia+Lazaridis+Quantum+Nano+Centre!5e0!3m2!1sen!2sca!4v1498422584714"  width="50%" height="500" frameborder="0" style="border:0" margin="0px" allowfullscreen></iframe>
+
 
     </div>
     <div id="contact" class="section-contact"></div>
