@@ -165,7 +165,7 @@
 
         .button:hover {
                 background-color: #fafafa;
-                border-color: #5B9BD5;
+                /*border-color: #5B9BD5;*/
                 color: #5B9BD5;
                 transition-duration: 300ms;
             }
@@ -357,9 +357,13 @@
         }
         .keynote-speaker-box{
             width:100%;
+            margin: auto;
             display:flex;
             min-height: 100%;
-            flex-direction: column;
+            flex-direction: row;
+        }
+        .mini-logo{
+            display: 
         }
 
         @media screen and (max-width:700px) {
@@ -393,7 +397,7 @@
                 min-width: 45%;
             }
             .homepage-box{
-                height: 80vh;
+                /*height: 80vh;*/
             }
         }
     </style>
@@ -479,7 +483,7 @@
     <div class="section-speakers" ID="speakers">
         <div class="section-title"> Keynote Speakers </div>
             <div class="keynote-speaker-box">
-                <div class="image-box">
+                <div class="keynote-image-box">
                     <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
                     <div class="speaker-name"> John Smith </div>
                     <div class="speaker-title"> ACME </div>
