@@ -151,7 +151,7 @@
             border-color: #fafafa;
             border-style: solid;
             border-width: 2px;
-            color: #5B9BD5;
+            color: #242424;
             display: inline-block;
             padding: 10px 36px;
             text-align: center;
@@ -163,6 +163,7 @@
             .button:hover {
                 background-color: #fafafa;
                 border-color: #5B9BD5;
+                color: #5B9BD5;
                 transition-duration: 300ms;
             }
 
@@ -219,12 +220,22 @@
         .map-button:hover {
             border-bottom: 2px solid #5B9BD5;
         }
+        .mobile-box {
+            display:none;
+            position: fixed;
+            top:0;
+            left:0;
+            background-color: #fafafa;
+            width:100%;
+            height: 43px;
+            
+        }
         .mobile-menu {
             display: none;
             position: fixed;
             top: 0;
             left: 0;
-            color: #5B9BD5;
+            color: #242424;
             background-color: #fafafa;
             padding-bottom: 3px;
             padding-top: 3px;
@@ -235,9 +246,8 @@
             text-decoration: none;
         }
         .mobile-menu:hover {
-            background-color: #5B9BD5;
-            color: #fafafa;
-            border-color: #fafafa;
+            color: #5B9BD5;
+            border-color: #5B9BD5;
             transition-duration: 300ms;
         }
         /*.mobile-menu:hover .mobile-toolbar{
@@ -263,6 +273,7 @@
             display: none;
             background-color: #5B9BD5;
             width: 20%;
+            min-width:120px;
             position: fixed;
             top: 0;
             left: 0;
@@ -316,7 +327,7 @@
             max-width:100%;
             max-height:100%;
             margin: auto;
-            padding:5% 10%;
+            padding:7% 10% 3% 10%;
         }
         .homepage-description{
             width:100%;
@@ -347,6 +358,9 @@
             .mobile-menu {
                 display: block;
             }
+            .mobile-box {
+                display: block;
+            }
 
             .toolbar {
                 display: none;
@@ -375,6 +389,7 @@
             <a class="button" href="#contact">Contact</a>
         </div>
     </div>
+    <div class="mobile-box">
         <div onclick="menuOpen()" class="mobile-menu" >
             &#9776;
             <div class="mobile-background" id="mobile-background">
@@ -389,6 +404,7 @@
                 </div>
             </div>
         </div>
+    </div>
     <div class="homepage-box" id="title">
         <img src="Biotec_Vector.svg" class="logo" />
         <div class="homepage-description">
