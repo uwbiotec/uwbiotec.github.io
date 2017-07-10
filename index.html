@@ -50,7 +50,6 @@
             font-size: 36px;
             text-align: center;
             padding-bottom: 20px;
-            border: 2px solid green;
         }
 
         .section-speakers {
@@ -58,7 +57,6 @@
             background-color: #fafafa;
             margin: 0; 
             padding-bottom: 20px;
-            border: 2px solid purple;
             display: flex;
             flex-direction: column;
         }
@@ -506,7 +504,7 @@
     </div>
     <div class="homepage-box" id="title">
         <img src="Biotec_Vector.svg" class="logo" />
-        <div class="homepage-description">
+        <div class="homepage-description" id="homepage-description">
             <div class="homepage-date">Saturday, November 25, 2017</div>
             <a class="homepage-address" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank">Mike & Ophelia Lazaridis Quantum Nano Centre </a>
         </div>
@@ -669,7 +667,7 @@
         }
         
         window.onscroll = function (oEvent) {
-            var divPos = document.getElementById("schedule").offsetTop;
+            var divPos = document.getElementById("homepage-description").offsetTop;
             var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
 
             if (scrollPos >= divPos)
