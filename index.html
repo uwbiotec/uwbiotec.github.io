@@ -9,6 +9,8 @@
               families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
           }
       });</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>UW BioTEC</title>
     <style>
         
@@ -53,7 +55,7 @@
         }
 
         .section-speakers {
-            padding-top: 20px;
+            padding-top: 42px;
             background-color: #fafafa;
             margin: 0; 
             padding-bottom: 20px;
@@ -62,8 +64,8 @@
         }
 
         .section-schedule {
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 42px;
+            padding-bottom: 42px;
             color: #fff;
             display: block;
             background-color: #5B9BD5;
@@ -76,25 +78,21 @@
             max-width: 70%;
             height: 300px;
         }
-
         .speaker-name {
             text-align: center;
         }
-
         .speaker-title {
             text-align: center;
             font-size: 18px;
             line-height: 30px;
             font-weight: 600;
         }
-
         .speaker-description {
             float: left;
             display: block;
             text-align: justify;
             max-width: 68%;
         }
-
         .image-box {
             float: left;
             max-width: 30%;
@@ -172,40 +170,56 @@
                 transition-duration: 300ms;
             }
 
-        .section-map {
-            margin: 0;
-            height: 500px;
+        .signup-button {
+            border-radius: 5px;
+            font-weight:400;
             background-color: #fafafa;
-            display: block;
-            width:100%;
+            border-color: #fafafa;
+            border-style: solid;
+            border-width: 2px;
+            color: #f20606;
+            display: inline-block;
+            padding: 10px 36px;
+            text-align: center;
+            text-decoration: none;
+            padding: 2px 10px;
+            width: 16%;
         }
-        .map {
-            float: left;
+
+        .signup-button:hover {
+            background-color: #fafafa;
+            /*border-color: #5B9BD5;*/
+            color: #5B9BD5;
+            transition-duration: 300ms;
+        }
+
+        .section-map {  
+            background-color: #5B9BD5;
+            width:100%;
+            height: 542px;
+            padding-top: 42px;
+            display: block;
+        }
+        .map-box {
             display: block;
             height: 500px;
             width: 50%;
+            min-width: 300px;
+            float: right;
+        }
+        .map {
             display: block;
-            border: solid;
-            min-width:300px;
+            height: 500px;
+            width: 100%;
+            max-height: 500px;
         }
         .map-description-section {
-            height: 100%;
-            float: left;
-            margin-left: 0;
             width: 50%;
             display: block;
             min-width: 300px;
-        }
-        .map-description {
-            margin: 0px auto;
-            font-weight: 300;
-            display: block;
-            text-align: center;
-            font-size: 1.5em;
-            max-width: 400px;
-            padding-bottom: 10px;
-            color: #242424;
-            text-decoration: none;
+            float: right;
+            background-color:#fafafa;
+            height: 500px;
         }
         .map-title {
             font-size: 2em;
@@ -216,6 +230,18 @@
             display: block;
             text-align: center;
             max-width: 400px;
+            color: #242424;
+        }
+        .map-description {
+            margin: 0px auto;
+            font-weight: 300;
+            display: block;
+            text-align: center;
+            font-size: 1.5em;
+            max-width: 400px;
+            margin-bottom: 192px;
+            color: #242424;
+            text-decoration: none;
         }
         .map-button:hover {
             border-bottom: 2px solid #5B9BD5;
@@ -405,16 +431,145 @@
             width: 100%;
         }
         
-        .facebook-iframe-box {
-            width:100%;
-            height: 540px;
-            background-color: #fafafa;
-            padding: 20px 0;
+        .uwbiotec-iframe-box {
+            width:50%;
+            height: 500px;
+            float: left;
+            display: block;
         }
-        .facebook-iframe {
+        .uwbiotec-iframe{
             display: block;
             margin: auto;
         }
+        .contact-box{
+            padding-top: 42px;
+        }
+        .contact-content-box{
+            height: 500px;
+            width: 80%;
+            margin: auto;
+        }
+        .contact-text-box{
+            width: 50%;
+            height: 500px;
+            display: block;
+            float: left;
+        }
+        .contact-description-title {
+            font-size: 2em;
+            margin-top: 180px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+            max-width: 400px;
+            color:#fafafa;
+        }
+        .contact-description-email {
+            font-size: 1.5em;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+            max-width: 400px;
+            color: #fafafa;
+        }
+
+        
+        .section-sponsors{
+            padding-top: 42px;
+            background-color: #fafafa;
+            padding-bottom: 40px;
+        }
+        .sponsor-logo-box{
+            margin: auto;
+            height: 60px;
+            width: 40%;
+            margin-bottom: 40px;
+            display: block;
+            margin-top: 30px;
+        }
+        .diamond-sponsor-logo{
+            height: 60px;
+            width: 33.3%;
+            float:left;
+            margin: auto;
+        }
+        .sponsor-logo{
+            height: 60px;
+            float: left;
+            width: 50%;
+        }
+
+        .application {
+            height: 85px;
+            background-color: #D00101;
+            margin: auto;
+            display: block;
+            width: 100%;
+        }
+        .application-text{
+            font-size: 1.75em;
+            color:#fafafa;
+            padding-top: 24px;
+            display: block;
+            margin:auto;
+            width: 318px;
+        }
+
+        .section-bottom-bar{
+            background-color: #5B9BD5;
+            height: 80px;
+            width: 100%;
+            border: 2px green solid;
+            display: block;
+        }
+        .fa{
+            width: 80px;
+            font-size: 2em;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-facebook{
+            background-color: #5B9BD5;
+            color: #fafafa;
+            float:left;
+        }
+        .fa-linkedin{
+            background-color: #5B9BD5;
+            color: #fafafa;
+            float: left;
+        }
+        .social-media-icons-container-container{
+            width:50%;
+            border: 2px red solid;
+            float: left;
+            margin: 20px 0;
+
+        }
+        .social-media-icons-container{
+            width: 180px;
+            height: 100%;
+            display: block;
+            border: black solid 2px;
+        }
+        .copyright-container{
+            width:50%;
+            display: block;
+            float: left;
+            border: 2px black solid;
+            margin: 20px 0px;
+        }
+        .copyright-text{
+            margin: auto;
+            display: block;
+            color: #fafafa;
+            font-size: 1em;
+            width:250px;
+        }
+
         @media screen and (max-width:500px) {
             .keynote-image-box {
                 float: none;
@@ -442,11 +597,17 @@
             }
             .map{
                 width: 100%;
-                height: 100%;
+                float: right;
+            }
+            .section-map{
+                height: 1042px;
             }
             .map-description-section{
                 width:100%;
-                height: 100%;
+            }
+            .map-box{
+                width: 100%;
+                float: right;
             }
             .mobile-toolbar{
                 min-width: 45%;
@@ -460,6 +621,9 @@
             .mini-logo-image{
                 max-height:40px;
                 height: 40px;
+            }
+            .application-text{
+                margin:auto;
             }
         }
         @media screen and (max-width:1000px) {
@@ -487,10 +651,10 @@
         <div class="toolbar-block">
             <a class="button" href="#title">Home</a>
             <a class="button" href="#schedule">Schedule</a>
+            <a class="button" href="#location">Location</a>            
             <a class="button" href="#speakers">Speakers</a>
-            <a class="button" href="#location">Location</a>
             <a class="button" href="#sponsors">Sponsors</a>
-            <a class="button" href="#contact">Contact</a>
+            <a class="signup-button" href="#">Apply</a>
         </div>
     </div>
     <div class="mobile-box">
@@ -504,7 +668,7 @@
                     <a class="mobile-button" href="#speakers">Speakers</a>
                     <a class="mobile-button" href="#location">Location</a>
                     <a class="mobile-button" href="#sponsors">Sponsors</a>
-                    <a class="mobile-button" href="#contact">Contact</a>
+                    <a class="mobile-button" href="#">Apply</a>
                 </div>
             </div>
         </div>
@@ -518,6 +682,11 @@
             <div class="homepage-date">Saturday, November 25, 2017</div>
             <a class="homepage-address" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank">Mike & Ophelia Lazaridis Quantum Nano Centre </a>
         </div>
+    </div>
+    <div class="application">
+        <a class="application-text">
+            Applications Now Open
+        </a>
     </div>
     <div class="section-schedule" id="schedule">
         <div class="section-title"> Schedule </div>
@@ -562,92 +731,132 @@
             </table>
         </div>
     </div>
-    <div class="section-speakers" ID="speakers">
-        <div class="section-title"> Keynote Speakers </div>
-            <div class="keynote-speaker-box">
-                <div class="keynote-image-box">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title"> ACME </div>
-                </div>
-                <div class="keynote-image-box">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title"> ACME </div>
-                </div>
-            </div>
-<!--
-        <div class="section-title"> Breakout Speakers</div>
-            <div class="breakout-speaker-box">
-                <div class="breakout-image-box">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title"> ACME </div>
-                </div>
-                <div class="breakout-image-box">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title"> ACME </div>
-                </div>
-                <div class="breakout-image-box">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title"> ACME </div>
-                </div>
-                <div class="breakout-image-box">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title"> ACME </div>
-                </div>
-            </div>
-        <div class="section-title"> Industry Panel</div>
-        <div class="section-title"> Moderator</div>
-    -->
-<!--
-        <div class="speaker">
-            <div class="image-box">
-                <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                <div class="speaker-name"> John Smith </div>
-                <div class="speaker-title"> ACME </div>
-            </div>
-            <div class="speaker-description">
-                Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any.
-            </div>
-        </div>
-
-        <div class="speaker">
-            <div class="image-box">
-                <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                <div class="speaker-name"> John Smith </div>
-                <div class="speaker-title"> CEO, ACME </div>
-            </div>
-            <div class="speaker-description">Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any. </div>
-        </div>
-
-        <div class="speaker">
-            <div class="image-box">
-                <img class="img-portrait" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/000/1ea/3e8/0ed3351.jpg">
-                <div class="speaker-name"> John Smith </div>
-                <div class="speaker-title"> President, ACME </div>
-            </div>
-            <div class="speaker-description"> Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any. </div>
-        </div>
--->
-    </div>
     <div class="section-map" id="location">
         <div class="map-description-section">
             <div class="map-title"> Location</div>
             <a class="map-description map-button" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank">200 University Avenue West, Waterloo, ON N2L 3G1</a>
         </div>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.4925986034614!2d-80.54620728401505!3d43.47118927912813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6aa030140c1%3A0x1bc6d1d3667b8e16!2sMike+%26+Ophelia+Lazaridis+Quantum+Nano+Centre!5e0!3m2!1sen!2sca!4v1498422584714"   frameborder="0" style="border:0" margin="0px" allowfullscreen></iframe>
-
+        <div class="map-box">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.4925986034614!2d-80.54620728401505!3d43.47118927912813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6aa030140c1%3A0x1bc6d1d3667b8e16!2sMike+%26+Ophelia+Lazaridis+Quantum+Nano+Centre!5e0!3m2!1sen!2sca!4v1498422584714" frameborder="0" style="border:0" margin="0px" scrolling="no" allowfullscreen></iframe>
+        </div>
 
     </div>
-    <div class="facebook-iframe-box">
-        <iframe class="facebook-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-    </div>
-    <div id="contact" class="section-contact"></div>
+    <div class="section-speakers" ID="speakers">
+        <div class="section-title"> Keynote Speakers </div>
+        <div class="keynote-speaker-box">
+            <div class="keynote-image-box">
+                <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                <div class="speaker-name"> John Smith </div>
+                <div class="speaker-title"> ACME </div>
+            </div>
+            <div class="keynote-image-box">
+                <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                <div class="speaker-name"> John Smith </div>
+                <div class="speaker-title"> ACME </div>
+            </div>
+        </div>
+        <!--
+                <div class="section-title"> Breakout Speakers</div>
+                    <div class="breakout-speaker-box">
+                        <div class="breakout-image-box">
+                            <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                            <div class="speaker-name"> John Smith </div>
+                            <div class="speaker-title"> ACME </div>
+                        </div>
+                        <div class="breakout-image-box">
+                            <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                            <div class="speaker-name"> John Smith </div>
+                            <div class="speaker-title"> ACME </div>
+                        </div>
+                        <div class="breakout-image-box">
+                            <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                            <div class="speaker-name"> John Smith </div>
+                            <div class="speaker-title"> ACME </div>
+                        </div>
+                        <div class="breakout-image-box">
+                            <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                            <div class="speaker-name"> John Smith </div>
+                            <div class="speaker-title"> ACME </div>
+                        </div>
+                    </div>
+                <div class="section-title"> Industry Panel</div>
+                <div class="section-title"> Moderator</div>
+            -->
+        <!--
+                <div class="speaker">
+                    <div class="image-box">
+                        <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                        <div class="speaker-name"> John Smith </div>
+                        <div class="speaker-title"> ACME </div>
+                    </div>
+                    <div class="speaker-description">
+                        Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any.
+                    </div>
+                </div>
 
+                <div class="speaker">
+                    <div class="image-box">
+                        <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                        <div class="speaker-name"> John Smith </div>
+                        <div class="speaker-title"> CEO, ACME </div>
+                    </div>
+                    <div class="speaker-description">Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any. </div>
+                </div>
+
+                <div class="speaker">
+                    <div class="image-box">
+                        <img class="img-portrait" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/000/1ea/3e8/0ed3351.jpg">
+                        <div class="speaker-name"> John Smith </div>
+                        <div class="speaker-title"> President, ACME </div>
+                    </div>
+                    <div class="speaker-description"> Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any. </div>
+                </div>
+        -->
+    </div>
+    <div class="section-sponsors" id="sponsors">
+        <div class="section-title">Diamond Sponsors</div>
+        <div class="sponsor-logo-box">
+            <img class="diamond-sponsor-logo" src="Biotec_Vector.svg" /><img class="diamond-sponsor-logo" src="Biotec_Vector.svg" /><img class="diamond-sponsor-logo" src="Biotec_Vector.svg" />
+        </div>
+        <div class="section-title">Platinum Sponsors</div>
+        <div class="sponsor-logo-box">
+            <img class="sponsor-logo" src="Biotec_Vector.svg" /><img class="sponsor-logo" src="Biotec_Vector.svg" />    
+        </div>
+        <div class="section-title">Gold Sponsors</div>
+        <div class="sponsor-logo-box">
+            <img class="sponsor-logo" src="Biotec_Vector.svg" /><img class="sponsor-logo" src="Biotec_Vector.svg" />
+        </div>
+        <div class="section-title">Silver Sponsors</div>
+        <div class="sponsor-logo-box">
+            <img class="sponsor-logo" src="Biotec_Vector.svg" /><img class="sponsor-logo" src="Biotec_Vector.svg" />
+        </div>
+
+    </div>
+ <!--
+    <div class="contact-box" id="contact">
+        <div class="section-title" style="color: #fafafa;"> Contact Us</div>
+        <div class="contact-content-box">
+            <div class="uwbiotec-iframe-box">
+                <iframe class="uwbiotec-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuwbiotec%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+            <div class="contact-text-box">
+                <div class="contact-description-title">Email</div>
+                <div class="contact-description-email">uwbiotec.****@gmail.com</div>
+            </div>
+        </div>
+    </div>
+-->
+    <div class="section-bottom-bar">
+        <div class="social-media-icons-container-container">
+            <div class="social-media-icons-container">
+                <a href="https://www.facebook.com/uwbiotec/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/company-beta/11156642/" target="_blank" class="fa fa-linkedin"></a>            
+            </div>
+        </div>
+        <div class="copyright-container">
+            <div class="copyright-text">Copyright &copy;2017 UW BioTEC</div>
+        </div>
+    </div>
     <script>
     function menuOpen() {
         document.getElementById("mobile-toolbar").classList.toggle("show");
@@ -673,9 +882,9 @@
                     }
                 }
             }
-            
+
         }
-        
+
         window.onscroll = function (oEvent) {
             var divPos = document.getElementById("homepage-description").offsetTop;
             var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
@@ -685,7 +894,7 @@
             else
                 document.getElementById("mini-logo").className = "mini-logo-hidden";
         }
-        
+
     </script>
 
 </body>
