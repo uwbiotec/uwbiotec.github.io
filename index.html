@@ -184,13 +184,15 @@
             text-decoration: none;
             padding: 2px 10px;
             width: 16%;
+            border: 1px solid #f20606;
+            border-radius: 5px;
         }
-
         .signup-button:hover {
             background-color: #fafafa;
-            /*border-color: #5B9BD5;*/
+            border-color: #5B9BD5;
             color: #5B9BD5;
             transition-duration: 300ms;
+
         }
 
         .section-map {  
@@ -239,12 +241,13 @@
             text-align: center;
             font-size: 1.5em;
             max-width: 400px;
-            margin-bottom: 192px;
+            margin-bottom: 172px;
             color: #242424;
             text-decoration: none;
         }
         .map-button:hover {
-            border-bottom: 2px solid #5B9BD5;
+            /*border-bottom: 2px solid #5B9BD5;*/
+            color: #5B9BD5;
         }
 
         .mobile-box {
@@ -274,7 +277,7 @@
         }
         .mobile-menu:hover {
             color: #5B9BD5;
-            border-color: #5B9BD5;
+            /*border-color: #5B9BD5;*/
             transition-duration: 300ms;
         }
         /*.mobile-menu:hover .mobile-toolbar{
@@ -298,7 +301,7 @@
         }
         .mobile-toolbar{
             display: none;
-            background-color: #5B9BD5;
+            background-color: #fafafa;
             width: 20%;
             position: fixed;
             top: 0;
@@ -308,16 +311,16 @@
         .mobile-button {
             float: left;
             border-radius: 5px;
-            background-color: #5B9BD5;
-            border-color: #5B9BD5;
+            background-color: #fafafa;
+            border-color: #fafafa;
             border-style: solid;
             border-width: 2px;
-            color: #fff;
-            display: inline-block;
-            padding: 10px 36px;
+            color: #242424;
+            display: block;
+            padding: 17% 20%;
             text-align: center;
             text-decoration: none;
-            padding: 10px;
+            
             width: 100%;
             font-size: 1.3em;
             height: 14%; /*alternate: 10%*/
@@ -326,11 +329,31 @@
             background-color: #fff;
             color: #5B9BD5;
             transition-duration: 500ms;
-            border-color: #5B9BD5;
-
+            /*border-color: #5B9BD5;*/
+        }
+        .mobile-application-button {
+            float: left;
+            border-radius: 5px;
+            background-color: #fafafa;
+            border-color: #f20606;
+            border-style: solid;
+            border-width: 1px;
+            color: #f20606;
+            display: block;
+            padding: 17% 20%;
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+            font-size: 1.3em;
+            height: 14%; /*alternate: 10%*/
+            font-weight: 400;
+        }
+        .mobile-application-button:hover {
+            color: #5B9BD5;
+            border-color: #5B9BD5
         }
         .mobile-toolbar-spacer{
-            height: 10%; /*alternate: 20%*/
+            height: 8%; /*alternate: 20%*/
         }
         .mobile{
             width: 100%;
@@ -409,18 +432,19 @@
             display:none;
             position: fixed;
             top: 0;
-            right: 0;
+            left: 0;
             height:40px;
         }
         .mini-logo{
             display: block;
             position: fixed;
             top: 0;
-            right: 0;
+            left: 0;
             max-height: 36px;
             height: 36px;
             min-height: 36px;
-            width: 16%;
+            width: 13%;
+            min-width: 80px;
             padding:4px 10px;
         }
         .mini-logo-image{
@@ -486,6 +510,7 @@
             margin: auto;
             height: 60px;
             width: 40%;
+            min-width: 300px;
             margin-bottom: 40px;
             display: block;
             margin-top: 30px;
@@ -520,55 +545,63 @@
 
         .section-bottom-bar{
             background-color: #5B9BD5;
-            height: 80px;
-            width: 100%;
-            border: 2px green solid;
+            height: 42px;
             display: block;
+            
         }
         .fa{
-            width: 80px;
-            font-size: 2em;
+            width: 32px;
+            height: 32px;
             display: block;
             text-align: center;
             text-decoration: none;
         }
         .fa-facebook{
             background-color: #5B9BD5;
+            font-size: 1.4em;
             color: #fafafa;
             float:left;
+            padding-top: 2px;
         }
-        .fa-linkedin{
-            background-color: #5B9BD5;
-            color: #fafafa;
+        .fa-linkedin {
+            padding-top:4px;
+            font-size: 1.4em;
+            background-color: #fafafa;
+            color: #5B9BD5;
             float: left;
+            border-radius: 10%;
         }
-        .social-media-icons-container-container{
-            width:50%;
-            border: 2px red solid;
+        .facebook-icon-container {
+            height: 32px;
+            width: 32px;
+            margin-right: 30px;
             float: left;
-            margin: 20px 0;
-
-        }
-        .social-media-icons-container{
-            width: 180px;
-            height: 100%;
             display: block;
-            border: black solid 2px;
         }
-        .copyright-container{
-            width:50%;
-            display: block;
+        .linkedin-icon-container {
+            height: 32px;
+            width: 32px;
+            margin-right: 30px;
             float: left;
-            border: 2px black solid;
-            margin: 20px 0px;
+            display: block;
         }
-        .copyright-text{
+        .bottom-bar-content-container {
+            height: 32px;
+            width: 300px;
             margin: auto;
             display: block;
-            color: #fafafa;
-            font-size: 1em;
-            width:250px;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
+        .bottom-bar-description-container{
+            height: 32px;
+            float: left;
+            display: block;
+        }
+        .bottom-bar-description{
+            color: #fafafa;
+        }
+
 
         @media screen and (max-width:500px) {
             .keynote-image-box {
@@ -577,6 +610,16 @@
             }
         }
         @media screen and (max-width:700px) {
+            .mini-logo{
+                position: fixed;
+                right: 0;
+                left: unset;
+            }
+            .mini-logo-hidden{
+                position: fixed;
+                right: 0;
+                left: unset;
+            }
             .mobile-menu {
                 display: block;
             }
@@ -668,7 +711,7 @@
                     <a class="mobile-button" href="#speakers">Speakers</a>
                     <a class="mobile-button" href="#location">Location</a>
                     <a class="mobile-button" href="#sponsors">Sponsors</a>
-                    <a class="mobile-button" href="#">Apply</a>
+                    <a class="mobile-application-button" href="#">Apply</a>
                 </div>
             </div>
         </div>
@@ -734,7 +777,7 @@
     <div class="section-map" id="location">
         <div class="map-description-section">
             <div class="map-title"> Location</div>
-            <a class="map-description map-button" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank">200 University Avenue West, Waterloo, ON N2L 3G1</a>
+            <a class="map-description map-button" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank"> Quantum Nano Centre <br />200 University Avenue West, Waterloo, ON N2L 3G1</a>
         </div>
         <div class="map-box">
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.4925986034614!2d-80.54620728401505!3d43.47118927912813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6aa030140c1%3A0x1bc6d1d3667b8e16!2sMike+%26+Ophelia+Lazaridis+Quantum+Nano+Centre!5e0!3m2!1sen!2sca!4v1498422584714" frameborder="0" style="border:0" margin="0px" scrolling="no" allowfullscreen></iframe>
@@ -846,19 +889,21 @@
         </div>
     </div>
 -->
-<!-- 
+
     <div class="section-bottom-bar">
-        <div class="social-media-icons-container-container">
-            <div class="social-media-icons-container">
+        <div class="bottom-bar-content-container">
+            <div class="facebook-icon-container">
                 <a href="https://www.facebook.com/uwbiotec/" target="_blank" class="fa fa-facebook"></a>
+            </div>
+            <div class="linkedin-icon-container">
                 <a href="https://www.linkedin.com/company-beta/11156642/" target="_blank" class="fa fa-linkedin"></a>            
             </div>
-        </div>
-        <div class="copyright-container">
-            <div class="copyright-text">Copyright &copy;2017 UW BioTEC</div>
+            <div class="bottom-bar-description-container">
+                <div class="bottom-bar-description">&copy;2017 UW BioTEC</div>
+            </div>
         </div>
     </div>
-    -->
+    
     <script>
     function menuOpen() {
         document.getElementById("mobile-toolbar").classList.toggle("show");
@@ -890,7 +935,7 @@
         window.onscroll = function (oEvent) {
             var divPos = document.getElementById("homepage-description").offsetTop;
             var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
-
+            
             if (scrollPos >= divPos)
                 document.getElementById("mini-logo").className = "mini-logo";
             else
