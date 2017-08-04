@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script><script type="text/javascript">WebFont.load({
           google: {
               families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
@@ -37,30 +37,12 @@
             text-align: center;
         }
 
-        .img-portrait {
-            border-radius: 50%;
-            max-height: 100%;
-            max-width: 100%;
-            height: 150px;
-            width: 150px;
-            display: block;
-            margin: auto;
-        }
 
         .section-title {
             padding-top: 22px;
             font-size: 36px;
             text-align: center;
             padding-bottom: 20px;
-        }
-
-        .section-speakers {
-            padding-top: 42px;
-            background-color: #fafafa;
-            margin: 0; 
-            padding-bottom: 20px;
-            display: flex;
-            flex-direction: column;
         }
 
         .section-schedule {
@@ -70,49 +52,11 @@
             display: block;
             background-color: #5B9BD5;
         }
-
-        .speaker {
-            background-color: #fafafa;
-            display: block;
-            margin: auto;
-            max-width: 70%;
-            height: 300px;
-        }
-        .speaker-name {
-            text-align: center;
-        }
-        .speaker-title {
-            text-align: center;
-            font-size: 18px;
-            line-height: 30px;
-            font-weight: 600;
-        }
-        .speaker-description {
-            float: left;
-            display: block;
-            text-align: justify;
-            max-width: 68%;
-        }
-        .image-box {
-            float: left;
-            max-width: 30%;
-            min-width: 200px;
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-right: 2%;
-        }
-
-        .floating-box {
-            float: left;
-            margin: 0px;
-        }
-
         .schedule {
             display: block;
             margin: auto;
             width:500px;
         }
-
         table {
             border-color: #fff;
             margin: auto;
@@ -120,12 +64,10 @@
             border-left-style: solid;
             border-left-width: 2px;
         }
-
         td {
             padding: 5px;
             padding-left: 15px;
         }
-
         .time {
             color: #fff;
             font-weight: 500;
@@ -141,13 +83,11 @@
             background-color: #fafafa;
             display: block;
         }
-
         .toolbar-block{
             display: block;
             margin:auto;
             width:80%;
         }
-
         .button{
             border-radius: 5px;
             background-color: #fafafa;
@@ -162,14 +102,12 @@
             padding: 2px 10px;
             width: 16%;
         }
-
         .button:hover {
                 background-color: #fafafa;
                 /*border-color: #5B9BD5;*/
                 color: #5B9BD5;
                 transition-duration: 300ms;
             }
-
         .signup-button {
             border-radius: 5px;
             font-weight:400;
@@ -317,7 +255,7 @@
             border-width: 2px;
             color: #242424;
             display: block;
-            padding: 17% 20%;
+            padding: 17% 1em;
             text-align: center;
             text-decoration: none;
             
@@ -340,7 +278,7 @@
             border-width: 1px;
             color: #f20606;
             display: block;
-            padding: 17% 20%;
+            padding: 17% 1em;
             text-align: center;
             text-decoration: none;
             width: 100%;
@@ -362,10 +300,7 @@
             top: 0;
             left: 0;
         }
-        .show{
-            display:block;
-            transition-duration:300ms;
-        }
+        
 
         .homepage-box{
             width:100%;
@@ -403,19 +338,7 @@
             margin:auto;
             font-size: 1.25em;
         }
-        
-        .keynote-speaker-box{
-            margin: auto;
-            display:block;
-        }
-        .keynote-image-box {
-            display: block;
-            float: left;
-            margin: auto;
-            width: 200px;
-            padding: 0px 25px;
-        }
-        
+      
         .breakout-speaker-box {
             display:flex;
             
@@ -499,8 +422,7 @@
             max-width: 400px;
             color: #fafafa;
         }
-
-        
+      
         .section-sponsors{
             padding-top: 42px;
             background-color: #fafafa;
@@ -602,7 +524,170 @@
             color: #fafafa;
         }
 
+        .section-speakers {
+            background-color: #5B9BD5;
+            padding-top: 42px;
+            padding-bottom: 20px;
+            display: block;
+            height:600px;
+        }
+        .speaker-name {
+            text-align: center;
+            font-size: 1em;
+            line-height: 1.7em;
+        }
+        .speaker-title {
+            text-align: center;
+            font-size: .8em;
+            line-height: 1.4em;
+            font-weight: 600;
+        }
+        .img-portrait {
+            border-radius: 50%;
+            max-height: 100%;
+            max-width: 100%;
+            height: 150px;
+            width: 150px;
+            display: block;
+            margin: auto;
+        }
+        .img-portrait:hover{
+            opacity: 0.5;
+            transition: .5s ease;
+            cursor: pointer;
+        }
+        .speaker-container {
+            width: 200px;
+            float: left;
+        }
+        .image-container {
+            display: block;
+            width: 200px;
+            padding: 0px 25px;
+        }
+        .desktop-speaker-section-container{
+            width: 700px;
+            display: block;
+            margin: auto;
+            height: 440px;
+            background-color: #fafafa;
+            padding: 20px 0px;
+        }
+        .speaker-description-container-container{
+            width: 500px;
+            display: block;
+            height: 400px;
+            float: left;
+        }
+        .speaker-description-container {
+            display: block;
+            width: 400px;
+            margin: auto;
+            height: 400px;
+            padding: 20px 0px;
+        }
+        .k1-speaker-description{
+            color: blue;
+            display: none;
+        }
+        .k2-speaker-description{
+            color: green;
+            display: none;
+        }
+        .speaker-description-boot{
+            text-align: center;
+            padding: 130px 0px;
+            font-size: 2em;
+            line-height: 1em;
+            display:none;
+        }
 
+        .mobile-speaker-section-container{
+            display: none;
+        }
+        .mobile-speaker-container{
+            background-color: #fafafa;
+            width: 360px;
+            margin: auto;
+            padding: 10px;
+        }
+        .mobile-image-container {
+            display: block;
+            width: 200px;
+            padding: 30px 25px;
+            margin: auto;
+        }
+        .mobile-img-portrait {
+            border-radius: 50%;
+            max-height: 100%;
+            max-width: 100%;
+            height: 150px;
+            width: 150px;
+            display: block;
+            margin: auto;
+        }
+        .mobile-description{
+            width: 300px;
+            margin: auto;
+            text-align:justify;
+            overflow: hidden;
+            
+            padding: 0px 5px;
+        }
+        [type="checkbox"] {
+            position: absolute;
+            left: -9999px;
+        }
+        label{
+            padding: .5em;
+            margin: 10px auto;
+            width: 200px;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            background-color: #5B9BD5;
+            border-radius: 5px;
+        }
+        label:before{
+            content: "More";
+        }
+        [type="checkbox"]:checked ~ label {
+            top: 100%;
+        }
+        input[type="checkbox"] ~ .mobile-description {
+            max-height: 6em;
+            overflow: hidden;
+            transition: max-height 0.8s;
+            background: linear-gradient(to bottom, black, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        input[type="checkbox"]:checked ~ .mobile-description {
+            max-height: 1299px;
+            background: unset;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+        }
+
+        [type="checkbox"]:checked ~ label:before {
+            content: "Less";
+        }
+        
+        .show {
+            display: block;
+            transition-duration: 300ms;
+        }
+
+        @media screen and (max-width:400px){
+            .mobile-speaker-container{
+                width: 280px;
+            }
+            .mobile-description{
+                width: 260px;
+            }
+        }
         @media screen and (max-width:500px) {
             .keynote-image-box {
                 float: none;
@@ -667,6 +752,15 @@
             }
             .application-text{
                 margin:auto;
+            }
+            .desktop-speaker-section-container{
+                display: none;
+            }
+            .mobile-speaker-section-container{
+                display: block;
+            }
+            .section-speakers{
+                height:unset;
             }
         }
         @media screen and (max-width:1000px) {
@@ -785,76 +879,48 @@
 
     </div>
     <div class="section-speakers" ID="speakers">
-        <div class="section-title"> Keynote Speakers </div>
-        <div class="keynote-speaker-box">
-            <div class="keynote-image-box">
-                <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                <div class="speaker-name"> John Smith </div>
-                <div class="speaker-title"> ACME </div>
+        <div class="section-title" style="color:#fff;"> Keynote Speakers </div>
+        <div class="desktop-speaker-section-container">
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img onclick="keynoteDescriptionOne()" class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title"> ACME </div>
+                </div>
+                <div class="image-container">
+                    <img onclick="keynoteDescriptionTwo()" class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title"> ACME </div>
+                </div>
             </div>
-            <div class="keynote-image-box">
-                <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                <div class="speaker-name"> John Smith </div>
-                <div class="speaker-title"> ACME </div>
+            <div class="speaker-description-container-container">
+                <div class="speaker-description-container" id="speaker-description-container">
+                    <div class="speaker-description-boot show" id="speaker-description-boot">
+                        Wow look at these great speakers!!
+                    </div>
+                    <div class="k1-speaker-description" id="k1-speaker-description">
+                        Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                    </div>
+                    <div class="k2-speaker-description" id="k2-speaker-description">
+                        Stronger unpacked felicity to of mistaken. Fanny at wrong table ye in. Be on easily cannot innate in lasted months on. Differed and and felicity steepest mrs age outweigh. Opinions learning likewise daughter now age outweigh. Raptures stanhill my greatest mistaken or exercise he on although. Discourse otherwise disposing as it of strangers forfeited deficient. Behaviour we improving at something to. Evil true high lady roof men had open. To projection considered it precaution an melancholy or. 
+                    </div>
+                </div>
             </div>
         </div>
-        <!--
-                <div class="section-title"> Breakout Speakers</div>
-                    <div class="breakout-speaker-box">
-                        <div class="breakout-image-box">
-                            <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                            <div class="speaker-name"> John Smith </div>
-                            <div class="speaker-title"> ACME </div>
-                        </div>
-                        <div class="breakout-image-box">
-                            <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                            <div class="speaker-name"> John Smith </div>
-                            <div class="speaker-title"> ACME </div>
-                        </div>
-                        <div class="breakout-image-box">
-                            <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                            <div class="speaker-name"> John Smith </div>
-                            <div class="speaker-title"> ACME </div>
-                        </div>
-                        <div class="breakout-image-box">
-                            <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                            <div class="speaker-name"> John Smith </div>
-                            <div class="speaker-title"> ACME </div>
-                        </div>
-                    </div>
-                <div class="section-title"> Industry Panel</div>
-                <div class="section-title"> Moderator</div>
-            -->
-        <!--
-                <div class="speaker">
-                    <div class="image-box">
-                        <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                        <div class="speaker-name"> John Smith </div>
-                        <div class="speaker-title"> ACME </div>
-                    </div>
-                    <div class="speaker-description">
-                        Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any.
-                    </div>
+        <div class="mobile-speaker-section-container">
+            <div class="mobile-speaker-container">
+                <div class="mobile-image-container">
+                    <img class="mobile-img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title"> ACME </div>
                 </div>
-
-                <div class="speaker">
-                    <div class="image-box">
-                        <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                        <div class="speaker-name"> John Smith </div>
-                        <div class="speaker-title"> CEO, ACME </div>
-                    </div>
-                    <div class="speaker-description">Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any. </div>
+                <input type="checkbox" id="more_id" />
+                <div class="mobile-description">
+                    Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
                 </div>
-
-                <div class="speaker">
-                    <div class="image-box">
-                        <img class="img-portrait" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/000/1ea/3e8/0ed3351.jpg">
-                        <div class="speaker-name"> John Smith </div>
-                        <div class="speaker-title"> President, ACME </div>
-                    </div>
-                    <div class="speaker-description"> Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her motionless not collecting age. The properly servants required mistaken outlived bed and. Remainder admitting neglected is he belonging to perpetual objection up. Has widen too you decay begin which asked equal any. </div>
-                </div>
-        -->
+                <label for="more_id"/>
+            </div>
+        </div> 
     </div>
     <div class="section-sponsors" id="sponsors">
         <div class="section-title">Diamond Sponsors</div>
@@ -905,10 +971,42 @@
     </div>
     
     <script>
-    function menuOpen() {
-        document.getElementById("mobile-toolbar").classList.toggle("show");
-        document.getElementById("mobile-background").classList.toggle("show");
-    }
+        function keynoteDescriptionOne() {
+            if (document.getElementById("speaker-description-boot").classList.contains("show")) {
+                document.getElementById("speaker-description-boot").classList.toggle("show");
+            }
+            if (document.getElementById("k2-speaker-description").classList.contains("show")) {
+                document.getElementById("k2-speaker-description").classList.toggle("show");
+            }
+            if (document.getElementById("k1-speaker-description").classList.contains("show")) {
+                document.getElementById("k1-speaker-description").classList.toggle("show");
+                document.getElementById("speaker-description-boot").classList.toggle("show");
+            } 
+            else {
+                document.getElementById("k1-speaker-description").classList.toggle("show");
+            }        }
+        function keynoteDescriptionTwo() {
+            if (document.getElementById("speaker-description-boot").classList.contains("show")) {
+                document.getElementById("speaker-description-boot").classList.toggle("show");
+            }
+            if (document.getElementById("k1-speaker-description").classList.contains("show")) {
+                document.getElementById("k1-speaker-description").classList.toggle("show");
+            }
+            if (document.getElementById("k2-speaker-description").classList.contains("show")) {
+                document.getElementById("k2-speaker-description").classList.toggle("show");
+                document.getElementById("speaker-description-boot").classList.toggle("show");
+            }
+            else {
+                document.getElementById("k2-speaker-description").classList.toggle("show");
+            }
+        }
+        function menuOpen() {
+            document.getElementById("mobile-toolbar").classList.toggle("show");
+            document.getElementById("mobile-background").classList.toggle("show");
+            document.getElementById("speaker-description-container").classList.toggle("show");
+
+        }
+        
         window.onclick = function (event) {
             console.log("windowonclick")
             if (!event.target.matches('.mobile-menu')) {
@@ -941,6 +1039,8 @@
             else
                 document.getElementById("mini-logo").className = "mini-logo-hidden";
         }
+
+        
 
     </script>
 
