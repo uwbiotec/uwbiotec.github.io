@@ -83,6 +83,17 @@
             background-color: #fafafa;
             display: block;
         }
+        .toolbar-shadow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 42px;
+            background-color: #f5f5f5;
+            display: block;
+            box-shadow: 0px 1px 3px rgba(0,0,0,0.12);
+            transition: 1s;
+        }
         .toolbar-block{
             display: block;
             margin:auto;
@@ -90,9 +101,8 @@
         }
         .button{
             border-radius: 5px;
-            background-color: #fafafa;
-            border-color: #fafafa;
             border-style: solid;
+            border-color: transparent;
             border-width: 2px;
             color: #242424;
             display: inline-block;
@@ -198,18 +208,29 @@
             height: 43px;
             
         }
+        .mobile-box-shadow {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #f5f5f5;
+            width: 100%;
+            height: 43px;
+            box-shadow: 0px 1px 3px rgba(0,0,0,0.12);
+            transition: 1s;
+        }
+
         .mobile-menu {
             display: none;
             position: fixed;
             top: 0;
             left: 0;
             color: #242424;
-            background-color: #fafafa;
             padding-bottom: 3px;
             padding-top: 3px;
             padding-right: 10px;
             padding-left: 10px;
-            border: 2px solid #fafafa;
+            border: 2px solid transparent;
             border-radius: 8px;
             text-decoration: none;
         }
@@ -565,13 +586,14 @@
             width: 200px;
             padding: 0px 25px;
         }
-        .desktop-speaker-section-container{
+        .desktop-speaker-section-container {
             width: 700px;
             display: block;
             margin: auto;
             height: 440px;
-            background-color: #fafafa;
+            background-color: #fff;
             padding: 20px 0px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
         .speaker-description-container-container{
             width: 500px;
@@ -605,11 +627,12 @@
         .mobile-speaker-section-container{
             display: none;
         }
-        .mobile-speaker-container{
+        .mobile-speaker-container {
             background-color: #fafafa;
             width: 360px;
             margin: auto;
             padding: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
         .mobile-image-container {
             display: block;
@@ -762,6 +785,9 @@
             .section-speakers{
                 height:unset;
             }
+            .mobile-box-shadow{
+                display: block;
+            }
         }
         @media screen and (max-width:1000px) {
             .logo{
@@ -784,7 +810,7 @@
 </head>
 <body>
     
-    <div class="toolbar">
+    <div class="toolbar" id="toolbar">
         <div class="toolbar-block">
             <a class="button" href="#title">Home</a>
             <a class="button" href="#schedule">Schedule</a>
@@ -794,7 +820,7 @@
             <a class="signup-button" href="#">Apply</a>
         </div>
     </div>
-    <div class="mobile-box">
+    <div class="mobile-box" id="mobile-box">
         <div onclick="menuOpen()" class="mobile-menu" >
             &#9776;
             <div class="mobile-background" id="mobile-background">
@@ -1039,7 +1065,22 @@
             else
                 document.getElementById("mini-logo").className = "mini-logo-hidden";
         }
+        window.onscroll = function (oEvent) {
+            var divPos = document.getElementById("logo").offsetTop;
+            var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
+            var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
+            if (scrollPos > divPos && width > 700) {
+                document.getElementById("toolbar").className = "toolbar-shadow";
+            }
+            else if (scrollPos > divPos && width < 700) {
+                document.getElementById("mobile-box").className = "mobile-box-shadow";
+            }
+            else {
+                document.getElementById("toolbar").className = "toolbar";
+                document.getElementById("mobile-box").className = "mobile-box";
+            }
+        }
         
 
     </script>
