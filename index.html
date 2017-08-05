@@ -92,7 +92,7 @@
             height: 42px;
             background-color: #f5f5f5;
             display: block;
-            box-shadow: 0px 1px 3px rgba(0,0,0,0.12);
+            box-shadow: 0px 1px 3px rgba(0,0,0,0.23);
             transition: 1s;
         }
         .toolbar-block{
@@ -114,7 +114,6 @@
             width: 16%;
         }
         .button:hover {
-                background-color: #fafafa;
                 /*border-color: #5B9BD5;*/
                 color: #5B9BD5;
                 transition-duration: 300ms;
@@ -122,10 +121,6 @@
         .signup-button {
             border-radius: 5px;
             font-weight:400;
-            background-color: #fafafa;
-            border-color: #fafafa;
-            border-style: solid;
-            border-width: 2px;
             color: #f20606;
             display: inline-block;
             padding: 10px 36px;
@@ -137,7 +132,6 @@
             border-radius: 5px;
         }
         .signup-button:hover {
-            background-color: #fafafa;
             border-color: #5B9BD5;
             color: #5B9BD5;
             transition-duration: 300ms;
@@ -217,7 +211,7 @@
             background-color: #f5f5f5;
             width: 100%;
             height: 43px;
-            box-shadow: 0px 1px 3px rgba(0,0,0,0.12);
+            box-shadow: 0px 1px 3px rgba(0,0,0,0.23);
             transition: 1s;
         }
 
@@ -471,21 +465,47 @@
             width: 50%;
         }
 
-        .application {
-            height: 85px;
+        .section-application {
+            height: 5em;
             background-color: #D00101;
-            margin: auto;
             display: block;
-            width: 100%;
+            text-decoration: none;
         }
-        .application-text{
-            font-size: 1.75em;
+        .application-text-left{
+            font-size: 1.5em;
+            height: 50px;
+            padding: 9px;
+            font-weight: 400;
+            line-height: 1;
             color:#fafafa;
-            padding-top: 24px;
             display: block;
-            margin:auto;
-            width: 318px;
+            width: 152px;
+            float: left;
         }
+        .application-text-container{
+            height: 90px;
+            display: block;
+            padding: 20px 25px;
+        }
+        .application-text-right{
+            display: block;
+            float: left;
+            font-weight: 300;
+            color: #fff;
+            font-size: 1em;
+            border-left: solid #fff 1px;
+            height: 50px;
+            padding: 9px 8px;
+            width: 282px;
+        }
+        .arrow-image{
+            width: 20px;
+            height: 50px;
+            padding: 15px 0;
+            display: block;
+            float: right;
+        }
+
 
         .section-bottom-bar{
             background-color: #5B9BD5;
@@ -719,6 +739,27 @@
             }
         }
         @media screen and (max-width:700px) {
+            .application-text-container{
+                padding: 20px 0px;
+            }
+            .arrow-image{
+                display: none;
+            }
+            .application-text-left {
+                float: unset;
+                margin: auto;
+                height: 30px;
+                padding: 0 9px;
+            }
+            .application-text-right {
+                float: unset;
+                margin: auto;
+                border: unset;
+                padding: 0 8px;
+                height: 20px;
+                line-height: 1;
+            }
+            
             .mini-logo{
                 position: fixed;
                 right: 0;
@@ -847,11 +888,18 @@
             <a class="homepage-address" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank">Mike & Ophelia Lazaridis Quantum Nano Centre </a>
         </div>
     </div>
-    <div class="application">
-        <a class="application-text">
-            Applications Now Open
-        </a>
-    </div>
+    <a class="section-application" href="#application">
+        <div class="application-text-container">
+            <div class="application-text-left">
+                Apply Now
+            </div>
+            <div class="application-text-right">
+                Applications opening on October 1
+            </div>
+            <div class="application-text-spacer"> </div>
+            <img src="Arrow.svg" class="arrow-image" />
+        </div>
+    </a>
     <div class="section-schedule" id="schedule">
         <div class="section-title"> Schedule </div>
         <div class="schedule">
