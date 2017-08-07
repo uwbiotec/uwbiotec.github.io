@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿ <!DOCTYPE html>
 
 <html>
 <head>
@@ -43,6 +43,7 @@
             font-size: 36px;
             text-align: center;
             padding-bottom: 20px;
+            font-weight: 300;
         }
 
         .section-schedule {
@@ -140,9 +141,8 @@
 
         .section-map {  
             background-color: #5B9BD5;
-            width:100%;
-            height: 542px;
             padding-top: 42px;
+            height: 500px;
             display: block;
         }
         .map-box {
@@ -166,25 +166,26 @@
             background-color:#fafafa;
             height: 500px;
         }
+        .map-description-container{
+            margin: 176px auto;
+            display: block;
+            max-width: 400px;
+        }
         .map-title {
             font-size: 2em;
-            margin-top: 180px;
-            margin-bottom: 20px;
-            margin-left: auto;
-            margin-right: auto;
             display: block;
             text-align: center;
             max-width: 400px;
             color: #242424;
+            margin: auto;
+            margin-bottom: 20px;
+
         }
         .map-description {
-            margin: 0px auto;
-            font-weight: 300;
             display: block;
             text-align: center;
             font-size: 1.5em;
             max-width: 400px;
-            margin-bottom: 172px;
             color: #242424;
             text-decoration: none;
         }
@@ -263,7 +264,6 @@
             height: 100%;
         }
         .mobile-button {
-            float: left;
             border-radius: 5px;
             background-color: #fafafa;
             border-color: #fafafa;
@@ -271,13 +271,12 @@
             border-width: 2px;
             color: #242424;
             display: block;
-            padding: 17% 1em;
+            padding:20px 0;
+            margin: auto;
             text-align: center;
             text-decoration: none;
-            
-            width: 100%;
             font-size: 1.3em;
-            height: 14%; /*alternate: 10%*/
+
         }
         .mobile-button:hover {
             background-color: #fff;
@@ -286,7 +285,6 @@
             /*border-color: #5B9BD5;*/
         }
         .mobile-application-button {
-            float: left;
             border-radius: 5px;
             background-color: #fafafa;
             border-color: #f20606;
@@ -294,12 +292,10 @@
             border-width: 1px;
             color: #f20606;
             display: block;
-            padding: 17% 1em;
+            padding: 20px 0;
             text-align: center;
             text-decoration: none;
-            width: 100%;
             font-size: 1.3em;
-            height: 14%; /*alternate: 10%*/
             font-weight: 400;
         }
         .mobile-application-button:hover {
@@ -307,7 +303,7 @@
             border-color: #5B9BD5
         }
         .mobile-toolbar-spacer{
-            height: 8%; /*alternate: 20%*/
+            height: 46px;
         }
         .mobile{
             width: 100%;
@@ -496,7 +492,8 @@
             border-left: solid #fff 1px;
             height: 50px;
             padding: 9px 8px;
-            width: 282px;
+            padding-left: 16px;
+            width: 290px;
         }
         .arrow-image{
             width: 20px;
@@ -505,7 +502,41 @@
             display: block;
             float: right;
         }
-
+        .section-email-signup {
+            height: 5em;
+            background-color: #2E7D32;
+            display: block;
+            text-decoration: none;
+        }
+        .signup-text-left {
+            font-size: 1.5em;
+            height: 50px;
+            padding: 9px;
+            font-weight: 400;
+            line-height: 1;
+            color: #fafafa;
+            display: block;
+            width: 152px;
+            float: left;
+            text-align: center;
+        }
+        .signup-text-container {
+            height: 90px;
+            display: block;
+            padding: 20px 25px;
+        }
+        .signup-text-right {
+            display: block;
+            float: left;
+            font-weight: 300;
+            color: #fff;
+            font-size: 1em;
+            border-left: solid #fff 1px;
+            height: 50px;
+            padding: 9px 8px;
+            padding-left: 16px;
+            width: 335px;
+        }
 
         .section-bottom-bar{
             background-color: #5B9BD5;
@@ -739,6 +770,26 @@
             }
         }
         @media screen and (max-width:700px) {
+            .map-box{
+                height: 400px;
+                width: 100%;
+            }
+            .map{
+                height: 400px;
+            }
+            .section-map{
+                height: 700px;
+            }
+            .map-description-section{
+                height: 300px;
+                width: 100%;
+            }
+            .map-description-container{
+                margin: 76px auto;
+            }
+            .map-description{
+                font-size: 1.2em;
+            }
             .application-text-container{
                 padding: 20px 0px;
             }
@@ -758,6 +809,25 @@
                 padding: 0 8px;
                 height: 20px;
                 line-height: 1;
+            }
+            .signup-text-container {
+                padding: 20px 0px;
+            }
+            .signup-text-left {
+                float: unset;
+                margin: auto;
+                height: 30px;
+                padding: 0 9px;
+            }
+
+            .signup-text-right {
+                float: unset;
+                margin: auto;
+                border: unset;
+                padding: 0 8px;
+                height: 20px;
+                line-height: 1;
+                width: 325px;
             }
             
             .mini-logo{
@@ -788,20 +858,7 @@
             }
             .image-box{
             }
-            .map{
-                width: 100%;
-                float: right;
-            }
-            .section-map{
-                height: 1042px;
-            }
-            .map-description-section{
-                width:100%;
-            }
-            .map-box{
-                width: 100%;
-                float: right;
-            }
+
             .mobile-toolbar{
                 min-width: 45%;
             }
@@ -900,6 +957,18 @@
             <img src="Arrow.svg" class="arrow-image" />
         </div>
     </a>
+    <a class="section-email-signup" href="#emailsignup">
+        <div class="signup-text-container">
+            <div class="signup-text-left">
+                Sign Up
+            </div>
+            <div class="signup-text-right">
+                Receive weekly updates about the event
+            </div>
+            <div class="signup-text-spacer"> </div>
+            <img src="Arrow.svg" class="arrow-image" />
+        </div>
+    </a>
     <div class="section-schedule" id="schedule">
         <div class="section-title"> Schedule </div>
         <div class="schedule">
@@ -945,8 +1014,10 @@
     </div>
     <div class="section-map" id="location">
         <div class="map-description-section">
-            <div class="map-title"> Location</div>
-            <a class="map-description map-button" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank"> Quantum Nano Centre <br />200 University Avenue West, Waterloo, ON N2L 3G1</a>
+            <div class="map-description-container">
+                <div class="map-title"> Location</div>
+                <a class="map-description map-button" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank"> Quantum Nano Centre <br />200 University Avenue West, Waterloo, ON N2L 3G1</a>
+            </div>
         </div>
         <div class="map-box">
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.4925986034614!2d-80.54620728401505!3d43.47118927912813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6aa030140c1%3A0x1bc6d1d3667b8e16!2sMike+%26+Ophelia+Lazaridis+Quantum+Nano+Centre!5e0!3m2!1sen!2sca!4v1498422584714" frameborder="0" style="border:0" margin="0px" scrolling="no" allowfullscreen></iframe>
