@@ -303,7 +303,7 @@
             border-color: #5B9BD5
         }
         .mobile-toolbar-spacer{
-            height: 46px;
+            height: 42px;
         }
         .mobile{
             width: 100%;
@@ -462,7 +462,7 @@
         }
 
         .section-application {
-            height: 5em;
+            height: 70px;
             background-color: #D00101;
             display: block;
             text-decoration: none;
@@ -479,9 +479,9 @@
             float: left;
         }
         .application-text-container{
-            height: 90px;
+            height: 70px;
             display: block;
-            padding: 20px 25px;
+            padding: 10px 25px;
         }
         .application-text-right{
             display: block;
@@ -503,7 +503,7 @@
             float: right;
         }
         .section-email-signup {
-            height: 5em;
+            height: 70px;
             background-color: #2E7D32;
             display: block;
             text-decoration: none;
@@ -521,9 +521,9 @@
             text-align: center;
         }
         .signup-text-container {
-            height: 90px;
+            height: 70px;
             display: block;
-            padding: 20px 25px;
+            padding: 10px 25px;
         }
         .signup-text-right {
             display: block;
@@ -1154,7 +1154,6 @@
         }
         
         window.onclick = function (event) {
-            console.log("windowonclick")
             if (!event.target.matches('.mobile-menu')) {
                 var menuButtons = document.getElementsByClassName("mobile-toolbar");
                 var i;
@@ -1177,18 +1176,11 @@
         }
 
         window.onscroll = function (oEvent) {
-            var divPos = document.getElementById("homepage-description").offsetTop;
-            var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
-            
-            if (scrollPos >= divPos)
-                document.getElementById("mini-logo").className = "mini-logo";
-            else
-                document.getElementById("mini-logo").className = "mini-logo-hidden";
-        }
-        window.onscroll = function (oEvent) {
+            var homepageDesPos = document.getElementById("homepage-description").offsetTop;
             var divPos = document.getElementById("logo").offsetTop;
             var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
             var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
 
             if (scrollPos > divPos && width > 700) {
                 document.getElementById("toolbar").className = "toolbar-shadow";
@@ -1200,6 +1192,12 @@
                 document.getElementById("toolbar").className = "toolbar";
                 document.getElementById("mobile-box").className = "mobile-box";
             }
+
+            if (scrollPos >= homepageDesPos)
+                document.getElementById("mini-logo").className = "mini-logo";
+            else
+                document.getElementById("mini-logo").className = "mini-logo-hidden";
+
         }
         
 
