@@ -37,7 +37,6 @@
             text-align: center;
         }
 
-
         .section-title {
             padding-top: 22px;
             font-size: 36px;
@@ -602,79 +601,139 @@
             padding-top: 42px;
             padding-bottom: 20px;
             display: block;
-            height:600px;
-        }
-        .speaker-name {
-            text-align: center;
-            font-size: 1em;
-            line-height: 1.7em;
+            height:696px;
         }
         .speaker-title {
-            text-align: center;
-            font-size: .8em;
+            font-size: 1em;
+            line-height: 1.7em;
+            font-style: italic;
+        }
+        .speaker-name {
+            font-size: 2em;
             line-height: 1.4em;
-            font-weight: 600;
+            font-weight: 500;
         }
         .img-portrait {
             border-radius: 50%;
             max-height: 100%;
             max-width: 100%;
-            height: 150px;
-            width: 150px;
+            height: 300px;
+            width: 300px;
             display: block;
             margin: auto;
         }
-        .img-portrait:hover{
-            opacity: 0.5;
-            transition: .5s ease;
-            cursor: pointer;
-        }
-        .speaker-container {
-            width: 200px;
-            float: left;
-        }
+
         .image-container {
             display: block;
-            width: 200px;
-            padding: 0px 25px;
+            width: 360px;
+            padding: 80px 0;
+            height:460px;
+            float:left;
+            border-right: 1px solid #5B9BD5;
         }
         .desktop-speaker-section-container {
-            width: 700px;
+            width: 900px;
             display: block;
             margin: auto;
-            height: 440px;
+            height: 560px;
             background-color: #fff;
             padding: 20px 0px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
         .speaker-description-container-container{
-            width: 500px;
+            width: 540px;
+            padding: 0 20px;
             display: block;
-            height: 400px;
+            height: 460px;
             float: left;
         }
         .speaker-description-container {
             display: block;
-            width: 400px;
+            width: 500px;
             margin: auto;
-            height: 400px;
+            height: 330px;
             padding: 20px 0px;
         }
         .k1-speaker-description{
-            color: blue;
-            display: none;
+            color: black;
+            display: block;
         }
         .k2-speaker-description{
             color: green;
             display: none;
         }
-        .speaker-description-boot{
-            text-align: center;
-            padding: 130px 0px;
-            font-size: 2em;
-            line-height: 1em;
-            display:none;
+        .speaker-links-container{
+            height: 50px;
+            display: block;
         }
+        .speaker-website{
+            padding: 9px 0px;
+            display: block;
+            text-decoration: none;
+            color: black;
+            float: left;
+            margin-left: 30px;
+        }
+        .speaker-website:hover{
+            color: #5B9BD5;
+        }
+        .speaker-linkedin-container{
+            float: left;
+            width: 32px;
+            padding: 9px 0;
+            display:block;
+        }
+        .speaker-graphic-container{
+            height: 60px;
+            padding: 10px 0;
+            display: block;
+            float:left;
+            width: 100%;
+        }
+        .speaker-graphic-left-arrow {
+            width: 20px;
+            height: 40px;
+            padding: 10px 0;
+            display: block;
+            margin-left: 30px;
+            float: left;
+        }
+        .speaker-graphic-circle-container{
+            width: 330px;
+            margin: 0 235px;
+            height: 40px;
+            display: block;
+            float: left;
+            padding: 15px 0;
+        }
+        .speaker-graphic-circle{
+            float: left;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            border: #242424 1px solid;
+            margin: 0 10px; 
+        }
+        .speaker-graphic-circle:hover{
+            background-color: #242424;
+        }
+        .speaker-graphic-right-arrow{
+            width: 20px;
+            height: 40px;
+            padding: 10px 0;
+            display: block;
+            float: left;
+            margin-right: 30px;
+        }
+        .speaker-container{
+            height: 460px;
+            width: 900px;
+            display: none;
+        }
+        .black{
+            background-color: black;
+        }
+
 
         .mobile-speaker-section-container{
             display: none;
@@ -738,18 +797,15 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         input[type="checkbox"]:checked ~ .mobile-description {
             max-height: 1299px;
             background: unset;
             -webkit-background-clip: unset;
             -webkit-text-fill-color: unset;
         }
-
         [type="checkbox"]:checked ~ label:before {
             content: "Less";
         }
-        
         .show {
             display: block;
             transition-duration: 300ms;
@@ -791,7 +847,7 @@
                 font-size: 1.2em;
             }
             .application-text-container{
-                padding: 20px 0px;
+                padding: 10px 0px;
             }
             .arrow-image{
                 display: none;
@@ -811,7 +867,7 @@
                 line-height: 1;
             }
             .signup-text-container {
-                padding: 20px 0px;
+                padding: 10px 0px;
             }
             .signup-text-left {
                 float: unset;
@@ -916,7 +972,7 @@
             <a class="button" href="#location">Location</a>            
             <a class="button" href="#speakers">Speakers</a>
             <a class="button" href="#sponsors">Sponsors</a>
-            <a class="signup-button" href="#">Apply</a>
+            <a class="signup-button" href="#application">Apply</a>
         </div>
     </div>
     <div class="mobile-box" id="mobile-box">
@@ -930,7 +986,7 @@
                     <a class="mobile-button" href="#speakers">Speakers</a>
                     <a class="mobile-button" href="#location">Location</a>
                     <a class="mobile-button" href="#sponsors">Sponsors</a>
-                    <a class="mobile-application-button" href="#">Apply</a>
+                    <a class="mobile-application-button" href="#application">Apply</a>
                 </div>
             </div>
         </div>
@@ -969,6 +1025,260 @@
             <img src="Arrow.svg" class="arrow-image" />
         </div>
     </a>
+    <div class="section-speakers" ID="speakers">
+        <div class="section-title" style="color:#fff; font-weight: 400;"> Featured Speakers </div>
+        <div class="desktop-speaker-section-container">
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself pasture believe females. Fancy she stuff after aware merit small his. Charmed esteems luckily age out.  Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality.                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            How promotion excellent curiosity yet attempted happiness. Gay prosperous impression had conviction. For every delay death ask style. Me mean able my by in they. Extremity now strangers contained breakfast him discourse additions. Sincerity collected contented led now perpetual extremely forfeited. Rendered her for put improved concerns his. Ladies bed wisdom theirs mrs men months set. Everything so dispatched as it increasing pianoforte. Hearing now saw perhaps minutes herself his. Of instantly excellent therefore difficult he northward.                         </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            Be me shall purse my ought times. Joy years doors all would again rooms these. Solicitude announcing as to sufficient my. No my reached suppose proceed pressed perhaps he. Eagerness it delighted pronounce repulsive furniture no. Excuse few the remain highly feebly add people manner say. It high at my mind by roof. No wonder worthy in dinner.  Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity. Delay rapid joy share allow age manor six.                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            Men bred fine call ask. Cease one miles truth day above seven. Suspicion sportsmen provision suffering mrs saw engrossed something. Snug soon he on plan in be dine some. Had repulsive dashwoods suspicion sincerity but advantage now him. Remark easily garret nor nay. Civil those mrs enjoy shy fat merry. You greatest jointure saw horrible. He private he on be imagine suppose. Fertile beloved evident through no service elderly is. Blind there if every no so at. Own neglected you preferred way sincerity delivered his attempted.                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            In as name to here them deny wise this. As rapid woody my he me which. Men but they fail shew just wish next put. Led all visitor musical calling nor her. Within coming figure sex things are. Pretended concluded did repulsive education smallness yet yet described. Had country man his pressed shewing. No gate dare rose he. Eyes year if miss he as upon. Extremity direction existence as dashwoods do up. Securing marianne led welcomed offended but offering six raptures. Conveying concluded newspaper rapturous oh at.                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            She literature discovered increasing how diminution understood. Though and highly the enough county for man. Of it up he still court alone widow seems. Suspected he remainder rapturous my sweetness. All vanity regard sudden nor simple can. World mrs and vexed china since after often. Ever man are put down his very. And marry may table him avoid. Hard sell it were into it upon. He forbade affixed parties of assured to me windows. Happiness him nor she disposing provision.                         </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="speaker-graphic-container">
+                <img src="Arrow-left.svg" class="speaker-graphic-left-arrow" onclick="plusDiv(-1)"/>
+                <div class="speaker-graphic-circle-container">
+                    <div class="speaker-graphic-circle" onclick="currentDiv(1)"> </div> <div class="speaker-graphic-circle" onclick="currentDiv(2)"> </div> <div class="speaker-graphic-circle" onclick="currentDiv(3)"> </div> <div class="speaker-graphic-circle" onclick="currentDiv(4)"> </div> <div class="speaker-graphic-circle" onclick="currentDiv(5)"> </div> <div class="speaker-graphic-circle" onclick="currentDiv(6)"> </div>
+                    <div class="speaker-graphic-circle" onclick="currentDiv(7)"> </div><div class="speaker-graphic-circle" onclick="currentDiv(8)"> </div><div class="speaker-graphic-circle" onclick="currentDiv(9)"> </div><div class="speaker-graphic-circle" onclick="currentDiv(10)"> </div><div class="speaker-graphic-circle" onclick="currentDiv(11)"> </div>
+                </div>
+                <img src="Arrow-right.svg" class="speaker-graphic-right-arrow" onclick="plusDiv(1)"/>
+            </div>
+        </div>
+        <div class="mobile-speaker-section-container">
+            <div class="mobile-speaker-container">
+                <div class="mobile-image-container">
+                    <img class="mobile-img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <div class="speaker-name"> John Smith </div>
+                    <div class="speaker-title"> ACME </div>
+                </div>
+                <input type="checkbox" id="more_id" />
+                <div class="mobile-description">
+                    Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                </div>
+                <label for="more_id" />
+            </div>
+        </div>
+    </div>
+    <div class="section-map" id="location">
+        <div class="map-description-section">
+            <div class="map-description-container">
+                <div class="map-title"> Location</div>
+                <a class="map-description map-button" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank"> Quantum Nano Centre <br />200 University Avenue West, Waterloo, ON N2L 3G1</a>
+            </div>
+        </div>
+        <div class="map-box">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.4925986034614!2d-80.54620728401505!3d43.47118927912813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6aa030140c1%3A0x1bc6d1d3667b8e16!2sMike+%26+Ophelia+Lazaridis+Quantum+Nano+Centre!5e0!3m2!1sen!2sca!4v1498422584714" frameborder="0" style="border:0" margin="0px" scrolling="no" allowfullscreen></iframe>
+        </div>
+
+    </div>
     <div class="section-schedule" id="schedule">
         <div class="section-title"> Schedule </div>
         <div class="schedule">
@@ -1012,62 +1322,7 @@
             </table>
         </div>
     </div>
-    <div class="section-map" id="location">
-        <div class="map-description-section">
-            <div class="map-description-container">
-                <div class="map-title"> Location</div>
-                <a class="map-description map-button" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank"> Quantum Nano Centre <br />200 University Avenue West, Waterloo, ON N2L 3G1</a>
-            </div>
-        </div>
-        <div class="map-box">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.4925986034614!2d-80.54620728401505!3d43.47118927912813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6aa030140c1%3A0x1bc6d1d3667b8e16!2sMike+%26+Ophelia+Lazaridis+Quantum+Nano+Centre!5e0!3m2!1sen!2sca!4v1498422584714" frameborder="0" style="border:0" margin="0px" scrolling="no" allowfullscreen></iframe>
-        </div>
 
-    </div>
-    <div class="section-speakers" ID="speakers">
-        <div class="section-title" style="color:#fff;"> Keynote Speakers </div>
-        <div class="desktop-speaker-section-container">
-            <div class="speaker-container">
-                <div class="image-container">
-                    <img onclick="keynoteDescriptionOne()" class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title"> ACME </div>
-                </div>
-                <div class="image-container">
-                    <img onclick="keynoteDescriptionTwo()" class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title"> ACME </div>
-                </div>
-            </div>
-            <div class="speaker-description-container-container">
-                <div class="speaker-description-container" id="speaker-description-container">
-                    <div class="speaker-description-boot show" id="speaker-description-boot">
-                        Wow look at these great speakers!!
-                    </div>
-                    <div class="k1-speaker-description" id="k1-speaker-description">
-                        Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
-                    </div>
-                    <div class="k2-speaker-description" id="k2-speaker-description">
-                        Stronger unpacked felicity to of mistaken. Fanny at wrong table ye in. Be on easily cannot innate in lasted months on. Differed and and felicity steepest mrs age outweigh. Opinions learning likewise daughter now age outweigh. Raptures stanhill my greatest mistaken or exercise he on although. Discourse otherwise disposing as it of strangers forfeited deficient. Behaviour we improving at something to. Evil true high lady roof men had open. To projection considered it precaution an melancholy or. 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mobile-speaker-section-container">
-            <div class="mobile-speaker-container">
-                <div class="mobile-image-container">
-                    <img class="mobile-img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title"> ACME </div>
-                </div>
-                <input type="checkbox" id="more_id" />
-                <div class="mobile-description">
-                    Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
-                </div>
-                <label for="more_id"/>
-            </div>
-        </div> 
-    </div>
     <div class="section-sponsors" id="sponsors">
         <div class="section-title">Diamond Sponsors</div>
         <div class="sponsor-logo-box">
@@ -1117,6 +1372,32 @@
     </div>
     
     <script>
+        var slideIndex = 1;
+        showDiv(slideIndex);
+
+        function plusDiv(n) {
+            showDiv(slideIndex += n);
+        }
+        function currentDiv(n) {
+            showDiv(slideIndex = n);
+        }
+        function showDiv(n) {
+            var i;
+            var x = document.getElementsByClassName("speaker-container");
+            var dots = document.getElementsByClassName("speaker-graphic-circle");
+            if (n > x.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" black", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " black";
+        }
         function keynoteDescriptionOne() {
             if (document.getElementById("speaker-description-boot").classList.contains("show")) {
                 document.getElementById("speaker-description-boot").classList.toggle("show");
