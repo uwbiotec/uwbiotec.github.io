@@ -214,7 +214,7 @@
             box-shadow: 0px 1px 3px rgba(0,0,0,0.23);
             transition: 1s;
         }
-
+        
         .mobile-menu {
             display: none;
             position: fixed;
@@ -503,7 +503,7 @@
         }
         .section-email-signup {
             height: 70px;
-            background-color: #2E7D32;
+            background-color: #535F6B;
             display: block;
             text-decoration: none;
         }
@@ -555,7 +555,7 @@
             font-size: 1.4em;
             color: #fafafa;
             float:left;
-            padding-top: 2px;
+            padding-top: 4px;
         }
         .fa-linkedin {
             padding-top:4px;
@@ -580,7 +580,7 @@
             display: block;
         }
         .bottom-bar-content-container {
-            height: 32px;
+            height: 42px;
             width: 300px;
             margin: auto;
             display: block;
@@ -589,7 +589,7 @@
         }
         .bottom-bar-description-container{
             height: 32px;
-            float: left;
+            float: right;
             display: block;
         }
         .bottom-bar-description{
@@ -601,7 +601,7 @@
             padding-top: 42px;
             padding-bottom: 20px;
             display: block;
-            height:696px;
+            height: 696px;
         }
         .speaker-title {
             font-size: 1em;
@@ -615,20 +615,34 @@
         }
         .img-portrait {
             border-radius: 50%;
-            max-height: 100%;
-            max-width: 100%;
             height: 300px;
             width: 300px;
             display: block;
             margin: auto;
         }
-
+        .speaker-left-container {
+            height: 460px;
+            width: 360px;
+            display: block;
+            float: left;
+        }
+        .speaker-type{
+            height: 50px;
+            width: 340px;
+            margin-left:20px;
+            display: block;
+            float:left;
+            font-size: 1.5em;
+            line-height:1.4em;
+            font-weight: 500;
+        }
         .image-container {
             display: block;
             width: 360px;
-            padding: 80px 0;
-            height:460px;
-            float:left;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            height: 410px;
+            float: left;
             border-right: 1px solid #5B9BD5;
         }
         .desktop-speaker-section-container {
@@ -736,36 +750,61 @@
 
 
         .mobile-speaker-section-container{
-            display: none;
+            display: block;
         }
         .mobile-speaker-container {
             background-color: #fafafa;
-            width: 360px;
+            width: 320px;
             margin: auto;
             padding: 10px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
-        .mobile-image-container {
+        .mobile-header-container {
             display: block;
-            width: 200px;
-            padding: 30px 25px;
-            margin: auto;
+            width: 260px;
+            height: 100px;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
         .mobile-img-portrait {
             border-radius: 50%;
-            max-height: 100%;
-            max-width: 100%;
-            height: 150px;
-            width: 150px;
+            height: 100px;
+            width: 120px;
+            padding-right: 10px;
+            padding-left: 10px;
             display: block;
-            margin: auto;
+        }
+        .mobile-img-portrait-container {
+            display: block;
+            float: left;
+            height: 100px;
+            width: 120px;
+            border-right: 1px solid #5B9BD5;
+        }
+        .mobile-speaker-name{
+            font-weight:400;
+            font-size:1.4em;
+            height:30px;
+            width:140px;
+            float: left;
+            padding-left: 10px;
+            margin-top:10px;
+        }
+        .mobile-speaker-title {
+            font-weight: 300;
+            font-size: 1em;
+            font-style: italic;
+            height: 30px;
+            width: 140px;
+            float: left;
+            padding-left: 10px;
         }
         .mobile-description{
             width: 300px;
+            font-size: 1em;
             margin: auto;
             text-align:justify;
             overflow: hidden;
-            
             padding: 0px 5px;
         }
         [type="checkbox"] {
@@ -779,8 +818,8 @@
             display: block;
             text-align: center;
             cursor: pointer;
-            color: #fff;
-            background-color: #5B9BD5;
+            color: black;
+            border: 1px solid black;
             border-radius: 5px;
         }
         label:before{
@@ -790,7 +829,7 @@
             top: 100%;
         }
         input[type="checkbox"] ~ .mobile-description {
-            max-height: 6em;
+            max-height: 8em;
             overflow: hidden;
             transition: max-height 0.8s;
             background: linear-gradient(to bottom, black, white);
@@ -1004,7 +1043,7 @@
     <a class="section-application" href="#application">
         <div class="application-text-container">
             <div class="application-text-left">
-                Apply Now
+                Apply Soon
             </div>
             <div class="application-text-right">
                 Applications opening on October 1
@@ -1029,8 +1068,10 @@
         <div class="section-title" style="color:#fff; font-weight: 400;"> Featured Speakers </div>
         <div class="desktop-speaker-section-container">
             <div class="speaker-container">
-                <div class="image-container">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                <div class="speaker-left-container">
+                    <div class="image-container">
+                        <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    </div>
                 </div>
                 <div class="speaker-description-container-container">
                     <div class="speaker-name"> John Smith </div>
@@ -1254,16 +1295,20 @@
         </div>
         <div class="mobile-speaker-section-container">
             <div class="mobile-speaker-container">
-                <div class="mobile-image-container">
-                    <img class="mobile-img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title"> ACME </div>
+                <div class="mobile-header-container">
+                    <div class="mobile-img-portrait-container">
+                        <img class="mobile-img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    </div>
+                    <div class="mobile-speaker-name"> John Smith </div>
+                    <div class="mobile-speaker-title"> ACME </div>
                 </div>
                 <input type="checkbox" id="more_id" />
                 <div class="mobile-description">
-                    Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                    Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself pasture believe females. Fancy she stuff after aware merit small his. Charmed esteems luckily age out.  Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality.
                 </div>
-                <label for="more_id" />
+                <label for="more_id" /> </div>
+
+                </div>
             </div>
         </div>
     </div>
