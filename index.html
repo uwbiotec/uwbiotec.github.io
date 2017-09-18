@@ -45,34 +45,8 @@
             font-weight: 300;
         }
 
-        .section-schedule {
-            padding-top: 42px;
-            padding-bottom: 42px;
-            color: #fff;
-            display: block;
-            background-color: #5B9BD5;
-        }
-        .schedule {
-            display: block;
-            margin: auto;
-            width:500px;
-        }
-        table {
-            border-color: #fff;
-            margin: auto;
-            text-align: left;
-            border-left-style: solid;
-            border-left-width: 2px;
-        }
-        td {
-            padding: 5px;
-            padding-left: 15px;
-        }
-        .time {
-            color: #fff;
-            font-weight: 500;
-            text-align: left;
-        }
+
+
 
         .toolbar {
             position: fixed;
@@ -138,10 +112,10 @@
 
         }
 
-        .section-map {  
-            background-color: #5B9BD5;
+        .section-map {
+            background-color: #1e6da3;
             padding-top: 42px;
-            height: 500px;
+            height: 542px;
             display: block;
         }
         .map-box {
@@ -436,7 +410,7 @@
       
         .section-sponsors{
             padding-top: 42px;
-            background-color: #fafafa;
+            background-color: #fff;
             padding-bottom: 40px;
         }
         .sponsor-logo-box{
@@ -458,8 +432,56 @@
             height: 60px;
             float: left;
             width: 50%;
+            display: block;
+        }
+        .interfacebio-sponsor-jpg-box{
+            float:left;
+            width: 50%;
+            height:60px;
+            display: block;
+        }
+        .interfacebio-sponsor-jpg-container{
+            display: block;
+            max-width:100%;
+            height:60px;
+            margin: auto;
+        }
+        .interfacebio-sponsor-jpg-logo {
+            display: block;
+            height: 60px;
+            padding: 10.5px 0;
+            max-width: 180px;
+            width: 100%;
+            margin: auto;
+        }
+        .christiemed-sponsor-jpg-container{
+            display: block;
+            max-width: 248px;
+            height: 60px;
+            margin: auto;
+        }
+        .christiemed-sponsor-jpg-logo {
+            display: block;
+            margin: auto;
+            height: 60px;
+            padding: 14px 0;
+            max-width: 180px;
+            width: 100%;
+        }
+        .christiemed-sponsor-jpg-box {
+            margin: auto;
+            width: 50%;
+            height: 60px;
+            display: block;
         }
 
+        
+        .section-application-container{
+            height: 112px;
+            background-color: #fafafa;
+            display: block;
+            padding-top: 42px;
+        }
         .section-application {
             height: 70px;
             background-color: #D00101;
@@ -503,7 +525,7 @@
         }
         .section-email-signup {
             height: 70px;
-            background-color: #535F6B;
+            background-color: #303F4F;
             display: block;
             text-decoration: none;
         }
@@ -524,7 +546,7 @@
             display: block;
             padding: 10px 25px;
         }
-        .signup-text-right {
+        .signup-text-right{
             display: block;
             float: left;
             font-weight: 300;
@@ -536,12 +558,22 @@
             padding-left: 16px;
             width: 335px;
         }
+        .mobile-signup-text-right {
+            display: none;
+            font-weight: 300;
+            color: #fff;
+            font-size: 1em;
+            margin: auto;
+            height: 20px;
+            line-height: 1em;
+            width: 100%;
+            text-align: center;
+        }
 
-        .section-bottom-bar{
-            background-color: #5B9BD5;
+        .section-bottom-bar {
+            background-color: #1e6da3;
             height: 42px;
             display: block;
-            
         }
         .fa{
             width: 32px;
@@ -550,18 +582,18 @@
             text-align: center;
             text-decoration: none;
         }
-        .fa-facebook{
-            background-color: #5B9BD5;
+        .fa-facebook {
+            background-color: #1e6da3;
             font-size: 1.4em;
-            color: #fafafa;
-            float:left;
+            color: #fff;
+            float: left;
             padding-top: 4px;
         }
         .fa-linkedin {
-            padding-top:4px;
+            padding-top: 4px;
             font-size: 1.4em;
-            background-color: #fafafa;
-            color: #5B9BD5;
+            background-color: #fff;
+            color: #1e6da3;
             float: left;
             border-radius: 10%;
         }
@@ -597,7 +629,7 @@
         }
 
         .section-speakers {
-            background-color: #5B9BD5;
+            background-color: #1e6da3;
             padding-top: 42px;
             padding-bottom: 20px;
             display: block;
@@ -711,10 +743,11 @@
             display: block;
             margin-left: 30px;
             float: left;
+            cursor: pointer;
         }
         .speaker-graphic-circle-container{
-            width: 330px;
-            margin: 0 235px;
+            width: 270px;
+            margin: 0 265px;
             height: 40px;
             display: block;
             float: left;
@@ -727,6 +760,7 @@
             border-radius: 50%;
             border: #242424 1px solid;
             margin: 0 10px; 
+            cursor: pointer;
         }
         .speaker-graphic-circle:hover{
             background-color: #242424;
@@ -738,6 +772,7 @@
             display: block;
             float: left;
             margin-right: 30px;
+            cursor: pointer;
         }
         .speaker-container{
             height: 460px;
@@ -750,7 +785,7 @@
 
 
         .mobile-speaker-section-container{
-            display: block;
+            display: none;
         }
         .mobile-speaker-container {
             background-color: #fafafa;
@@ -760,44 +795,37 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
         .mobile-header-container {
-            display: block;
+            display: none;
             width: 260px;
-            height: 100px;
-            margin-top: 10px;
-            margin-bottom: 20px;
+            height: 260px;
+            margin: 10px auto;
         }
         .mobile-img-portrait {
             border-radius: 50%;
-            height: 100px;
-            width: 120px;
-            padding-right: 10px;
-            padding-left: 10px;
+            height: 200px;
+            width: 200px;
             display: block;
         }
         .mobile-img-portrait-container {
             display: block;
-            float: left;
-            height: 100px;
-            width: 120px;
-            border-right: 1px solid #5B9BD5;
+            height: 200px;
+            width: 260px;
+            padding: 0 30px;
         }
-        .mobile-speaker-name{
-            font-weight:400;
-            font-size:1.4em;
-            height:30px;
-            width:140px;
-            float: left;
-            padding-left: 10px;
-            margin-top:10px;
+        .mobile-speaker-name {
+            font-weight: 400;
+            font-size: 1.4em;
+            height: 30px;
+            display: block;
+            text-align: center;
         }
         .mobile-speaker-title {
             font-weight: 300;
             font-size: 1em;
             font-style: italic;
             height: 30px;
-            width: 140px;
-            float: left;
-            padding-left: 10px;
+            display: block;
+            text-align: center;
         }
         .mobile-description{
             width: 300px;
@@ -806,6 +834,19 @@
             text-align:justify;
             overflow: hidden;
             padding: 0px 5px;
+        }
+        .mobile-description2{
+            width: 300px;
+            font-size: 1em;
+            margin: auto;
+            text-align: justify;
+            overflow: hidden;
+            padding: 0px 5px;
+        }
+        .mobile-links-container{
+            width: 300px;
+            height: 50px;
+            display: block;
         }
         [type="checkbox"] {
             position: absolute;
@@ -829,7 +870,7 @@
             top: 100%;
         }
         input[type="checkbox"] ~ .mobile-description {
-            max-height: 8em;
+            max-height: 7em;
             overflow: hidden;
             transition: max-height 0.8s;
             background: linear-gradient(to bottom, black, white);
@@ -845,17 +886,199 @@
         [type="checkbox"]:checked ~ label:before {
             content: "Less";
         }
+
+
+
+        .mobile-speaker-graphic-circle-container {
+            margin: 0 60px;
+            width: 180px;
+            padding: 5px 0;
+            height: 20px;
+            display: block;
+        }
+        .mobile-speaker-graphic-circle {
+            float: left;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            border: #242424 1px solid;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .mobile-speaker-graphic-circle:hover {
+            background-color: #242424;
+        }
+        .mobile-speaker-description-container{
+            display:none;
+        }
+
+
         .show {
             display: block;
             transition-duration: 300ms;
         }
 
+        .section-schedule {
+            padding-top: 42px;
+            padding-bottom: 42px;
+            color: #fff;
+            display: block;
+            background-color: #1e6da3;
+        }
+        .schedule-container {
+            display: block;
+            margin: auto;
+            width: 500px;
+            height: 470px;
+        }
+        .schedule-left-container{
+            width:200px;
+            display: block;
+            height:470px;
+            float:left;
+            border-right: 1px white solid;
+        }
+        .schedule-left-line-container {
+            height: 50px;
+            width: 200px;
+            display: block;
+            padding-right: 20px;
+        }
+        .schedule-left-line-top{
+            width: 180px;
+            height: 30px;
+            display: block;
+            text-align: right;
+            font-weight: 400;
+            line-height: 30px;
+            font-size: 1.2em;
+        }
+        .schedule-left-line-bottom {
+            width: 180px;
+            height: 20px;
+            display: block;
+            text-align: right;
+            font-size:.8em;
+            line-height: 20px;
+            padding-right:2px;
+        }
+        .schedule-right-container{
+            width: 300px;
+            display:block;
+            height:470px;
+            float: left;
+        }
+        .schedule-right-line-container{
+            width:300px;
+            height:50px;
+            display: block;
+            padding-left: 10px;
+        }
+        .schedule-right-line-top{
+            width: 290px;
+            height:30px;
+            display: block;
+            line-height:30px;
+            font-size: 1em;
+            font-weight: 400;
+        }
+        .schedule-right-line-bottom {
+            width: 290px;
+            height: 20px;
+            display: block;
+            line-height:20px;
+            font-size:.8em;
+            font-style: italic;
+            padding-left: 5px;
+        }
+
+        .mobile-schedule-container {
+            display: none;
+            margin: auto;
+            width: 300px;
+            height: 434px;
+        }
+        .mobile-schedule-left-container {
+            width: 100px;
+            display: block;
+            height: 434px;
+            float: left;
+            border-right: 1px white solid;
+        }
+        .mobile-schedule-left-line-container {
+            height: 44px;
+            width: 100px;
+            display: block;
+            padding-right: 10px;
+        }
+        .mobile-schedule-left-line-top {
+            width: 90px;
+            height: 20px;
+            display: block;
+            text-align: right;
+            font-weight: 400;
+            line-height: 20px;
+            font-size: 1.1em;
+            margin:2px 0;
+        }
+        .mobile-schedule-left-line-bottom {
+            width: 90px;
+            height: 20px;
+            display: block;
+            text-align: right;
+            font-size: .8em;
+            line-height: 20px;
+            padding-right: 2px;
+        }
+        .mobile-schedule-right-container {
+            width: 200px;
+            display: block;
+            height: 434px;
+            float: left;
+        }
+        .mobile-schedule-right-line-container {
+            width: 200px;
+            height: 44px;
+            display: block;
+            padding-left: 20px;
+        }
+        .mobile-schedule-right-line-top {
+            width: 180px;
+            height: 20px;
+            display: block;
+            line-height: 20px;
+            font-size: 1em;
+            font-weight: 400;
+            margin: 2px 0;
+        }
+        .mobile-schedule-right-line-bottom {
+            width: 180px;
+            height: 20px;
+            display: block;
+            line-height: 20px;
+            font-size: .8em;
+            font-style: italic;
+            padding-left: 5px;
+        }
+
+
+        @media screen and (max-width:310px){
+            .signup-text-right{
+                content: "Recieve weekly updates"
+            }
+        }
         @media screen and (max-width:400px){
             .mobile-speaker-container{
                 width: 280px;
             }
             .mobile-description{
                 width: 260px;
+            }
+            .mobile-speaker-graphic-circle-container {
+                margin: 0 40px;
+            }
+            .homepage-description{
+                margin-top: 10vh;
             }
         }
         @media screen and (max-width:500px) {
@@ -865,6 +1088,7 @@
             }
         }
         @media screen and (max-width:700px) {
+
             .map-box{
                 height: 400px;
                 width: 100%;
@@ -873,7 +1097,7 @@
                 height: 400px;
             }
             .section-map{
-                height: 700px;
+                height: 742px;
             }
             .map-description-section{
                 height: 300px;
@@ -899,11 +1123,12 @@
             }
             .application-text-right {
                 float: unset;
-                margin: auto;
                 border: unset;
-                padding: 0 8px;
-                height: 20px;
-                line-height: 1;
+                padding: unset;
+                height: unset;
+                line-height: 1em;
+                width: 100%;
+                text-align: center;
             }
             .signup-text-container {
                 padding: 10px 0px;
@@ -914,15 +1139,11 @@
                 height: 30px;
                 padding: 0 9px;
             }
-
             .signup-text-right {
-                float: unset;
-                margin: auto;
-                border: unset;
-                padding: 0 8px;
-                height: 20px;
-                line-height: 1;
-                width: 325px;
+                display: none;
+            }
+            .mobile-signup-text-right{
+                display:block;
             }
             
             .mini-logo{
@@ -943,13 +1164,12 @@
             }
             .logo{
                 padding: 40% 0 10% 0;
+                min-width: 300px;
+                min-height:200px;
             }
 
             .toolbar {
                 display: none;
-            }
-            .schedule {
-                width: 90%;
             }
             .image-box{
             }
@@ -982,6 +1202,40 @@
             .mobile-box-shadow{
                 display: block;
             }
+
+            .mobile-schedule-container{
+                display: block;
+            }
+            .schedule-container{
+                display: none;
+            }
+        }
+        @media screen and (max-width:900px){
+            .speaker-graphic-circle-container {
+                margin: 0 60px;
+                width: 180px;
+                padding: 5px 0;
+                height: 20px;
+            }
+
+            .speaker-graphic-circle {
+                margin: 0 5px;
+            }
+            .desktop-speaker-section-container {
+                display: none;
+            }
+
+            .mobile-speaker-section-container {
+                display: block;
+            }
+
+            .section-speakers {
+                height: unset;
+            }
+
+            .mobile-box-shadow {
+                display: block;
+            }
         }
         @media screen and (max-width:1000px) {
             .logo{
@@ -991,7 +1245,18 @@
                 width: 14%;
             }
         }
-
+        @media screen and (max-height:500px) {
+            .logo {
+                padding-top: 42px;
+                padding-bottom:42px;
+            }
+            .mobile-button{
+                padding: 4px 0;
+            }
+            .mobile-application-button{
+                padding: 4px 0;
+            }
+        }
 
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" >
@@ -1040,25 +1305,30 @@
             <a class="homepage-address" href="https://goo.gl/maps/o1i9ZPg1rkC2" target="_blank">Mike & Ophelia Lazaridis Quantum Nano Centre </a>
         </div>
     </div>
-    <a class="section-application" href="#application">
-        <div class="application-text-container">
-            <div class="application-text-left">
-                Apply Soon
+    <div class="section-application-container" id="application">
+        <a class="section-application" href="#application" >
+            <div class="application-text-container">
+                <div class="application-text-left">
+                    Apply Soon
+                </div>
+                <div class="application-text-right">
+                    Applications opening on October 1
+                </div>
+                <div class="application-text-spacer"> </div>
+                <img src="Arrow.svg" class="arrow-image" />
             </div>
-            <div class="application-text-right">
-                Applications opening on October 1
-            </div>
-            <div class="application-text-spacer"> </div>
-            <img src="Arrow.svg" class="arrow-image" />
-        </div>
-    </a>
-    <a class="section-email-signup" href="#emailsignup">
+        </a>
+    </div>
+    <a class="section-email-signup" href="https://www.goo.gl/forms/G1kxHSe7vhxlsi6o2">
         <div class="signup-text-container">
             <div class="signup-text-left">
                 Sign Up
             </div>
             <div class="signup-text-right">
                 Receive weekly updates about the event
+            </div>
+            <div class="mobile-signup-text-right">
+                Receive weekly updates
             </div>
             <div class="signup-text-spacer"> </div>
             <img src="Arrow.svg" class="arrow-image" />
@@ -1070,44 +1340,46 @@
             <div class="speaker-container">
                 <div class="speaker-left-container">
                     <div class="image-container">
-                        <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                        <img class="img-portrait" src="Frank_Baylis.jpg">
                     </div>
                 </div>
                 <div class="speaker-description-container-container">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-name">Frank Baylis</div>
+                    <div class="speaker-title">Keynote Speaker</div>
                     <div class="speaker-description-container" id="speaker-description-container">
                         <div class="speaker-description" id="k1-speaker-description">
-                            Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                            Frank Baylis served as President of Baylis Medical Company from 1989 to 2015 after graduating from the University of Waterloo, and currently serves as a Member of Parliament. During that period, Baylis Medical grew into an international leading developer of medical devices. Previously, Frank launched the company charity For the Children (FTC) in 2004. Frank was also a co-founder and Vice-President of OME Group, a consulting company providing Scientific Research and Experimental Development tax consulting services.
                         </div>
                     </div>
                     <div class="speaker-links-container">
-                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                        <a class="speaker-linkedin-container" target="_blank" href="https://www.linkedin.com/in/frankbaylis/">
                             <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
                         </a>
-                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                        <a class="speaker-website" target="_blank" href="https://en.wikipedia.org/wiki/Frank_Baylis"> [website]</a>
                     </div>
                 </div>
             </div>
             <div class="speaker-container">
                 <div class="image-container">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <img class="img-portrait" src="Julie_Audet.jpg">
                 </div>
                 <div class="speaker-description-container-container">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-name">Julie Audet</div>
+                    <div class="speaker-title">Keynote Speaker</div>
                     <div class="speaker-description-container" id="speaker-description-container">
                         <div class="speaker-description" id="k1-speaker-description">
-                            Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself pasture believe females. Fancy she stuff after aware merit small his. Charmed esteems luckily age out.  Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality.                        </div>
+                            Dr. Audet is part of the IBBME at the University of Toronto, and a member of the Canadian Stem Cell Network and the Ontario Institute for Regenerative Medicine. Through her early research, she was recognized by AABB and NARSAD. She is interested in the Development of Biological Search Algorithms and their applications in Stem and Progenitor cell manufacturing processes. In recent years, Dr. Audet has worked on the development of a new graduate program on biomedical devices.
+                        </div>
                     </div>
                     <div class="speaker-links-container">
-                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                        <a class="speaker-linkedin-container" target="_blank" href="https://www.linkedin.com/in/julie-audet-8763149/">
                             <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
                         </a>
-                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                        <a class="speaker-website" target="_blank" href="http://www.ibbme.utoronto.ca/faculty/members/audet/"> [website]</a>
                     </div>
                 </div>
             </div>
+            <!--
             <div class="speaker-container">
                 <div class="image-container">
                     <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
@@ -1127,187 +1399,317 @@
                     </div>
                 </div>
             </div>
+            -->
             <div class="speaker-container">
                 <div class="image-container">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <img class="img-portrait" src="Shrey_Sindhwani.jpg">
                 </div>
                 <div class="speaker-description-container-container">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-name"> Shrey Sindhwani </div>
+                    <div class="speaker-title">Breakout Speaker</div>
                     <div class="speaker-description-container" id="speaker-description-container">
                         <div class="speaker-description" id="k1-speaker-description">
-                            Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                            Shrey is a MD-PhD Candidate at University of Toronto. Currently, he is completing the PhD portion under Dr. Warren Chan, whose lab focuses understanding the interactions between nanomaterials and biological environment. Shrey completed his undergraduate in Nanotechnology Engineering from University of Waterloo in 2011 and held research positions at Waterloo, Harvard, and MIT. As a future physician-scientist, he is continuing to learn how to bridge the gap between bench and bedside through application of engineering to medicine.
                         </div>
                     </div>
                     <div class="speaker-links-container">
-                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                        <a class="speaker-linkedin-container" target="_blank" href="https://www.linkedin.com/in/shrey/">
                             <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
                         </a>
-                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                        <a class="speaker-website" target="_blank" href="http://www.md.utoronto.ca/current-student-biographies"> [website]</a>
                     </div>
                 </div>
             </div>
             <div class="speaker-container">
                 <div class="image-container">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <img class="img-portrait" src="Paul_Reginato.jpg">
                 </div>
                 <div class="speaker-description-container-container">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-name"> Paul Reginato </div>
+                    <div class="speaker-title">Breakout Speaker</div>
                     <div class="speaker-description-container" id="speaker-description-container">
                         <div class="speaker-description" id="k1-speaker-description">
-                            Be me shall purse my ought times. Joy years doors all would again rooms these. Solicitude announcing as to sufficient my. No my reached suppose proceed pressed perhaps he. Eagerness it delighted pronounce repulsive furniture no. Excuse few the remain highly feebly add people manner say. It high at my mind by roof. No wonder worthy in dinner.  Day handsome addition horrible sensible goodness two contempt. Evening for married his account removal. Estimable me disposing of be moonlight cordially curiosity. Delay rapid joy share allow age manor six.                        </div>
+                            Paul received a BSc in Biology joint with Mathematics from the University of Waterloo, and is now a PhD candidate in Biological Engineering at MIT. He works jointly in the labs of George Church (Harvard) and Ed Boyden (MIT) to develop technology for in situ (in its native spatial arrangement) omics, using methods including expansion microscopy and in situ sequencing. He is broadly interested in the study of life and health, and how we can make living things healthy.</div>
                     </div>
                     <div class="speaker-links-container">
-                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                        <a class="speaker-linkedin-container" target="_blank" href="https://www.linkedin.com/in/paul-reginato-ba6601a8/">
                             <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
                         </a>
-                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                        <a class="speaker-website" target="_blank" href="https://genetics.med.harvard.edu/lab/church/preginato"> [website]</a>
                     </div>
                 </div>
             </div>
             <div class="speaker-container">
                 <div class="image-container">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <img class="img-portrait" src="Shakir_Lakhani.jpg">
                 </div>
                 <div class="speaker-description-container-container">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-name">Shakir Lakhani</div>
+                    <div class="speaker-title">Breakout Speaker</div>
                     <div class="speaker-description-container" id="speaker-description-container">
                         <div class="speaker-description" id="k1-speaker-description">
-                            Men bred fine call ask. Cease one miles truth day above seven. Suspicion sportsmen provision suffering mrs saw engrossed something. Snug soon he on plan in be dine some. Had repulsive dashwoods suspicion sincerity but advantage now him. Remark easily garret nor nay. Civil those mrs enjoy shy fat merry. You greatest jointure saw horrible. He private he on be imagine suppose. Fertile beloved evident through no service elderly is. Blind there if every no so at. Own neglected you preferred way sincerity delivered his attempted.                        </div>
-                    </div>
-                    <div class="speaker-links-container">
-                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
-                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
-                        </a>
-                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
-                    </div>
-                </div>
-            </div>
-            <div class="speaker-container">
-                <div class="image-container">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                </div>
-                <div class="speaker-description-container-container">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title">Pres of ACME</div>
-                    <div class="speaker-description-container" id="speaker-description-container">
-                        <div class="speaker-description" id="k1-speaker-description">
-                            Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                            Shak is a B.ASc candidate in Nanotechnology Engineering, and the CTO of Avro Life Science, a Velocity startup developing novel transdermal drug delivery systems. His research career began at the University of Toronto in grade 10, working in Dr. Alison McGuigan’s tissue engineering lab. He has previously worked for Validere (YC S16) and H2nanO, developing proficiencies in product development, process engineering, and analytical chemistry. His work has been published in Nature Materials and Biofabrication, among other high profile journals.
                         </div>
                     </div>
                     <div class="speaker-links-container">
-                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                        <a class="speaker-linkedin-container" target="_blank" href="https://www.linkedin.com/in/shaklakhani/">
                             <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
                         </a>
-                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                        <a class="speaker-website" target="_blank" href="https://www.avrolifesci.com/"> [website]</a>
                     </div>
                 </div>
             </div>
             <div class="speaker-container">
                 <div class="image-container">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <img class="img-portrait" src="Catherine_Burns.jpg">
                 </div>
                 <div class="speaker-description-container-container">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-name">Catherine Burns</div>
+                    <div class="speaker-title">Industry Panel Moderator</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            Dr. Burns is the founding director of the Centre for Bioengineering and Biotechnology, Professor of Systems Design Engineering, and Director of Advanced Interface Design Lab at the University of Waterloo. Catherine’s own research is in human factors engineering and clinical decision support systems, contributing over 200 publications. She has also served as Program Chair for the largest international conference in her field. She received her BASc (University of Waterloo), MASc (University of Toronto), PhD (University of Toronto) P.Eng.
+                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" target="_blank" href="https://www.linkedin.com/in/burnscatherine/">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" target="_blank" href="https://uwaterloo.ca/systems-design-engineering/people-profiles/catherine-burns"> [website]</a>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="Alexa_Roeper.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name">Alexa Roeper</div>
+                    <div class="speaker-title">Industry Panelist</div>
                     <div class="speaker-description-container" id="speaker-description-container">
                         <div class="speaker-description" id="k1-speaker-description">
                             In as name to here them deny wise this. As rapid woody my he me which. Men but they fail shew just wish next put. Led all visitor musical calling nor her. Within coming figure sex things are. Pretended concluded did repulsive education smallness yet yet described. Had country man his pressed shewing. No gate dare rose he. Eyes year if miss he as upon. Extremity direction existence as dashwoods do up. Securing marianne led welcomed offended but offering six raptures. Conveying concluded newspaper rapturous oh at.                        </div>
                     </div>
                     <div class="speaker-links-container">
-                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                        <a class="speaker-linkedin-container" target="_blank" href="https://www.linkedin.com/in/alexaroeper/">
                             <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
                         </a>
-                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                        <a class="speaker-website" target="_blank" href="http://www.pentamedical.ca/"> [website]</a>
                     </div>
                 </div>
             </div>
+            -->
             <div class="speaker-container">
                 <div class="image-container">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <img class="img-portrait" src="Ben_Wagner.jpg">
                 </div>
                 <div class="speaker-description-container-container">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-name">Ben Wagner</div>
+                    <div class="speaker-title">Industry Panelist</div>
                     <div class="speaker-description-container" id="speaker-description-container">
                         <div class="speaker-description" id="k1-speaker-description">
-                            Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                            As Director of Engineering at Christie Medical, Ben Wagner is responsible for Product Development, R&D Strategy and Engineering Management. His duties include strategic planning and implementation for Christie’s new Medical Products Business Unit. Recent products include VeinViewer® Vision, XTND, Flex and Vision2 devices. In the past, Ben has also worked for the Canadian National Research Council. He holds a P.Eng Designation, a BASc in Mechanical Engineering from the University of Waterloo, and an MBA from Wilfrid Laurier University.
                         </div>
                     </div>
                     <div class="speaker-links-container">
-                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                        <a class="speaker-linkedin-container" target="_blank" href="https://www.linkedin.com/in/ben-wagner-5a912112/">
                             <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
                         </a>
-                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                        <a class="speaker-website" target="_blank" href="https://www.christiemed.com/"> [website]</a>
                     </div>
                 </div>
             </div>
             <div class="speaker-container">
                 <div class="image-container">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                    <img class="img-portrait" src="Jeannette_Ho.jpg">
                 </div>
                 <div class="speaker-description-container-container">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title">Pres of ACME</div>
+                    <div class="speaker-name">Jeannette Ho</div>
+                    <div class="speaker-title">Industry Panelist</div>
                     <div class="speaker-description-container" id="speaker-description-container">
                         <div class="speaker-description" id="k1-speaker-description">
-                            She literature discovered increasing how diminution understood. Though and highly the enough county for man. Of it up he still court alone widow seems. Suspected he remainder rapturous my sweetness. All vanity regard sudden nor simple can. World mrs and vexed china since after often. Ever man are put down his very. And marry may table him avoid. Hard sell it were into it upon. He forbade affixed parties of assured to me windows. Happiness him nor she disposing provision.                         </div>
-                    </div>
-                    <div class="speaker-links-container">
-                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
-                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
-                        </a>
-                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
-                    </div>
-                </div>
-            </div>
-            <div class="speaker-container">
-                <div class="image-container">
-                    <img class="img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
-                </div>
-                <div class="speaker-description-container-container">
-                    <div class="speaker-name"> John Smith </div>
-                    <div class="speaker-title">Pres of ACME</div>
-                    <div class="speaker-description-container" id="speaker-description-container">
-                        <div class="speaker-description" id="k1-speaker-description">
-                            Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to.
+                            Jeannette Ho is a co-founder and VP of Product Development at Interface Biologics.  Her roles included Research and Development, Operations, and she currently leads the Endexo development team focusing on a novel surface modifying technology for medical device applications.  Jeannette was involved in developing Endexo™ technology during her graduate studies at the University of Toronto, and started a company that began the commercialization.  At Interface Biologics this was further developed into products that are now used widely in clinics.
                         </div>
                     </div>
                     <div class="speaker-links-container">
-                        <a class="speaker-linkedin-container" href="#speakerlinkedin">
+                        <a class="speaker-linkedin-container" target="_blank" href="#speakerlinkedin">
                             <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
                         </a>
-                        <a class="speaker-website" href="#speakerwebsite"> [website.com]</a>
+                        <a class="speaker-website" target="_blank" href="http://www.interfacebiologics.com/"> [website]</a>
                     </div>
                 </div>
             </div>
-
+            <div class="speaker-container">
+                <div class="image-container">
+                    <img class="img-portrait" src="Kris_Shah.jpg">
+                </div>
+                <div class="speaker-description-container-container">
+                    <div class="speaker-name">Kris Shah</div>
+                    <div class="speaker-title">Industry Panelist</div>
+                    <div class="speaker-description-container" id="speaker-description-container">
+                        <div class="speaker-description" id="k1-speaker-description">
+                            Kris Shah is a co-founder and current President of Baylis Medical Co. Kris led the divesture Pain Management business to Kimberly Clark, divesture of OsteoCool business to Medtronic, and acquisition of Fralex. He co-founded OME Group, a specialty consulting firm that was divested to Ernest & Young. Kris is an active board member for Conavi, IntelliJoint Technologies, past board member of Venture Lab, MEDEC, and Business Advisory Committee of HTX. He holds a BASc in Electrical Engineering from University of Waterloo.
+                        </div>
+                    </div>
+                    <div class="speaker-links-container">
+                        <a class="speaker-linkedin-container" target="_blank" href="https://www.linkedin.com/in/krisshah/">
+                            <div class="fa fa-linkedin" style="color: white; background-color: #007bb5; "></div>
+                        </a>
+                        <a class="speaker-website" target="_blank" href="http://www.baylismedical.com/"> [website]</a>
+                    </div>
+                </div>
+            </div>
             <div class="speaker-graphic-container">
                 <img src="Arrow-Left.svg" class="speaker-graphic-left-arrow" onclick="plusDiv(-1)"/>
                 <div class="speaker-graphic-circle-container">
                     <div class="speaker-graphic-circle" onclick="currentDiv(1)"> </div> <div class="speaker-graphic-circle" onclick="currentDiv(2)"> </div> <div class="speaker-graphic-circle" onclick="currentDiv(3)"> </div> <div class="speaker-graphic-circle" onclick="currentDiv(4)"> </div> <div class="speaker-graphic-circle" onclick="currentDiv(5)"> </div> <div class="speaker-graphic-circle" onclick="currentDiv(6)"> </div>
-                    <div class="speaker-graphic-circle" onclick="currentDiv(7)"> </div><div class="speaker-graphic-circle" onclick="currentDiv(8)"> </div><div class="speaker-graphic-circle" onclick="currentDiv(9)"> </div><div class="speaker-graphic-circle" onclick="currentDiv(10)"> </div><div class="speaker-graphic-circle" onclick="currentDiv(11)"> </div>
+                    <div class="speaker-graphic-circle" onclick="currentDiv(7)"> </div><div class="speaker-graphic-circle" onclick="currentDiv(8)"> </div><div class="speaker-graphic-circle" onclick="currentDiv(9)"> </div>
                 </div>
                 <img src="Arrow-Right.svg" class="speaker-graphic-right-arrow" onclick="plusDiv(1)"/>
             </div>
         </div>
-        <div class="mobile-speaker-section-container">
+        <div class="mobile-speaker-section-container" id="mobile-speaker-section-container">
             <div class="mobile-speaker-container">
                 <div class="mobile-header-container">
                     <div class="mobile-img-portrait-container">
-                        <img class="mobile-img-portrait" src="https://thumb1.shutterstock.com/display_pic_with_logo/82755/127727240/stock-photo-cheerful-young-man-isolated-over-white-background-127727240.jpg">
+                        <img class="mobile-img-portrait" src="Frank_Baylis.jpg">
                     </div>
-                    <div class="mobile-speaker-name"> John Smith </div>
-                    <div class="mobile-speaker-title"> ACME </div>
+                    <div class="mobile-speaker-name" style="">Frank Baylis</div>
+                    <div class="mobile-speaker-title">Keynote Speaker</div>
+                    <!--<div class="fa fa-linkedin" style="color: white; background-color: #007bb5; height: 30px; width: 30px; margin-left: 10px;"></div>-->
                 </div>
-                <input type="checkbox" id="more_id" />
-                <div class="mobile-description">
-                    Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself pasture believe females. Fancy she stuff after aware merit small his. Charmed esteems luckily age out.  Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality.
+                <div class="mobile-header-container">
+                    <div class="mobile-img-portrait-container">
+                        <img class="mobile-img-portrait" src="Julie_Audet.jpg">
+                    </div>
+                    <div class="mobile-speaker-name" style="">Julie Audet</div>
+                    <div class="mobile-speaker-title">Keynote Speaker</div>
+                    <!--<div class="fa fa-linkedin" style="color: white; background-color: #007bb5; height: 30px; width: 30px; margin-left: 10px;"></div>-->
                 </div>
-                <label for="more_id" /> </div>
-
+                <div class="mobile-header-container">
+                    <div class="mobile-img-portrait-container">
+                        <img class="mobile-img-portrait" src="Shrey_Sindhwani.jpg">
+                    </div>
+                    <div class="mobile-speaker-name" style="">Shrey Sindhwani</div>
+                    <div class="mobile-speaker-title">Breakout Speaker</div>
+                    <!--<div class="fa fa-linkedin" style="color: white; background-color: #007bb5; height: 30px; width: 30px; margin-left: 10px;"></div>-->
+                </div>
+                <div class="mobile-header-container">
+                    <div class="mobile-img-portrait-container">
+                        <img class="mobile-img-portrait" src="Paul_Reginato.jpg">
+                    </div>
+                    <div class="mobile-speaker-name" style="">Paul Reginato</div>
+                    <div class="mobile-speaker-title">Breakout Speaker</div>
+                    <!--<div class="fa fa-linkedin" style="color: white; background-color: #007bb5; height: 30px; width: 30px; margin-left: 10px;"></div>-->
+                </div>
+                <div class="mobile-header-container">
+                    <div class="mobile-img-portrait-container">
+                        <img class="mobile-img-portrait" src="Shakir_Lakhani.jpg">
+                    </div>
+                    <div class="mobile-speaker-name" style="">Shakir Lakhani</div>
+                    <div class="mobile-speaker-title">Breakout Speaker</div>
+                    <!--<div class="fa fa-linkedin" style="color: white; background-color: #007bb5; height: 30px; width: 30px; margin-left: 10px;"></div>-->
+                </div>
+                <div class="mobile-header-container">
+                    <div class="mobile-img-portrait-container">
+                        <img class="mobile-img-portrait" src="Catherine_Burns.jpg">
+                    </div>
+                    <div class="mobile-speaker-name" style="">Catherine Burns</div>
+                    <div class="mobile-speaker-title">Industry Panel Moderator</div>
+                    <!--<div class="fa fa-linkedin" style="color: white; background-color: #007bb5; height: 30px; width: 30px; margin-left: 10px;"></div>-->
+                </div>
+                <div class="mobile-header-container">
+                    <div class="mobile-img-portrait-container">
+                        <img class="mobile-img-portrait" src="Ben_Wagner.jpg">
+                    </div>
+                    <div class="mobile-speaker-name" style="">Ben Wagner</div>
+                    <div class="mobile-speaker-title">Industry Panelist</div>
+                    <!--<div class="fa fa-linkedin" style="color: white; background-color: #007bb5; height: 30px; width: 30px; margin-left: 10px;"></div>-->
+                </div>
+                <div class="mobile-header-container">
+                    <div class="mobile-img-portrait-container">
+                        <img class="mobile-img-portrait" src="Jeannette_Ho.jpg">
+                    </div>
+                    <div class="mobile-speaker-name" style="">Jeannette Ho</div>
+                    <div class="mobile-speaker-title">Industry Panelist</div>
+                    <!--<div class="fa fa-linkedin" style="color: white; background-color: #007bb5; height: 30px; width: 30px; margin-left: 10px;"></div>-->
+                </div>
+                <div class="mobile-header-container">
+                    <div class="mobile-img-portrait-container">
+                        <img class="mobile-img-portrait" src="Kris_Shah.jpg">
+                    </div>
+                    <div class="mobile-speaker-name" style="">Kris Shah</div>
+                    <div class="mobile-speaker-title">Industry Panelist</div>
+                    <!--<div class="fa fa-linkedin" style="color: white; background-color: #007bb5; height: 30px; width: 30px; margin-left: 10px;"></div>-->
+                </div>
+                <div class="mobile-speaker-graphic-container">
+                    <div class="mobile-speaker-graphic-circle-container">
+                        <div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(1)"> </div> <div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(2)"> </div> <div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(3)"> </div> <div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(4)"> </div> <div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(5)"> </div> <div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(6)"> </div>
+                        <div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(7)"> </div><div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(8)"> </div><div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(9)"> </div>
+                    </div>
+                </div>
+                <div class="mobile-speaker-description-container">
+                    <input type="checkbox" id="more_id1" />
+                    <div class="mobile-description">
+                        Frank Baylis served as President of Baylis Medical Company from 1989 to 2015 after graduating from the University of Waterloo, and currently serves as a Member of Parliament. During that period, Baylis Medical grew into an international leading developer of medical devices. Previously, Frank launched the company charity For the Children (FTC) in 2004. Frank was also a co-founder and Vice-President of OME Group, a consulting company providing Scientific Research and Experimental Development tax consulting services.
+                    </div>
+                    <label for="more_id1" />
+                </div>
+                <div class="mobile-speaker-description-container">
+                    <input type="checkbox" id="more_id2" />
+                    <div class="mobile-description">
+                        Dr. Audet is part of the IBBME at the University of Toronto, and a member of the Canadian Stem Cell Network and the Ontario Institute for Regenerative Medicine. Through her early research, she was recognized by AABB and NARSAD. She is interested in the Development of Biological Search Algorithms and their applications in Stem and Progenitor cell manufacturing processes. In recent years, Dr. Audet has worked on the development of a new graduate program on biomedical devices.
+                    </div>
+                    <label for="more_id2" />
+                </div>
+                <div class="mobile-speaker-description-container">
+                    <input type="checkbox" id="more_id3" />
+                    <div class="mobile-description">
+                        Shrey is a MD-PhD Candidate at University of Toronto. Currently, he is completing the PhD portion under Dr. Warren Chan, whose lab focuses understanding the interactions between nanomaterials and biological environment. Shrey completed his undergraduate in Nanotechnology Engineering from University of Waterloo in 2011 and held research positions at Waterloo, Harvard, and MIT. As a future physician-scientist, he is continuing to learn how to bridge the gap between bench and bedside through application of engineering to medicine.
+                    </div>
+                    <label for="more_id3" />
+                </div>
+                <div class="mobile-speaker-description-container">
+                    <input type="checkbox" id="more_id4" />
+                    <div class="mobile-description">
+                        Paul received a BSc in Biology joint with Mathematics from the University of Waterloo, and is now a PhD candidate in Biological Engineering at MIT. He works jointly in the labs of George Church (Harvard) and Ed Boyden (MIT) to develop technology for in situ (in its native spatial arrangement) omics, using methods including expansion microscopy and in situ sequencing. He is broadly interested in the study of life and health, and how we can make living things healthy.                    </div>
+                    <label for="more_id4" />
+                </div>
+                <div class="mobile-speaker-description-container">
+                    <input type="checkbox" id="more_id5" />
+                    <div class="mobile-description">
+                        Shak is a B.ASc candidate in Nanotechnology Engineering, and the CTO of Avro Life Science, a Velocity startup developing novel transdermal drug delivery systems. His research career began at the University of Toronto in grade 10, working in Dr. Alison McGuigan’s tissue engineering lab. He has previously worked for Validere (YC S16) and H2nanO, developing proficiencies in product development, process engineering, and analytical chemistry. His work has been published in Nature Materials and Biofabrication, among other high profile journals.
+                    </div>
+                    <label for="more_id5" />
+                </div>
+                <div class="mobile-speaker-description-container">
+                    <input type="checkbox" id="more_id6" />
+                    <div class="mobile-description">
+                        Dr. Burns is the founding director of the Centre for Bioengineering and Biotechnology, Professor of Systems Design Engineering, and Director of Advanced Interface Design Lab at the University of Waterloo. Catherine’s own research is in human factors engineering and clinical decision support systems, contributing over 200 publications. She has also served as Program Chair for the largest international conference in her field. She received her BASc (University of Waterloo), MASc (University of Toronto), PhD (University of Toronto) P.Eng.
+                    </div>
+                    <label for="more_id6" />
+                </div>
+                <div class="mobile-speaker-description-container">
+                    <input type="checkbox" id="more_id7" />
+                    <div class="mobile-description">
+                        As Director of Engineering at Christie Medical, Ben Wagner is responsible for Product Development, R&D Strategy and Engineering Management. His duties include strategic planning and implementation for Christie’s new Medical Products Business Unit. Recent products include VeinViewer® Vision, XTND, Flex and Vision2 devices. In the past, Ben has also worked for the Canadian National Research Council. He holds a P.Eng Designation, a BASc in Mechanical Engineering from the University of Waterloo, and an MBA from Wilfrid Laurier University.
+                    </div>
+                    <label for="more_id7" />
+                </div>
+                <div class="mobile-speaker-description-container">
+                    <input type="checkbox" id="more_id8" />
+                    <div class="mobile-description">
+                        Jeannette Ho is a co-founder and VP of Product Development at Interface Biologics.  Her roles included Research and Development, Operations, and she currently leads the Endexo development team focusing on a novel surface modifying technology for medical device applications.  Jeannette was involved in developing Endexo™ technology during her graduate studies at the University of Toronto, and started a company that began the commercialization.  At Interface Biologics this was further developed into products that are now used widely in clinics.
+                    </div>
+                    <label for="more_id8" />
+                </div>
+                <div class="mobile-speaker-description-container">
+                    <input type="checkbox" id="more_id9" />
+                    <div class="mobile-description">
+                        Kris Shah is a co-founder and current President of Baylis Medical Co. Kris led the divesture Pain Management business to Kimberly Clark, divesture of OsteoCool business to Medtronic, and acquisition of Fralex. He co-founded OME Group, a specialty consulting firm that was divested to Ernest & Young. Kris is an active board member for Conavi, IntelliJoint Technologies, past board member of Venture Lab, MEDEC, and Business Advisory Committee of HTX. He holds a BASc in Electrical Engineering from University of Waterloo.
+                    </div>
+                    <label for="more_id9" />
                 </div>
             </div>
         </div>
@@ -1325,98 +1727,230 @@
 
     </div>
     <div class="section-schedule" id="schedule">
-        <div class="section-title"> Schedule </div>
-        <div class="schedule">
-            <table>
-                <tr>
-                    <td class="time">9:00am</td>
-                    <td>Registration & Refreshments</td>
-                </tr>
-                <tr>
-                    <td class="time">9:15am</td>
-                    <td>Opening Remarks</td>
-                </tr>
-                <tr>
-                    <td class="time">9:30am</td>
-                    <td>Keynote Speaker #1</td>
-                </tr>
-                <tr>
-                    <td class="time">10:45am</td>
-                    <td>Breakout Session</td>
-                </tr>
-                <tr>
-                    <td class="time">11:30pm</td>
-                    <td>Lunch and Poster Session</td>
-                </tr>
-                <tr>
-                    <td class="time">1:00pm</td>
-                    <td>Keynote Speaker #2</td>
-                </tr>
-                <tr>
-                    <td class="time">2:15pm</td>
-                    <td>Industry Panel</td>
-                </tr>
-                <tr>
-                    <td class="time">3:45pm</td>
-                    <td>Closing Remarks</td>
-                </tr>
-                <tr>
-                    <td class="time">4:00pm</td>
-                    <td>Dismissal</td>
-                </tr>
-            </table>
+        <div class="section-title" style="font-weight:400;"> Schedule </div>
+        <div class="schedule-container">
+            <div class="schedule-left-container">
+                <div class="schedule-left-line-container">
+                    <div class="schedule-left-line-top">9:00 - &nbsp 9:15</div>
+                    <div class="schedule-left-line-bottom">QNC Atrium</div>
+                </div>
+                <div class="schedule-left-line-container">
+                    <div class="schedule-left-line-top">9:15 - &nbsp 9:30</div>
+                    <div class="schedule-left-line-bottom">QNC 0101</div>
+                </div>
+                <div class="schedule-left-line-container">
+                    <div class="schedule-left-line-top">9:30 - 10:30</div>
+                    <div class="schedule-left-line-bottom">QNC 0101</div>
+                </div>
+                <div class="schedule-left-line-container" style="height:70px;">
+                    <div class="schedule-left-line-top">10:45 - 11:30</div>
+                    <div class="schedule-left-line-bottom">QNC 1502</div>
+                    <div class="schedule-left-line-bottom">QNC 2502</div>
+                </div>
+                <div class="schedule-left-line-container">
+                    <div class="schedule-left-line-top">11:30 - 12:15</div>
+                    <div class="schedule-left-line-bottom">QNC 1502</div>
+                </div>
+                <div class="schedule-left-line-container">
+                    <div class="schedule-left-line-top">12:15 - &nbsp 1:45</div>
+                    <div class="schedule-left-line-bottom">QNC Atrium</div>
+                </div>
+                <div class="schedule-left-line-container">
+                    <div class="schedule-left-line-top">1:45 -  &nbsp 2:45</div>
+                    <div class="schedule-left-line-bottom">QNC 0101</div>
+                </div>
+                <div class="schedule-left-line-container">
+                    <div class="schedule-left-line-top">3:00 - &nbsp 4:15</div>
+                    <div class="schedule-left-line-bottom">QNC 0101</div>
+                </div>
+                <div class="schedule-left-line-container">
+                    <div class="schedule-left-line-top">4:15 - &nbsp 4:30</div>
+                    <div class="schedule-left-line-bottom">QNC 0101</div>
+                </div>
+            </div>
+            <div class="schedule-right-container">
+                <div class="schedule-right-line-container">
+                    <div class="schedule-right-line-top">Registration and Refreshments</div>
+                    <div class="schedule-right-line-bottom"></div>
+                </div>
+                <div class="schedule-right-line-container">
+                    <div class="schedule-right-line-top">Opening Remarks</div>
+                    <div class="schedule-right-line-bottom"></div>
+                </div>
+                <div class="schedule-right-line-container">
+                    <div class="schedule-right-line-top">Keynote Speaker</div>
+                    <div class="schedule-right-line-bottom">Julie Audet</div>
+                </div>
+                <div class="schedule-right-line-container" style="height:70px">
+                    <div class="schedule-right-line-top">Breakout Speaker Session</div>
+                    <div class="schedule-right-line-bottom">Shrey Sindhwani</div>
+                    <div class="schedule-right-line-bottom">Shakir Lakhani</div>
+                </div>
+                <div class="schedule-right-line-container">
+                    <div class="schedule-right-line-top">Breakout Speaker Session</div>
+                    <div class="schedule-right-line-bottom">Paul Reginato</div>
+                </div>
+                <div class="schedule-right-line-container">
+                    <div class="schedule-right-line-top">Lunch and Poster Session</div>
+                    <div class="schedule-right-line-bottom"></div>
+                </div>
+                <div class="schedule-right-line-container">
+                    <div class="schedule-right-line-top">Keynote Speaker</div>
+                    <div class="schedule-right-line-bottom">Frank Baylis</div>
+                </div>
+                <div class="schedule-right-line-container">
+                    <div class="schedule-right-line-top">Industry Panel</div>
+                    <div class="schedule-right-line-bottom"></div>
+                </div>
+                <div class="schedule-right-line-container">
+                    <div class="schedule-right-line-top">Closing Remarks</div>
+                    <div class="schedule-right-line-bottom"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mobile-schedule-container">
+            <div class="mobile-schedule-left-container">
+                <div class="mobile-schedule-left-line-container">
+                    <div class="mobile-schedule-left-line-top"> 9:00 </div>
+                    <div class="mobile-schedule-left-line-bottom"> QNC Atrium</div>
+                </div>
+                <div class="mobile-schedule-left-line-container">
+                    <div class="mobile-schedule-left-line-top"> 9:15 </div>
+                    <div class="mobile-schedule-left-line-bottom"> QNC 0101</div>
+                </div>
+                <div class="mobile-schedule-left-line-container">
+                    <div class="mobile-schedule-left-line-top"> 9:30 </div>
+                    <div class="mobile-schedule-left-line-bottom"> QNC 0101</div>
+                </div>
+                <div class="mobile-schedule-left-line-container" style="height:64px;">
+                    <div class="mobile-schedule-left-line-top"> 10:45</div>
+                    <div class="mobile-schedule-left-line-bottom"> QNC 1502</div>
+                    <div class="mobile-schedule-left-line-bottom"> QNC 1502</div>
+                </div>
+                <div class="mobile-schedule-left-line-container">
+                    <div class="mobile-schedule-left-line-top"> 11:30 </div>
+                    <div class="mobile-schedule-left-line-bottom"> QNC 1502</div>
+                </div>
+                <div class="mobile-schedule-left-line-container">
+                    <div class="mobile-schedule-left-line-top"> 12:15</div>
+                    <div class="mobile-schedule-left-line-bottom"> QNC Atrium</div>
+                </div>
+                <div class="mobile-schedule-left-line-container">
+                    <div class="mobile-schedule-left-line-top"> 1:45</div>
+                    <div class="mobile-schedule-left-line-bottom"> QNC 0101</div>
+                </div>
+                <div class="mobile-schedule-left-line-container">
+                    <div class="mobile-schedule-left-line-top"> 3:00</div>
+                    <div class="mobile-schedule-left-line-bottom"> QNC 0101</div>
+                </div>
+                <div class="mobile-schedule-left-line-container">
+                    <div class="mobile-schedule-left-line-top"> 4:15 </div>
+                    <div class="mobile-schedule-left-line-bottom"> QNC 0101</div>
+                </div>
+            </div>
+            <div class="mobile-schedule-right-container">
+                <div class="mobile-schedule-right-line-container">
+                    <div class="mobile-schedule-right-line-top">Registration</div>
+                    <div class="mobile-schedule-right-line-bottom"></div>
+                </div>
+                <div class="mobile-schedule-right-line-container">
+                    <div class="mobile-schedule-right-line-top">Opening Remarks</div>
+                    <div class="mobile-schedule-right-line-bottom"></div>
+                </div>
+                <div class="mobile-schedule-right-line-container">
+                    <div class="mobile-schedule-right-line-top">Keynote Speaker</div>
+                    <div class="mobile-schedule-right-line-bottom">Julie Audet</div>
+                </div>
+                <div class="mobile-schedule-right-line-container"style="height:64px;">
+                    <div class="mobile-schedule-right-line-top">Breakout Speakers</div>
+                    <div class="mobile-schedule-right-line-bottom">Shrey Sindhwani</div>
+                    <div class="mobile-schedule-right-line-bottom">Shakir Lakhani</div>
+
+                </div>
+                <div class="mobile-schedule-right-line-container">
+                    <div class="mobile-schedule-right-line-top">Breakout Speakers</div>
+                    <div class="mobile-schedule-right-line-bottom">Paul Reginato</div>
+                </div>
+                <div class="mobile-schedule-right-line-container">
+                    <div class="mobile-schedule-right-line-top">Lunch and Posters</div>
+                    <div class="mobile-schedule-right-line-bottom"></div>
+                </div>
+                <div class="mobile-schedule-right-line-container">
+                    <div class="mobile-schedule-right-line-top">Keynote Speaker</div>
+                    <div class="mobile-schedule-right-line-bottom">Frank Baylis</div>
+                </div>
+                <div class="mobile-schedule-right-line-container">
+                    <div class="mobile-schedule-right-line-top">Industry Panel</div>
+                    <div class="mobile-schedule-right-line-bottom"></div>
+                </div>
+                <div class="mobile-schedule-right-line-container">
+                    <div class="mobile-schedule-right-line-top">Closing Remarks</div>
+                    <div class="mobile-schedule-right-line-bottom"></div>
+                </div>
+
+            </div>
         </div>
     </div>
-
     <div class="section-sponsors" id="sponsors">
         <div class="section-title">Diamond Sponsors</div>
         <div class="sponsor-logo-box">
-            <img class="diamond-sponsor-logo" src="Biotec_Vector.svg" /><img class="diamond-sponsor-logo" src="Biotec_Vector.svg" /><img class="diamond-sponsor-logo" src="Biotec_Vector.svg" />
+            <img class="sponsor-logo" src="Waterloo_Engineering_logo_cmyk.svg" /><img class="sponsor-logo" src="Waterloo_Science_logo_cmyk.svg" />
         </div>
         <div class="section-title">Platinum Sponsors</div>
         <div class="sponsor-logo-box">
-            <img class="sponsor-logo" src="Biotec_Vector.svg" /><img class="sponsor-logo" src="Biotec_Vector.svg" />    
+            <img class="sponsor-logo" src="StarFish-Medical-Logo.svg" /><img class="sponsor-logo" src="Waterloo_ENG_Systems_Design_Logo_cmyk.svg" />    
         </div>
         <div class="section-title">Gold Sponsors</div>
         <div class="sponsor-logo-box">
-            <img class="sponsor-logo" src="Biotec_Vector.svg" /><img class="sponsor-logo" src="Biotec_Vector.svg" />
-        </div>
-        <div class="section-title">Silver Sponsors</div>
-        <div class="sponsor-logo-box">
-            <img class="sponsor-logo" src="Biotec_Vector.svg" /><img class="sponsor-logo" src="Biotec_Vector.svg" />
-        </div>
+            <div class="christiemed-sponsor-jpg-box">
+                <div class="christiemed-sponsor-jpg-container">
+                    <img class="christiemed-sponsor-jpg-logo" src="ChristieMedical_Logo.jpg" />
+                    </div>
+                </div>
+                </div>
+            <div class="section-title">Silver Sponsors</div>
+            <div class="sponsor-logo-box">
+                <img class="sponsor-logo" src="CellScale_logo_final.svg" />
+                <div class="interfacebio-sponsor-jpg-box">
+                    <div class="interfacebio-sponsor-jpg-container">
+                        <img class="interfacebio-sponsor-jpg-logo" src="InterfaceBioLogo.png" />
+                    </div>
+                </div>
+            </div>
+    </div>
+            <!--
+            <div class="contact-box" id="contact">
+                <div class="section-title" style="color: #fafafa;"> Contact Us</div>
+                <div class="contact-content-box">
+                    <div class="uwbiotec-iframe-box">
+                        <iframe class="uwbiotec-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuwbiotec%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                    <div class="contact-text-box">
+                        <div class="contact-description-title">Email</div>
+                        <div class="contact-description-email">uwbiotec.****@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        -->
 
-    </div>
- <!--
-    <div class="contact-box" id="contact">
-        <div class="section-title" style="color: #fafafa;"> Contact Us</div>
-        <div class="contact-content-box">
-            <div class="uwbiotec-iframe-box">
-                <iframe class="uwbiotec-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuwbiotec%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <div class="section-bottom-bar">
+                <div class="bottom-bar-content-container">
+                    <div class="facebook-icon-container">
+                        <a href="https://www.facebook.com/uwbiotec/" target="_blank" class="fa fa-facebook"></a>
+                    </div>
+                    <div class="linkedin-icon-container">
+                        <a href="https://www.linkedin.com/company-beta/11156642/" target="_blank" class="fa fa-linkedin"></a>
+                    </div>
+                    <div class="bottom-bar-description-container">
+                        <div class="bottom-bar-description">&copy;2017 UW BioTEC</div>
+                    </div>
+                </div>
             </div>
-            <div class="contact-text-box">
-                <div class="contact-description-title">Email</div>
-                <div class="contact-description-email">uwbiotec.****@gmail.com</div>
-            </div>
-        </div>
-    </div>
--->
 
-    <div class="section-bottom-bar">
-        <div class="bottom-bar-content-container">
-            <div class="facebook-icon-container">
-                <a href="https://www.facebook.com/uwbiotec/" target="_blank" class="fa fa-facebook"></a>
-            </div>
-            <div class="linkedin-icon-container">
-                <a href="https://www.linkedin.com/company-beta/11156642/" target="_blank" class="fa fa-linkedin"></a>            
-            </div>
-            <div class="bottom-bar-description-container">
-                <div class="bottom-bar-description">&copy;2017 UW BioTEC</div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
+            <script>
+
+
         var slideIndex = 1;
         showDiv(slideIndex);
 
@@ -1430,19 +1964,52 @@
             var i;
             var x = document.getElementsByClassName("speaker-container");
             var dots = document.getElementsByClassName("speaker-graphic-circle");
+                if (n > x.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" black", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " black";
+        }
+
+        var mobileSlideIndex = 1;
+        mobileShowDiv(mobileSlideIndex);
+
+        function mobilePlusDiv(n) {
+            mobileShowDiv(mobileSlideIndex += n);
+        }
+        function mobileCurrentDiv(n) {
+            mobileShowDiv(mobileSlideIndex = n);
+        }
+        function mobileShowDiv(n) {
+            var i;
+            var x = document.getElementsByClassName("mobile-header-container");
+            var y = document.getElementsByClassName("mobile-speaker-description-container");
+            var dots = document.getElementsByClassName("mobile-speaker-graphic-circle");
             if (n > x.length) {
-                slideIndex = 1;
+                mobileSlideIndex = 1;
             }
-            if (n < 1) { slideIndex = x.length }
+            if (n < 1) { mobileSlideIndex = x.length }
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
+                y[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" black", "");
             }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " black";
+            x[mobileSlideIndex - 1].style.display = "block";
+            y[mobileSlideIndex - 1].style.display = "block";
+
+            dots[mobileSlideIndex - 1].className += " black";
         }
+
+
         function keynoteDescriptionOne() {
             if (document.getElementById("speaker-description-boot").classList.contains("show")) {
                 document.getElementById("speaker-description-boot").classList.toggle("show");
@@ -1453,7 +2020,7 @@
             if (document.getElementById("k1-speaker-description").classList.contains("show")) {
                 document.getElementById("k1-speaker-description").classList.toggle("show");
                 document.getElementById("speaker-description-boot").classList.toggle("show");
-            } 
+            }
             else {
                 document.getElementById("k1-speaker-description").classList.toggle("show");
             }        }
@@ -1478,7 +2045,7 @@
             document.getElementById("speaker-description-container").classList.toggle("show");
 
         }
-        
+
         window.onclick = function (event) {
             if (!event.target.matches('.mobile-menu')) {
                 var menuButtons = document.getElementsByClassName("mobile-toolbar");
@@ -1526,8 +2093,57 @@
 
         }
         
+                function detectswipe(el, func) {
+                    swipe_det = new Object();
+                    swipe_det.sX = 0;
+                    swipe_det.sY = 0;
+                    swipe_det.eX = 0;
+                    swipe_det.eY = 0;
+                    var min_x = 20;  //min x swipe for horizontal swipe
+                    var max_x = 40;  //max x difference for vertical swipe
+                    var min_y = 40;  //min y swipe for vertical swipe
+                    var max_y = 50;  //max y difference for horizontal swipe
+                    var direc = "";
+                    ele = document.getElementById(el);
+                    ele.addEventListener('touchstart', function (e) {
+                        var t = e.touches[0];
+                        swipe_det.sX = t.screenX;
+                        swipe_det.sY = t.screenY;
+                    }, false);
+                    ele.addEventListener('touchmove', function (e) {
+                        e.preventDefault();
+                        var t = e.touches[0];
+                        swipe_det.eX = t.screenX;
+                        swipe_det.eY = t.screenY;
+                    }, false);
+                    ele.addEventListener('touchend', function (e) {
+                        //horizontal detection
+                        if ((((swipe_det.eX - min_x > swipe_det.sX) || (swipe_det.eX + min_x < swipe_det.sX)) && ((swipe_det.eY < swipe_det.sY + max_y) && (swipe_det.sY > swipe_det.eY - max_y)))) {
+                            if (swipe_det.eX > swipe_det.sX) direc = "r";
+                            else direc = "l";
+                        }
+                        //vertical detection
+                        if ((((swipe_det.eY - min_y > swipe_det.sY) || (swipe_det.eY + min_y < swipe_det.sY)) && ((swipe_det.eX < swipe_det.sX + max_x) && (swipe_det.sX > swipe_det.eX - max_x)))) {
+                            if (swipe_det.eY > swipe_det.sY) direc = "d";
+                            else direc = "u";
+                        }
 
-    </script>
+                        if (direc != "") {
+                            if (typeof func == 'function') func(el, direc);
+                        }
+                        direc = "";
+                    }, false);
+                }
+                function swipefunction(el, d) {
+                        if (d =="l") {
+                            mobilePlusDiv(1);
+                        }
+                        if (d == "r") {
+                            mobilePlusDiv(-1);
+                        }
+                }
+                detectswipe("mobile-speaker-section-container", swipefunction);
+            </script>
 
 </body>
 </html>
