@@ -2143,6 +2143,7 @@
                     var direc = "";
                     ele = document.getElementById(el);
                     ele.addEventListener('touchstart', function (e) {
+                        console.log("xO:", window.pageXOffset, "yO:", window.pageYOffset, "scrX:", window.scrollX, "scrY:", window.scrollY);
                         var t = e.touches[0];
                         swipe_det.sX = t.screenX;
                         swipe_det.sY = t.screenY;
@@ -2160,6 +2161,8 @@
                     ele.addEventListener('touchend', function (e) {
                         if (swipe_tmcount > 0) {
                             //horizontal detection
+                            console.log("eX:", swipe_det.eX, "sX:", swipe_det.sX, "eY:", swipe_det.eY, "sY:", swipe_det.sY, "xO:",window.pageXOffset, "yO:", window.pageYOffset, "scrX:", window.scrollX, "scrY:", window.scrollY);
+
                             if (Math.abs(swipe_det.eX - swipe_det.sX) > Math.abs(swipe_det.eY - swipe_det.sY)) {
 
                                 if ((((swipe_det.eX - min_x > swipe_det.sX) || (swipe_det.eX + min_x < swipe_det.sX)) && ((swipe_det.eY < swipe_det.sY + max_y) && (swipe_det.sY > swipe_det.eY - max_y)))) {
