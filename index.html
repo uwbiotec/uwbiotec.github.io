@@ -2157,8 +2157,8 @@
             var scrollPos = window.scrollY;
             var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-            console.log(scrollPos)
-            console.log(document.getElementsByTagName("body")[0])
+            //console.log(scrollPos)
+            //console.log(document.getElementsByTagName("body")[0])
             if (scrollPos > divPos && width > 700) {
                 document.getElementById("toolbar").className = "toolbar-shadow";
             }
@@ -2191,7 +2191,7 @@
                     var direc = "";
                     ele = document.getElementById(el);
                     ele.addEventListener('touchstart', function (e) {
-                        console.log("xO:", window.pageXOffset, "yO:", window.pageYOffset, "scrX:", window.scrollX, "scrY:", window.scrollY);
+                        //console.log("xO:", window.pageXOffset, "yO:", window.pageYOffset, "scrX:", window.scrollX, "scrY:", window.scrollY);
                         var t = e.touches[0];
                         swipe_det.sX = t.screenX;
                         swipe_det.sY = window.scrollY;
@@ -2209,7 +2209,7 @@
                     ele.addEventListener('touchend', function (e) {
                         if (swipe_tmcount > 0) {
                             //horizontal detection
-                            console.log("eX:", swipe_det.eX, "sX:", swipe_det.sX, "eY:", swipe_det.eY, "sY:", swipe_det.sY, "xO:",window.pageXOffset, "yO:", window.pageYOffset, "scrX:", window.scrollX, "scrY:", window.scrollY);
+                            //console.log("eX:", swipe_det.eX, "sX:", swipe_det.sX, "eY:", swipe_det.eY, "sY:", swipe_det.sY, "xO:",window.pageXOffset, "yO:", window.pageYOffset, "scrX:", window.scrollX, "scrY:", window.scrollY);
 
                             if (Math.abs(swipe_det.eX - swipe_det.sX) > Math.abs(swipe_det.eY - swipe_det.sY)) {
 
