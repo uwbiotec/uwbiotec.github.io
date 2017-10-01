@@ -855,7 +855,7 @@
             text-align: center;
         }
         .mobile-description {
-            display: none;
+            display: block;
             width: 300px;
             font-size: .9em;
             margin: auto;
@@ -887,7 +887,7 @@
             border: 1px solid black;
             border-radius: 5px;
         }
-        /*
+        
         [type="checkbox"] {
             position: absolute;
             left: -9999px;
@@ -926,8 +926,12 @@
         [type="checkbox"]:checked ~ label:before {
             content: "Less";
         }
-            */
-
+        .mobile-speaker-description-button1{
+            display:none;
+        }
+        .mobile-speaker-description-button2 {
+            display: none;
+        }
 
         .mobile-speaker-graphic-circle-container {
             margin: 0 60px;
@@ -1703,6 +1707,7 @@
                         <div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(7)"> </div><div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(8)"> </div><div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(9)"> </div>
                     </div>
                 </div>
+                <!--
                 <div id="mobile-speaker-description-container"class="mobile-speaker-description-container limit">
                     <div class="mobile-description">
                         Frank Baylis served as President of Baylis Medical Company from 1989 to 2015 after graduating from the University of Waterloo, and currently serves as a Member of Parliament. During his time at Baylis, the company grew into an international leading developer of medical devices. Previously, Frank launched the company charity For the Children (FTC) in 2004. Frank was also a co-founder and Vice President of OME Group, a consulting company providing Scientific Research and Experimental Development tax consulting services.                    
@@ -1732,72 +1737,74 @@
                         Kris Shah is a co-founder and current President of Baylis Medical. Kris led the divestiture of Pain Management business to Kimberly Clark, the divestiture of OsteoCool business to Medtronic, and the acquisition of Fralex. He co-founded the OME Group, a specialty consulting firm that was divested to Ernst & Young. Kris is an active board member for Conavi, IntelliJoint Technologies, and a past board member of Venture Lab, MEDEC, and Business Advisory Committee of HTX. He holds a BASc in Electrical Engineering from University of Waterloo.
                     </div>
                 </div>
-                <div class="mobile-speaker-description-button" onclick="descriptionOpen()"> More </div>
-                <!--
+                <div class="mobile-speaker-description-button" onclick="descriptionOpen()"> 
+                    <div class="mobile-speaker-description-button1 show" id="mobile-speaker-description-button1">More</div>
+                    <div class="mobile-speaker-description-button2" id="mobile-speaker-description-button2">Less</div>
+                </div>
+                -->
                 <div class="mobile-speaker-description-container">
-                    <input type="checkbox" id="more_id1" />
+                    <input type="checkbox" class="mobile-speaker-enable" id="more_id1" />
                     <div class="mobile-description">
                         Frank Baylis served as President of Baylis Medical Company from 1989 to 2015 after graduating from the University of Waterloo, and currently serves as a Member of Parliament. During his time at Baylis, the company grew into an international leading developer of medical devices. Previously, Frank launched the company charity For the Children (FTC) in 2004. Frank was also a co-founder and Vice President of OME Group, a consulting company providing Scientific Research and Experimental Development tax consulting services.
                     </div>
-                    <label for="more_id1" />
+                    <label for="more_id1" onclick="moreLess(this)" />
                 </div>
                 <div class="mobile-speaker-description-container">
-                    <input type="checkbox" id="more_id2" />
+                    <input type="checkbox" class="mobile-speaker-enable" id="more_id2" />
                     <div class="mobile-description">
                         Dr. Audet is part of the IBBME at the University of Toronto, and is a member of the Canadian Stem Cell Network and the Ontario Institute for Regenerative Medicine. Through her early research, she was recognized by AABB and NARSAD. She is interested in the development of biological search algorithms and their applications in stem and progenitor cell manufacturing processes. In recent years, Dr. Audet has worked on the development of a new graduate program on biomedical devices.
                     </div>
-                    <label for="more_id2" />
+                    <label for="more_id2" onclick="moreLess(this)" />
                 </div>
                 <div class="mobile-speaker-description-container">
-                    <input type="checkbox" id="more_id3" />
+                    <input type="checkbox" class="mobile-speaker-enable" id="more_id3" />
                     <div class="mobile-description">
                         Shrey is a MD-PhD Candidate at University of Toronto. Currently, he is completing the PhD portion under Dr. Warren Chan, whose lab focuses understanding the interactions between nanomaterials and biological environment. Shrey completed his undergraduate in Nanotechnology Engineering from University of Waterloo in 2011 and held research positions at Waterloo, Harvard, and MIT. As a future physician-scientist, he is continuing to learn how to bridge the gap between bench and bedside through application of engineering to medicine.
                     </div>
-                    <label for="more_id3" />
+                    <label for="more_id3" onclick="moreLess(this)" />
                 </div>
                 <div class="mobile-speaker-description-container">
-                    <input type="checkbox" id="more_id4" />
+                    <input type="checkbox" class="mobile-speaker-enable" id="more_id4" />
                     <div class="mobile-description">
                         Paul received a BSc in Biology joint with Mathematics from the University of Waterloo, and is now a PhD candidate in Biological Engineering at MIT. He works jointly in the labs of George Church (Harvard) and Ed Boyden (MIT) to develop technology for in situ (in its native spatial arrangement) omics, using methods including expansion microscopy, and in situ sequencing. He is broadly interested in the study of life and health, and how we can make living things healthy.
                     </div>
-                    <label for="more_id4" />
+                    <label for="more_id4" onclick="moreLess(this)" />
                 </div>
                 <div class="mobile-speaker-description-container">
-                    <input type="checkbox" id="more_id5" />
+                    <input type="checkbox" class="mobile-speaker-enable" id="more_id5" />
                     <div class="mobile-description">
                         Shak is a BASc candidate in Nanotechnology Engineering, and the CTO of Avro Life Science, a Velocity startup developing novel transdermal drug delivery systems. His research career began at the University of Toronto in Grade 10, working in Dr. Alison McGuigan’s tissue engineering lab. He has previously worked for Validere (YC S16) and H2nanO, developing proficiencies in product development, process engineering, and analytical chemistry. His work has been published in Nature Materials and Biofabrication, among other high profile journals.
                     </div>
-                    <label for="more_id5" />
+                    <label for="more_id5" onclick="moreLess(this)" />
                 </div>
                 <div class="mobile-speaker-description-container">
-                    <input type="checkbox" id="more_id6" />
+                    <input type="checkbox" class="mobile-speaker-enable" id="more_id6" />
                     <div class="mobile-description">
                         Dr. Burns is the founding director of the Centre for Bioengineering and Biotechnology, a Professor of Systems Design Engineering, and the Director of Advanced Interface Design Lab at the University of Waterloo. Catherine’s own research is in human factors engineering and clinical decision support systems, and she has contributed over 200 publications. She has also served as Program Chair for the largest international conference in her field. She received her BASc (University of Waterloo), MASc (University of Toronto), PhD (University of Toronto), and PEng.
                     </div>
-                    <label for="more_id6" />
+                    <label for="more_id6" onclick="moreLess(this)" />
                 </div>
                 <div class="mobile-speaker-description-container">
-                    <input type="checkbox" id="more_id7" />
+                    <input type="checkbox" class="mobile-speaker-enable" id="more_id7" />
                     <div class="mobile-description">
                         As Director of Engineering at Christie Medical, Ben Wagner is responsible for Product Development, R&D Strategy, and Engineering Management. His duties include strategic planning and implementation for Christie’s new Medical Products Business Unit. Recent products include VeinViewer® Vision, XTND, Flex and Vision2 devices. In the past, Ben has also worked for the Canadian National Research Council. He holds a PEng Designation, a BASc in Mechanical Engineering from the University of Waterloo, and an MBA from Wilfrid Laurier University.
                     </div>
-                    <label for="more_id7" />
+                    <label for="more_id7" onclick="moreLess(this)" />
                 </div>
                 <div class="mobile-speaker-description-container">
-                    <input type="checkbox" id="more_id8" />
+                    <input type="checkbox" class="mobile-speaker-enable" id="more_id8" />
                     <div class="mobile-description">
                         Jeannette Ho is a co-founder and VP of Product Development at Interface Biologics. Her past roles included Research and Development, Operations, and she currently leads the Endexo development team focusing on a novel surface modifying technology for medical device applications. Jeannette was involved in developing Endexo™ technology during her graduate studies at the University of Toronto, and started a company that began the commercialization. At Interface Biologics this was further developed into products that are now used widely in clinics.
                     </div>
-                    <label for="more_id8" />
+                    <label for="more_id8" onclick="moreLess(this)" />
                 </div>
                 <div class="mobile-speaker-description-container">
-                    <input type="checkbox" id="more_id9" />
+                    <input type="checkbox" class="mobile-speaker-enable" id="more_id9" />
                     <div class="mobile-description">
                         Kris Shah is a co-founder and current President of Baylis Medical. Kris led the divestiture of Pain Management business to Kimberly Clark, the divestiture of OsteoCool business to Medtronic, and the acquisition of Fralex. He co-founded the OME Group, a specialty consulting firm that was divested to Ernst & Young. Kris is an active board member for Conavi, IntelliJoint Technologies, and a past board member of Venture Lab, MEDEC, and Business Advisory Committee of HTX. He holds a BASc in Electrical Engineering from University of Waterloo.
                     </div>
-                    <label for="more_id9" />
+                    <label for="more_id9" onclick="moreLess(this)" />
                 </div>
-                -->
             </div>
         </div>
     </div>
@@ -2074,7 +2081,7 @@
         function mobileShowDiv(n) {
             var i;
             var x = document.getElementsByClassName("mobile-header-container");
-            var y = document.getElementsByClassName("mobile-description");
+            var y = document.getElementsByClassName("mobile-speaker-description-container");
             var dots = document.getElementsByClassName("mobile-speaker-graphic-circle");
             if (n > x.length) {
                 mobileSlideIndex = 1;
@@ -2092,9 +2099,23 @@
 
             dots[mobileSlideIndex - 1].className += " black";
         }
+        function moreLess(el) {
+            var inputs = document.getElementsByClassName('mobile-speaker-enable');
+            var current = document.getElementById(el.htmlFor)
+            for (var i = 0; i < inputs.length; i++) {
+                if (current === inputs[i]) {
+                }
+                else {
+                    inputs[i].checked = !current.checked
+                }
+            }
+            //console.log("moreLess()", el);
+        }
 
         function descriptionOpen(){
             document.getElementById("mobile-speaker-description-container").classList.toggle("limit");
+                document.getElementById("mobile-speaker-description-button1").classList.toggle("show");
+                document.getElementById("mobile-speaker-description-button2").classList.toggle("show");
         }
         function keynoteDescriptionOne() {
             if (document.getElementById("speaker-description-boot").classList.contains("show")) {
