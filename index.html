@@ -18,13 +18,13 @@
 
     <title>UW BioTEC</title>
     <style>
-        
+
 
         body {
             font-family: lato, sans-serif;
             font-size: 18px;
             line-height: 1.8em;
-            background-color: #5B9BD5;
+            background-color: #1e6da3;
             font-weight: 300;
             margin: 0;
             color: #242424;
@@ -233,6 +233,7 @@
             left: 0;
         }
         .mobile-toolbar{
+            z-index:1;
             display: none;
             background-color: #fafafa;
             width: 20%;
@@ -379,18 +380,16 @@
             margin: auto;
         }
         .contact-box{
-            padding-top: 42px;
+            padding: 10px;
+            background-color: #fff;
         }
         .contact-content-box{
-            height: 500px;
-            width: 80%;
-            margin: auto;
+            height: 44px;
+            display: block;
         }
         .contact-text-box{
-            width: 50%;
-            height: 500px;
             display: block;
-            float: left;
+
         }
         .contact-description-title {
             font-size: 2em;
@@ -404,13 +403,12 @@
             color:#fafafa;
         }
         .contact-description-email {
-            font-size: 1.5em;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 1em;
+            line-height: normal;
+            margin:auto;
             display: block;
             text-align: center;
-            max-width: 400px;
-            color: #fafafa;
+            max-width:400px;
         }
       
         .section-sponsors{
@@ -856,11 +854,12 @@
             display: block;
             text-align: center;
         }
-        .mobile-description{
+        .mobile-description {
+            display: none;
             width: 300px;
-            font-size: 1em;
+            font-size: .9em;
             margin: auto;
-            text-align:justify;
+            text-align: justify;
             overflow: hidden;
             padding: 0px 5px;
         }
@@ -877,11 +876,23 @@
             height: 50px;
             display: block;
         }
+        .mobile-speaker-description-button {
+            padding: .5em;
+            margin: 10px auto;
+            width: 200px;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            color: black;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        /*
         [type="checkbox"] {
             position: absolute;
             left: -9999px;
         }
-        label{
+        label {
             padding: .5em;
             margin: 10px auto;
             width: 200px;
@@ -915,7 +926,7 @@
         [type="checkbox"]:checked ~ label:before {
             content: "Less";
         }
-
+            */
 
 
         .mobile-speaker-graphic-circle-container {
@@ -937,10 +948,23 @@
         .mobile-speaker-graphic-circle:hover {
             background-color: #242424;
         }
-        .mobile-speaker-description-container{
-            display:none;
+        .mobile-speaker-description-container {
+            display: block;
+            max-height: 1299px;
+            background: unset;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
         }
 
+        .limit {
+            max-height: 7em;
+            overflow: hidden;
+            transition: max-height 0.8s;
+            
+            background: linear-gradient(to bottom, black, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
         .show {
             display: block;
@@ -1679,10 +1703,41 @@
                         <div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(7)"> </div><div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(8)"> </div><div class="mobile-speaker-graphic-circle" onclick="mobileCurrentDiv(9)"> </div>
                     </div>
                 </div>
+                <div id="mobile-speaker-description-container"class="mobile-speaker-description-container limit">
+                    <div class="mobile-description">
+                        Frank Baylis served as President of Baylis Medical Company from 1989 to 2015 after graduating from the University of Waterloo, and currently serves as a Member of Parliament. During his time at Baylis, the company grew into an international leading developer of medical devices. Previously, Frank launched the company charity For the Children (FTC) in 2004. Frank was also a co-founder and Vice President of OME Group, a consulting company providing Scientific Research and Experimental Development tax consulting services.                    
+                    </div>
+                    <div class="mobile-description">
+                        Dr. Audet is part of the IBBME at the University of Toronto, and is a member of the Canadian Stem Cell Network and the Ontario Institute for Regenerative Medicine. Through her early research, she was recognized by AABB and NARSAD. She is interested in the development of biological search algorithms and their applications in stem and progenitor cell manufacturing processes. In recent years, Dr. Audet has worked on the development of a new graduate program on biomedical devices.
+                    </div>
+                    <div class="mobile-description">
+                        Shrey is a MD-PhD Candidate at University of Toronto. Currently, he is completing the PhD portion under Dr. Warren Chan, whose lab focuses understanding the interactions between nanomaterials and biological environment. Shrey completed his undergraduate in Nanotechnology Engineering from University of Waterloo in 2011 and held research positions at Waterloo, Harvard, and MIT. As a future physician-scientist, he is continuing to learn how to bridge the gap between bench and bedside through application of engineering to medicine.                    
+                    </div>
+                    <div class="mobile-description">
+                        Paul received a BSc in Biology joint with Mathematics from the University of Waterloo, and is now a PhD candidate in Biological Engineering at MIT. He works jointly in the labs of George Church (Harvard) and Ed Boyden (MIT) to develop technology for in situ (in its native spatial arrangement) omics, using methods including expansion microscopy, and in situ sequencing. He is broadly interested in the study of life and health, and how we can make living things healthy.
+                    </div>
+                    <div class="mobile-description">
+                        Shak is a BASc candidate in Nanotechnology Engineering, and the CTO of Avro Life Science, a Velocity startup developing novel transdermal drug delivery systems. His research career began at the University of Toronto in Grade 10, working in Dr. Alison McGuigan’s tissue engineering lab. He has previously worked for Validere (YC S16) and H2nanO, developing proficiencies in product development, process engineering, and analytical chemistry. His work has been published in Nature Materials and Biofabrication, among other high profile journals.
+                    </div>
+                    <div class="mobile-description">
+                        Dr. Burns is the founding director of the Centre for Bioengineering and Biotechnology, a Professor of Systems Design Engineering, and the Director of Advanced Interface Design Lab at the University of Waterloo. Catherine’s own research is in human factors engineering and clinical decision support systems, and she has contributed over 200 publications. She has also served as Program Chair for the largest international conference in her field. She received her BASc (University of Waterloo), MASc (University of Toronto), PhD (University of Toronto), and PEng.
+                    </div>
+                    <div class="mobile-description">
+                        As Director of Engineering at Christie Medical, Ben Wagner is responsible for Product Development, R&D Strategy, and Engineering Management. His duties include strategic planning and implementation for Christie’s new Medical Products Business Unit. Recent products include VeinViewer® Vision, XTND, Flex and Vision2 devices. In the past, Ben has also worked for the Canadian National Research Council. He holds a PEng Designation, a BASc in Mechanical Engineering from the University of Waterloo, and an MBA from Wilfrid Laurier University.
+                    </div>
+                    <div class="mobile-description">
+                        Jeannette Ho is a co-founder and VP of Product Development at Interface Biologics. Her past roles included Research and Development, Operations, and she currently leads the Endexo development team focusing on a novel surface modifying technology for medical device applications. Jeannette was involved in developing Endexo™ technology during her graduate studies at the University of Toronto, and started a company that began the commercialization. At Interface Biologics this was further developed into products that are now used widely in clinics.
+                    </div>
+                    <div class="mobile-description">
+                        Kris Shah is a co-founder and current President of Baylis Medical. Kris led the divestiture of Pain Management business to Kimberly Clark, the divestiture of OsteoCool business to Medtronic, and the acquisition of Fralex. He co-founded the OME Group, a specialty consulting firm that was divested to Ernst & Young. Kris is an active board member for Conavi, IntelliJoint Technologies, and a past board member of Venture Lab, MEDEC, and Business Advisory Committee of HTX. He holds a BASc in Electrical Engineering from University of Waterloo.
+                    </div>
+                </div>
+                <div class="mobile-speaker-description-button" onclick="descriptionOpen()"> More </div>
+                <!--
                 <div class="mobile-speaker-description-container">
                     <input type="checkbox" id="more_id1" />
                     <div class="mobile-description">
-                        Frank Baylis served as President of Baylis Medical Company from 1989 to 2015 after graduating from the University of Waterloo, and currently serves as a Member of Parliament. During his time at Baylis, the company grew into an international leading developer of medical devices. Previously, Frank launched the company charity For the Children (FTC) in 2004. Frank was also a co-founder and Vice President of OME Group, a consulting company providing Scientific Research and Experimental Development tax consulting services.                    
+                        Frank Baylis served as President of Baylis Medical Company from 1989 to 2015 after graduating from the University of Waterloo, and currently serves as a Member of Parliament. During his time at Baylis, the company grew into an international leading developer of medical devices. Previously, Frank launched the company charity For the Children (FTC) in 2004. Frank was also a co-founder and Vice President of OME Group, a consulting company providing Scientific Research and Experimental Development tax consulting services.
                     </div>
                     <label for="more_id1" />
                 </div>
@@ -1696,7 +1751,7 @@
                 <div class="mobile-speaker-description-container">
                     <input type="checkbox" id="more_id3" />
                     <div class="mobile-description">
-                        Shrey is a MD-PhD Candidate at University of Toronto. Currently, he is completing the PhD portion under Dr. Warren Chan, whose lab focuses understanding the interactions between nanomaterials and biological environment. Shrey completed his undergraduate in Nanotechnology Engineering from University of Waterloo in 2011 and held research positions at Waterloo, Harvard, and MIT. As a future physician-scientist, he is continuing to learn how to bridge the gap between bench and bedside through application of engineering to medicine.                    
+                        Shrey is a MD-PhD Candidate at University of Toronto. Currently, he is completing the PhD portion under Dr. Warren Chan, whose lab focuses understanding the interactions between nanomaterials and biological environment. Shrey completed his undergraduate in Nanotechnology Engineering from University of Waterloo in 2011 and held research positions at Waterloo, Harvard, and MIT. As a future physician-scientist, he is continuing to learn how to bridge the gap between bench and bedside through application of engineering to medicine.
                     </div>
                     <label for="more_id3" />
                 </div>
@@ -1742,6 +1797,7 @@
                     </div>
                     <label for="more_id9" />
                 </div>
+                -->
             </div>
         </div>
     </div>
@@ -1763,79 +1819,79 @@
             <div class="schedule-left-container">
                 <div class="schedule-left-line-container">
                     <div class="schedule-left-line-top">9:00 - &nbsp 9:15</div>
-                    <div class="schedule-left-line-bottom">QNC Atrium</div>
+                    <div class="schedule-left-line-bottom"></div>
                 </div>
                 <div class="schedule-left-line-container">
                     <div class="schedule-left-line-top">9:15 - &nbsp 9:30</div>
-                    <div class="schedule-left-line-bottom">QNC 0101</div>
+                    <div class="schedule-left-line-bottom"></div>
                 </div>
                 <div class="schedule-left-line-container">
                     <div class="schedule-left-line-top">9:30 - 10:30</div>
-                    <div class="schedule-left-line-bottom">QNC 0101</div>
+                    <div class="schedule-left-line-bottom"></div>
                 </div>
                 <div class="schedule-left-line-container" style="height:70px;">
                     <div class="schedule-left-line-top">10:45 - 11:30</div>
-                    <div class="schedule-left-line-bottom">QNC 1502</div>
-                    <div class="schedule-left-line-bottom">QNC 2502</div>
+                    <div class="schedule-left-line-bottom"></div>
+                    <div class="schedule-left-line-bottom"></div>
                 </div>
                 <div class="schedule-left-line-container">
                     <div class="schedule-left-line-top">11:30 - 12:15</div>
-                    <div class="schedule-left-line-bottom">QNC 1502</div>
+                    <div class="schedule-left-line-bottom"></div>
                 </div>
                 <div class="schedule-left-line-container">
                     <div class="schedule-left-line-top">12:15 - &nbsp 1:45</div>
-                    <div class="schedule-left-line-bottom">QNC Atrium</div>
+                    <div class="schedule-left-line-bottom"></div>
                 </div>
                 <div class="schedule-left-line-container">
                     <div class="schedule-left-line-top">1:45 -  &nbsp 2:45</div>
-                    <div class="schedule-left-line-bottom">QNC 0101</div>
+                    <div class="schedule-left-line-bottom"></div>
                 </div>
                 <div class="schedule-left-line-container">
                     <div class="schedule-left-line-top">3:00 - &nbsp 4:15</div>
-                    <div class="schedule-left-line-bottom">QNC 0101</div>
+                    <div class="schedule-left-line-bottom"></div>
                 </div>
                 <div class="schedule-left-line-container">
                     <div class="schedule-left-line-top">4:15 - &nbsp 4:30</div>
-                    <div class="schedule-left-line-bottom">QNC 0101</div>
+                    <div class="schedule-left-line-bottom"></div>
                 </div>
             </div>
             <div class="schedule-right-container">
                 <div class="schedule-right-line-container">
                     <div class="schedule-right-line-top">Registration and Refreshments</div>
-                    <div class="schedule-right-line-bottom"></div>
+                    <div class="schedule-right-line-bottom">QNC Atrium</div>
                 </div>
                 <div class="schedule-right-line-container">
                     <div class="schedule-right-line-top">Opening Remarks</div>
-                    <div class="schedule-right-line-bottom"></div>
+                    <div class="schedule-right-line-bottom">QNC 0101</div>
                 </div>
                 <div class="schedule-right-line-container">
                     <div class="schedule-right-line-top">Keynote Speaker</div>
-                    <div class="schedule-right-line-bottom">Julie Audet</div>
+                    <div class="schedule-right-line-bottom">QNC 0101, Julie Audet</div>
                 </div>
                 <div class="schedule-right-line-container" style="height:70px">
                     <div class="schedule-right-line-top">Breakout Speaker Session</div>
-                    <div class="schedule-right-line-bottom">Shrey Sindhwani</div>
-                    <div class="schedule-right-line-bottom">Shakir Lakhani</div>
+                    <div class="schedule-right-line-bottom">QNC 1502, Shrey Sindhwani</div>
+                    <div class="schedule-right-line-bottom">QNC 2502, Shakir Lakhani</div>
                 </div>
                 <div class="schedule-right-line-container">
                     <div class="schedule-right-line-top">Breakout Speaker Session</div>
-                    <div class="schedule-right-line-bottom">Paul Reginato</div>
+                    <div class="schedule-right-line-bottom">QNC 1502, Paul Reginato</div>
                 </div>
                 <div class="schedule-right-line-container">
                     <div class="schedule-right-line-top">Lunch and Poster Session</div>
-                    <div class="schedule-right-line-bottom"></div>
+                    <div class="schedule-right-line-bottom">QNC Atrium</div>
                 </div>
                 <div class="schedule-right-line-container">
                     <div class="schedule-right-line-top">Keynote Speaker</div>
-                    <div class="schedule-right-line-bottom">Frank Baylis</div>
+                    <div class="schedule-right-line-bottom">QNC 0101, Frank Baylis</div>
                 </div>
                 <div class="schedule-right-line-container">
                     <div class="schedule-right-line-top">Industry Panel</div>
-                    <div class="schedule-right-line-bottom"></div>
+                    <div class="schedule-right-line-bottom">QNC 0101</div>
                 </div>
                 <div class="schedule-right-line-container">
                     <div class="schedule-right-line-top">Closing Remarks</div>
-                    <div class="schedule-right-line-bottom"></div>
+                    <div class="schedule-right-line-bottom">QNC 0101</div>
                 </div>
 
             </div>
@@ -1844,80 +1900,80 @@
             <div class="mobile-schedule-left-container">
                 <div class="mobile-schedule-left-line-container">
                     <div class="mobile-schedule-left-line-top"> 9:00 </div>
-                    <div class="mobile-schedule-left-line-bottom"> QNC Atrium</div>
+                    <div class="mobile-schedule-left-line-bottom"> </div>
                 </div>
                 <div class="mobile-schedule-left-line-container">
                     <div class="mobile-schedule-left-line-top"> 9:15 </div>
-                    <div class="mobile-schedule-left-line-bottom"> QNC 0101</div>
+                    <div class="mobile-schedule-left-line-bottom"></div>
                 </div>
                 <div class="mobile-schedule-left-line-container">
                     <div class="mobile-schedule-left-line-top"> 9:30 </div>
-                    <div class="mobile-schedule-left-line-bottom"> QNC 0101</div>
+                    <div class="mobile-schedule-left-line-bottom"></div>
                 </div>
                 <div class="mobile-schedule-left-line-container" style="height:64px;">
                     <div class="mobile-schedule-left-line-top"> 10:45</div>
-                    <div class="mobile-schedule-left-line-bottom"> QNC 1502</div>
-                    <div class="mobile-schedule-left-line-bottom"> QNC 1502</div>
+                    <div class="mobile-schedule-left-line-bottom"></div>
+                    <div class="mobile-schedule-left-line-bottom"></div>
                 </div>
                 <div class="mobile-schedule-left-line-container">
                     <div class="mobile-schedule-left-line-top"> 11:30 </div>
-                    <div class="mobile-schedule-left-line-bottom"> QNC 1502</div>
+                    <div class="mobile-schedule-left-line-bottom"></div>
                 </div>
                 <div class="mobile-schedule-left-line-container">
                     <div class="mobile-schedule-left-line-top"> 12:15</div>
-                    <div class="mobile-schedule-left-line-bottom"> QNC Atrium</div>
+                    <div class="mobile-schedule-left-line-bottom"></div>
                 </div>
                 <div class="mobile-schedule-left-line-container">
                     <div class="mobile-schedule-left-line-top"> 1:45</div>
-                    <div class="mobile-schedule-left-line-bottom"> QNC 0101</div>
+                    <div class="mobile-schedule-left-line-bottom"></div>
                 </div>
                 <div class="mobile-schedule-left-line-container">
                     <div class="mobile-schedule-left-line-top"> 3:00</div>
-                    <div class="mobile-schedule-left-line-bottom"> QNC 0101</div>
+                    <div class="mobile-schedule-left-line-bottom"></div>
                 </div>
                 <div class="mobile-schedule-left-line-container">
                     <div class="mobile-schedule-left-line-top"> 4:15 </div>
-                    <div class="mobile-schedule-left-line-bottom"> QNC 0101</div>
+                    <div class="mobile-schedule-left-line-bottom"></div>
                 </div>
             </div>
             <div class="mobile-schedule-right-container">
                 <div class="mobile-schedule-right-line-container">
                     <div class="mobile-schedule-right-line-top">Registration</div>
-                    <div class="mobile-schedule-right-line-bottom"></div>
+                    <div class="mobile-schedule-right-line-bottom">QNC Atrium</div>
                 </div>
                 <div class="mobile-schedule-right-line-container">
                     <div class="mobile-schedule-right-line-top">Opening Remarks</div>
-                    <div class="mobile-schedule-right-line-bottom"></div>
+                    <div class="mobile-schedule-right-line-bottom">QNC 0101</div>
                 </div>
                 <div class="mobile-schedule-right-line-container">
                     <div class="mobile-schedule-right-line-top">Keynote Speaker</div>
-                    <div class="mobile-schedule-right-line-bottom">Julie Audet</div>
+                    <div class="mobile-schedule-right-line-bottom">QNC 0101, Julie Audet</div>
                 </div>
                 <div class="mobile-schedule-right-line-container"style="height:64px;">
                     <div class="mobile-schedule-right-line-top">Breakout Speakers</div>
-                    <div class="mobile-schedule-right-line-bottom">Shrey Sindhwani</div>
-                    <div class="mobile-schedule-right-line-bottom">Shakir Lakhani</div>
+                    <div class="mobile-schedule-right-line-bottom">QNC 1502, Shrey Sindhwani</div>
+                    <div class="mobile-schedule-right-line-bottom">QNC 2502, Shakir Lakhani</div>
 
                 </div>
                 <div class="mobile-schedule-right-line-container">
                     <div class="mobile-schedule-right-line-top">Breakout Speakers</div>
-                    <div class="mobile-schedule-right-line-bottom">Paul Reginato</div>
+                    <div class="mobile-schedule-right-line-bottom"> QNC 1502, Paul Reginato</div>
                 </div>
                 <div class="mobile-schedule-right-line-container">
                     <div class="mobile-schedule-right-line-top">Lunch and Posters</div>
-                    <div class="mobile-schedule-right-line-bottom"></div>
+                    <div class="mobile-schedule-right-line-bottom"> QNC Atrium</div>
                 </div>
                 <div class="mobile-schedule-right-line-container">
                     <div class="mobile-schedule-right-line-top">Keynote Speaker</div>
-                    <div class="mobile-schedule-right-line-bottom">Frank Baylis</div>
+                    <div class="mobile-schedule-right-line-bottom"> QNC 0101, Frank Baylis</div>
                 </div>
                 <div class="mobile-schedule-right-line-container">
                     <div class="mobile-schedule-right-line-top">Industry Panel</div>
-                    <div class="mobile-schedule-right-line-bottom"></div>
+                    <div class="mobile-schedule-right-line-bottom"> QNC 0101 </div>
                 </div>
                 <div class="mobile-schedule-right-line-container">
                     <div class="mobile-schedule-right-line-top">Closing Remarks</div>
-                    <div class="mobile-schedule-right-line-bottom"></div>
+                    <div class="mobile-schedule-right-line-bottom">QNC 0101</div>
                 </div>
 
             </div>
@@ -1955,34 +2011,26 @@
                 </div>
             </div>
     </div>
-            <!--
-            <div class="contact-box" id="contact">
-                <div class="section-title" style="color: #fafafa;"> Contact Us</div>
-                <div class="contact-content-box">
-                    <div class="uwbiotec-iframe-box">
-                        <iframe class="uwbiotec-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuwbiotec%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                    </div>
-                    <div class="contact-text-box">
-                        <div class="contact-description-title">Email</div>
-                        <div class="contact-description-email">uwbiotec.****@gmail.com</div>
-                    </div>
-                </div>
+    <div class="contact-box" id="contact">
+        <div class="contact-content-box">
+            <div class="contact-text-box">
+                <div class="contact-description-email">Questions? Email us at uwbiotec.main@gmail.com</div>
             </div>
-        -->
-
-            <div class="section-bottom-bar">
-                <div class="bottom-bar-content-container">
-                    <div class="facebook-icon-container">
-                        <a href="https://www.facebook.com/uwbiotec/" target="_blank" class="fa fa-facebook"></a>
-                    </div>
-                    <div class="linkedin-icon-container">
-                        <a href="https://www.linkedin.com/company-beta/11156642/" target="_blank" class="fa fa-linkedin"></a>
-                    </div>
-                    <div class="bottom-bar-description-container">
-                        <div class="bottom-bar-description">&copy;2017 UW BioTEC</div>
-                    </div>
-                </div>
+        </div>
+    </div>
+    <div class="section-bottom-bar">
+        <div class="bottom-bar-content-container">
+            <div class="facebook-icon-container">
+                <a href="https://www.facebook.com/uwbiotec/" target="_blank" class="fa fa-facebook"></a>
             </div>
+            <div class="linkedin-icon-container">
+                <a href="https://www.linkedin.com/company-beta/11156642/" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+            <div class="bottom-bar-description-container">
+                <div class="bottom-bar-description">&copy;2017 UW BioTEC</div>
+            </div>
+        </div>
+    </div>
 
             <script>
 
@@ -2026,7 +2074,7 @@
         function mobileShowDiv(n) {
             var i;
             var x = document.getElementsByClassName("mobile-header-container");
-            var y = document.getElementsByClassName("mobile-speaker-description-container");
+            var y = document.getElementsByClassName("mobile-description");
             var dots = document.getElementsByClassName("mobile-speaker-graphic-circle");
             if (n > x.length) {
                 mobileSlideIndex = 1;
@@ -2045,7 +2093,9 @@
             dots[mobileSlideIndex - 1].className += " black";
         }
 
-
+        function descriptionOpen(){
+            document.getElementById("mobile-speaker-description-container").classList.toggle("limit");
+        }
         function keynoteDescriptionOne() {
             if (document.getElementById("speaker-description-boot").classList.contains("show")) {
                 document.getElementById("speaker-description-boot").classList.toggle("show");
@@ -2079,9 +2129,7 @@
             document.getElementById("mobile-toolbar").classList.toggle("show");
             document.getElementById("mobile-background").classList.toggle("show");
             document.getElementById("speaker-description-container").classList.toggle("show");
-
         }
-
         window.onclick = function (event) {
             if (!event.target.matches('.mobile-menu')) {
                 var menuButtons = document.getElementsByClassName("mobile-toolbar");
@@ -2101,16 +2149,16 @@
                     }
                 }
             }
-
         }
 
         window.onscroll = function (oEvent) {
             var homepageDesPos = document.getElementById("homepage-description").offsetTop;
             var divPos = document.getElementById("logo").offsetTop;
-            var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
+            var scrollPos = window.scrollY;
             var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-
+            console.log(scrollPos)
+            console.log(document.getElementsByTagName("body")[0])
             if (scrollPos > divPos && width > 700) {
                 document.getElementById("toolbar").className = "toolbar-shadow";
             }
@@ -2146,15 +2194,15 @@
                         console.log("xO:", window.pageXOffset, "yO:", window.pageYOffset, "scrX:", window.scrollX, "scrY:", window.scrollY);
                         var t = e.touches[0];
                         swipe_det.sX = t.screenX;
-                        swipe_det.sY = t.screenY;
+                        swipe_det.sY = window.scrollY;
                         swipe_tmcount = 0;
-                    }, false);
+                    }, false); 
                     ele.addEventListener('touchmove', function (e) {
                         var t = e.touches[0];
                         swipe_det.eX = t.screenX;
-                        swipe_det.eY = t.screenY;
+                        swipe_det.eY = window.scrollY;
                         swipe_tmcount = swipe_tmcount + 1;
-                        if (Math.abs(swipe_det.eX - swipe_det.sX) > Math.abs(swipe_det.eY - swipe_det.sY)){
+                        if (Math.abs(swipe_det.eX - swipe_det.sX) > Math.abs(swipe_det.eY - swipe_det.sY +20)){
                             e.preventDefault();
                         }
                     }, false);
