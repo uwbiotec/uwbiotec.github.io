@@ -1,0 +1,410 @@
+	#body{
+		margin: 0px;
+	}
+
+	* {
+  		box-sizing: border-box;
+	}
+	
+	*{
+		text-decoration: none;
+	}
+	.homepage-container-wrapper{
+		min-height: 100vh;
+		width: 100%;
+		display: block;
+		background-image: url(images/blueback.svg);
+		position: relative;
+		justify-content: center;
+
+	}
+
+	.homepageboxcontent{
+		
+		width: 100%;
+		max-width: 100%;
+		position: relative;
+		padding-top: 5%;
+		padding-left: 10%;
+		padding-right: 10%;
+		justify-content: center;
+		display: flex;
+		margin: auto;
+	}
+
+	.logo{
+	    position: relative;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		padding-left: 10%;
+		padding-right: 10%;
+		display: block;
+	}
+
+	.homepage-info-container{
+		width: 100%;
+		max-width: 100%;
+		justify-content: center;
+		margin: auto;
+		padding-top: 3%;
+		padding-bottom: 5%;
+	}
+
+	.date{
+		position: relative;
+		font-family: Lato;
+		font-style: normal;
+		font-weight: 250;
+		font-size: 2em;
+		line-height: normal;
+		text-align: center;
+		color: #FFFFFF;
+		padding-bottom: 2px;
+		}
+
+	.vector{
+		position: relative;
+		margin: auto;
+		padding-left: 45%;
+		padding-right: 45%;
+	}
+
+	.location:hover{
+		color: #95B9DA;
+	}
+
+	.location{
+		margin: auto;
+		padding-top: 2px;
+		padding-bottom:2px;
+		display: block;
+		position: relative;
+		font-family: Lato;
+		font-style: normal;
+		font-weight: 250;
+		font-size: 2em;
+		line-height: normal;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	.details{
+		letter-spacing: 4px;
+	}
+
+	/* Homepage box responsive*/
+
+	
+
+	
+	#middleground{
+		position: relative;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 150vh;
+		background-image: url(images/Pattern.jpg);
+	}
+			
+		.vectorpat{
+			position: absolute;
+			left: 70%;
+			right: 6.67%;
+			top: 5%;
+			bottom: 0%;
+
+		}
+
+		.vectorpatreflect{
+			position: absolute;
+			right: 67.62%;
+			left: 10%;
+			top: 5%;
+			bottom: 0%;
+		}
+
+		.middletitle{
+			position: absolute;
+			left: 22%;
+			right: 18.58%;
+			top: 7%;
+			bottom: -18.67%;
+
+			font-family: Lato;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 72px;
+			line-height: normal;
+			text-align: center;
+
+			color: #FFFFFF;
+		}
+
+		.bodytxt{
+			position: absolute;
+			width: 1128px;
+			height: 359px;
+			left: 225px;
+			top: 230px;
+
+			font-family: Lato;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 30px;
+			line-height: normal;
+			text-align: justify;
+
+			color: #FFFFFF;
+		}
+
+		.sectsubtitle{
+			position: absolute;
+			width: 683px;
+			height: 59px;
+			left: 450px;
+			top: 682px;
+
+			font-family: Lato;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 48px;
+			line-height: normal;
+			text-align: center;
+
+			color: #FFFFFF;
+		}
+
+		.presentation{
+			position: absolute;
+			width: 110px;
+			height: 110px;
+			left: 240px;
+			top: 797px;
+		}
+
+		.attendees{
+			position: absolute;
+			width: 110px;
+			height: 110px;
+			left: 728px;
+			top: 789px;
+		}
+
+		.sponsors{
+			position: absolute;
+			width: 133px;
+			height: 119px;
+			left: 1235px;
+			top: 788px;
+		}
+
+		.vec1{
+			position: absolute;
+			/*left: 30%;
+			right: 64.72%;
+			top: 75%;
+			bottom: 13.41%; */
+			width: 133px;
+			height: 119px;
+			left: 470px;
+			top: 788px;
+		}
+
+		.vec2{
+			position: absolute;
+			/*left: 65%;
+			right: 30%;
+			top: 75%;
+			bottom: 13.41%;*/
+			width: 133px;
+			height: 119px;
+			left: 990px;
+			top: 788px;
+		}
+
+		.speakertxt{
+			position: absolute;
+			width: 250px;
+			height: 38px;
+			left: 150px;
+			top: 920px;
+
+			font-family: Lato;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 36px;
+			line-height: normal;
+			text-align: center;
+
+			color: #FFFFFF;
+		}
+
+		.attendeetxt{
+			position: absolute;
+			width: 250px;
+			height: 38px;
+			left: 650px;
+			top: 920px;
+
+			font-family: Lato;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 36px;
+			line-height: normal;
+			text-align: center;
+
+			color: #FFFFFF;
+		}
+
+		.sponsortxt{
+			position: absolute;
+			width: 250px;
+			height: 38px;
+			left: 1177px;
+			top: 920px;
+
+			font-family: Lato;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 36px;
+			line-height: normal;
+			text-align: center;
+
+			color: #FFFFFF;
+		}
+
+		#bottom{
+
+			position: absolute;
+			width: 100%;
+			height: 60px;
+			justify-content: center;
+			background: #FFFFFF;
+			bottom: 0;
+		}
+		.bottomcontainer{
+			display: block;
+			margin: auto;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			width: 115px;
+
+		}
+
+		.bottomcopyrightcontainer{
+			display: block;
+
+		}
+
+
+			.fb{
+				position: relative;
+				width: 35px;
+				height: 35px;
+				padding-top: 4px;
+				padding-right: 3px;
+				text-decoration: none;
+			}
+
+			.linkedin{
+				position: relative;
+				width: 35px;
+				height: 35px;
+				padding-top: 4px;
+				padding-right: 3px;
+			}
+
+
+			.mail{
+				position: relative;
+				width: 35px;
+				height: 35px;
+				padding-top: 4px;
+				padding-right: 3px;
+			}
+
+			.copyright{
+				position: relative;
+				font-family: Lato;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 12px;
+				line-height: normal;
+				text-align: center;
+				color: #000000;
+			}
+
+		@media screen and (max-width: 500px){
+
+				.homepageboxcontent{
+					padding-top: 20%;
+					padding-left: 0;
+					padding-right: 0;
+				}
+
+		.homepage-info-container{
+			width: 100%;
+			max-width: 100%;
+			justify-content: center;
+			margin: auto;
+			padding-top: 20%;
+			padding-bottom: 3%;
+		}
+
+	}
+
+	@media screen and (max-width: 600px){
+
+		.logo{
+			padding-top: 5%;
+		}
+
+
+		.date{
+			position: relative;	
+			font-size: 1em;
+			padding-bottom: 10px;
+		}
+		.vector{
+			position: relative;
+			margin: auto;
+			padding-left: 38%;
+		}
+
+		.location{
+			font-size: 1em;
+		}
+
+		.location-wloo{
+			font-size: 1em;
+		}
+
+	}
+
+	@media screen and (max-width: 768px){
+
+		.homepage-info-container{
+			padding-top: 7.5%;
+		}
+
+		.logo{
+			padding-top: 15%;
+		}
+
+		.date{
+			font-size: 1.5em;
+			padding-bottom: 2px;
+		}
+		.vector{
+			position: relative;
+			margin: auto;
+			padding-left: 40%;
+		}
+
+		.location{
+			padding-top: 2px;
+			font-size: 1.5em;
+		}
+	}
