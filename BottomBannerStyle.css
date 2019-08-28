@@ -1,0 +1,47 @@
+
+.bottom-banner{
+	background-color: #0C0808;
+	height: 75px;
+	width: 100%;
+	align-items: center;
+}
+
+.bottom-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 75px;
+}
+
+.bottom-info-wrapper{
+	position: relative;
+	padding-left: 3.5%; 	
+	display: inline-block;
+}
+
+.bottom-info{
+	font-family: Lato;
+	font-style: normal;
+	line-height: 125%;
+	font-size: 20px;
+	font-weight: 350;
+	color: #FFFFFF;
+}
+
+.icon-wrapper{
+	display: flex;
+	height: 65px;
+	/*right: 3.5%;*/
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon{
+	padding-right: 25%;
+	padding-top: 7.5%;
+}
+
+.mail{
+	padding-top: 7.5%;
+}

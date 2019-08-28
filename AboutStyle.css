@@ -1,0 +1,42 @@
+.about-box {
+  width: 100%;
+}
+.about-subsection-box {
+  width: 70%;
+  min-height: 640px;
+  margin-left: 30%;
+  background-color: rgba(84, 25, 17, 0.87);
+}
+.about-subsection-title {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 7%;
+
+  font-family: Lato;
+  font-size: 1.75em;
+  font-weight:bold;
+  line-height: 74px;
+  color: #FFFFFF;
+}
+.about-subsection-text {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 7%;
+  
+  text-align: justify;
+  font-family: Lato;
+  font-style: normal;
+	font-weight: 400;
+  font-size: 0.85em;
+  line-height: 151%;
+  color: #FFFFFF;
+}
+
+.about-box::before {
+  display: block; 
+  content: " "; 
+  margin-top: -80px; 
+  height: 80px; 
+  visibility: hidden; 
+  pointer-events: none;
+}

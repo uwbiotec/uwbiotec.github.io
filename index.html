@@ -1,65 +1,211 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="main.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no">
-<title>BioTEC</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,350,400,400italic,700,700italic,900,900italic,normal" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="LandingPageStyle.css">
+  <link rel="stylesheet" type="text/css" href="AboutStyle.css">
+  <link rel="stylesheet" type="text/css" href="ScheduleStyle.css">
+  <link rel="stylesheet" type="text/css" href="SponsorStyle.css">
+  <link rel="stylesheet" type="text/css" href="BottomBannerStyle.css">
+  <link rel="stylesheet" type="text/css" href="OverallStyle.css">
+  
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title> BioTEC </title>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
-<body id="body">
-<!--homepage-->
-<div class="homepage-container-wrapper">
-	<div class="homepageboxcontent">
-		<img src="images/whitelogo.svg" class="logo">
-	</div>
-	<div class="homepage-info-container">
-		<div class= "date">Saturday, November 16</div>
-		<a class="location" href="https://goo.gl/maps/vGpYyL5sMyec1oRG8" target="_blank">Engineering 7 <br>University of Waterloo</a>
-	</div>
-	<section id="bottom"> <!--Bottom Box-->
-		<div class="bottomcontainer">
-			<a href="https://www.facebook.com/uwbiotec/" target="_blank">
-				<img src="images/facebook.svg" class="fb">
-			</a>
-			<a href="https://www.linkedin.com/company/biotechnologyandbioengineeringconference/" target="_blank">
-				<img src="images/linkedin.svg" class="linkedin">
-			</a>
-			<a href="mailto: uwbiotec.main@gmail.com">
-				<img src="images/email.svg" class="mail">
-			</a>
-			<div class="bottomcopyrightcontainer">
-				<div class="copyright">©2019 UW BioTEC</div>
-			</div>
+<body>
+<div class="background-image-container">
+<div class="tint-container">
+  <!--LandingPageSection START-->
+  <div class="landingpage-container">
+
+    <header  class="top-banner" id="topbanner">
+      <div class="mini-logo-container" id="bannerlogo">
+        <img src="images/minilogo.svg" class="mini-logo">	
+      </div>
+      <div class="nav-tabs-container">
+        <a href="#about"><div class="nav-tabs">ABOUT</div></a>
+        <a href="#schedule"><div class="nav-tabs">SCHEDULE</div></a>
+        <a href="#sponsors"><div class="nav-tabs">SPONSORS</div></a>
+      </div>
+    </header>
+
+    <div class="landingpage-logo-wrapper">
+      <img src="images/logowhite.svg" class="logo">
+      <div class="location-wrapper">
+        <a href="https://goo.gl/maps/vGpYyL5sMyec1oRG8" target="_blank">
+		<div class="location">
+			Engineering 7 <br>University of Waterloo
 		</div>
-	</section>
+	</a>
+      </div>
+    </div>
+  </div>
+  <!--LandingPageSection END-->
+
+  <!--AboutSection START-->
+  <div class="about-box" id ="about">
+    <div class="about-subsection-box">
+      <div class="about-subsection-title">
+        ABOUT
+      </div>
+      <div class="about-subsection-text">
+          The Biotechnology and Bioengineering Conference (BioTEC) is Canada’s premier student-run conference focused on the intersection of healthcare and technology. BioTEC connects students, researchers, investors, professionals, and entrepreneurs who share a passion for advances in biomedical technology.
+          <br>
+          <br>
+          Through engaging talks, innovative demos, and numerous networking opportunities, BioTEC exposes attendees to world leaders in academia and industry, challenges them to broaden their perspectives, and enables them to make an impact in this exciting and rapidly growing field.
+      </div>
+    </div>
+  </div>
+  <!--AboutSection END-->
+
+  <!--ScheduleSection START-->
+  <div class="schedule-box" id="schedule">
+    <div class="schedule-subsection-box">
+      <div class="schedule-subsection-title">
+        SCHEDULE
+      </div>
+      <div class="schedule-subsection-content">
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:00</div> <div class = "schedule-subsection-titleblock" id = "Registration"> Registration & Refreshments </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:30</div> <div class = "schedule-subsection-titleblock"> Opening Remarks </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:45</div> <div class = "schedule-subsection-titleblock"> Keynote Speaker </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 10:45</div> <div class = "schedule-subsection-titleblock"> Morning Break </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 11:00</div> <div class = "schedule-subsection-titleblock" id = "PitchComp"> Medical Innovation Pitch Competition </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 12:00</div> <div class = "schedule-subsection-titleblock" id = "Lunch"> Lunch | Poster Session & Company Booths </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 13:50</div> <div class = "schedule-subsection-titleblock" id = "Workshops"> Industry Innovation Workshops </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 14:35</div> <div class = "schedule-subsection-titleblock" id = "Breakouts"> Research Breakout Sessions </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 15:15</div> <div class = "schedule-subsection-titleblock"> Afternoon Break </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 15:30</div> <div class = "schedule-subsection-titleblock" id = "Panel"> Technology Solutions in Healthcare Panel </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 16:30</div> <div class = "schedule-subsection-titleblock"> Closing Remarks </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 17:00</div> <div class = "schedule-subsection-titleblock"> Networking Session </div> </div>
+      </div>
+    </div>
+  </div>
+  <!--ScheduleSection END-->
 </div>
+  <!--SponsorSection START-->
+  <div class="sponsors-box" id="sponsors">
+    <div class="sponsors-container">
+    <div class="sponsor-title-wrapper">
+      <div class="sponsor-title">SPONSORS</div>
+    </div>
+    <div class="sponsortxt-wrapper">
+      <div class="sponsortxt">Interested in becoming a sponsor? <strong><a href="mailto: uwbiotec.main@gmail.com" style="color: #FFFFFF">Let’s chat!</a></strong></div>
+    </div>
 
+    <!--Diamond Level-->
+    <div class="sponsor-level-box">
+      <div class="top-box">
+        <div class="sponsor-level-txt">DIAMOND</div>
+        <div class="sponsor-box-top"></div>
+      </div>
+      <div class="sponsor-box">
+        <div class="company-logo-wrapper1">
+          <a href="https://www.intellijointsurgical.com/" target="_blank"><img src="images/intellijoint.svg" class="company-logo"></a>
+          <a href="https://www.relaymedical.com/" target="_blank"><img src="images/relay.svg" class="company-logo"></a>
+        </div>
+        <div class="company-logo-wrapper1">
+          <a href="https://www.baylismedical.com/" target="_blank"><img src="images/baylis.svg" class="company-logo3"></a>
+          <a href="http://www.biotech.ca/" target="_blank"><img src="images/biotec.svg" class="company-logo3"></a>
+        </div>
+      </div>
+    </div>
+    <!-- Diamond Level End-->
 
+    <!--Gold Level-->
+    <div class="sponsor-level-box">
+      <div class="top-box">
+        <div class="sponsor-level-txt">GOLD</div>
+        <div class="sponsor-box-top"></div>
+      </div>
+      <div class="sponsor-box" style="display: block;">
+        <div class="company-logo-wrapper2">
+          <a href="http://conavi.com/" target="_blank"><img src="images/conavi.svg" class="company-logo"></a>
+          <a href="https://starfishmedical.com/" target="_blank"><img src="images/starfish.svg" class="company-logo"></a>
+        </div>
+        <div class="company-logo-wrapper2">
+          <a href="https://www.anton-paar.com/corp-en/" target="_blank"><img src="images/antonpaar.svg" class="company-logo2"></a>
+        </div>
+      </div>
+    </div>
+    <!--Gold Level End-->
 
-<!----section id="middleground"> 
-	<img src="images/vectrefl.svg" class="vectorpatreflect">
-	<img src="images/vect.svg" class="vectorpat">
-	<div class= "middletitle">WHAT IS IT?</div>
-	<div class="bodytxt">The Biotechnology and Bioengineering Conference (BioTEC) is the first of its kind in Canada. Designed as a platform for students, researchers, and entrepreneurs to connect, BioTEC brings together individuals who are passionate about advances in the biomedical field.
-	<br> 
-	<br>Through engaging talks, thought provoking discussions, and numerous networking opportunities, BioTEC challenges students to broaden their perspectives and continue their pursuits at the intersection of science and engineering.
-	<br>
-	<br>Keep an eye out for applications in October 2019!</div>
-	<div class="sectsubtitle"> HIGHLIGHTS FROM 2018</div>
-	<img src="images/speaker.png" class="presentation">
-	<div class="speakertxt">15 Speakers</div>
-	<img src="images/Vector.svg" class="vec1">
-	<img src="images/attendees.png" class="attendees">
-	<div class="attendeetxt">151 Attendees</div>
-	<img src="images/Vector.svg" class = "vec2">
-	<img src="images/handshake.png" class="sponsors">
-	<div class="sponsortxt">15 Sponsors</div>
-</section> middle end-->
+    <!--Pitch Sponsors-->
+    <div class="pitch-sponsor-container">
+      <!--Pitch Place 1-->
+      <div class="pitch-sponsor-place">
+        <div class="top-box">
+          <div class="pitch-level-txt-1">PITCH SPONSOR:<br> 1ST PLACE PRIZE</div>
+          <div class="pitch-box-top-1"></div>
+        </div>
 
+      <div class="pitch-box-1">
+        <div class="pitch-company-logo-wrapper">
+          <a href="https://www.bdc.ca/en/pages/home.aspx" target="_blank"><img src="images/bdc.svg" class="pitch-company-logo"></a>
+        </div>
+      </div>
+      </div>
+      <!-- Pitch Place 1 End-->
 
+      <!--Pitch Place 2-->
+      <div class="pitch-sponsor-place">
+        <div class="top-box">
+          <div class="pitch-level-txt-2">PITCH SPONSOR:<br> 2ND PLACE PRIZE</div>
+          <div class="pitch-box-top-2"></div>
+        </div>
+
+      <div class="pitch-box-2">
+        <div class="pitch-company-logo-wrapper">
+          <a href="https://www.lumiraventures.com/" target="_blank"><img src="images/lumira.svg" class="pitch-company-logo2"></a>
+        </div>
+      </div>
+      </div>
+      <!--Pitch Place 2 End-->
+    </div>
+    </div>
+  </div>
+  <!--SponsorSection END-->
+
+  <!--BottomBannerSection START-->
+  <div class="bottom-banner">
+    <div class="bottom-container">
+      <div class="icon-wrapper">
+        <a href="https://www.facebook.com/uwbiotec/" target="_blank">	
+          <img src="images/facebook.svg" class="icon">
+        </a>
+        <a href="https://www.linkedin.com/company/biotechnologyandbioengineeringconference/" target="_blank">
+          <img src="images/linkedin.svg" class="icon">
+        </a>
+        <a href="https://twitter.com/uwbiotec" target="_blank">
+          <img src="images/twitter.svg" class="icon">
+        </a>
+        <a href="mailto: uwbiotec.main@gmail.com">
+          <img src="images/mail.svg" class="mail">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--BottomBannerSection END-->
+
+</div>
 </body>
-
-
-
-<html>
+</html>

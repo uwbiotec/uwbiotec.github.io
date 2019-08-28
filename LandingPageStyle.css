@@ -1,0 +1,103 @@
+
+.top-banner{
+	position: sticky;
+	top: 0;
+	height: 80px;
+	z-index: 80;
+	align-items: center;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+}
+
+.nav-tabs-container{
+	position: absolute;
+	display: inline-flex;
+	align-items: center;
+	right: 0%;
+}
+
+.nav-tabs{
+	font-family: Lato;
+	font-style: normal;
+	font-size: 0.65em;
+	font-weight: 400;
+	color: #FFFFFF;
+	padding-right: 35%;
+}
+
+.bannerbackground{
+	background-color: #3C130D;
+}
+
+.mini-logo-container{
+	position: absolute;
+	left: 0%;
+	align-items: center;
+}
+
+.mini-logo{
+	position: relative;
+	padding-left: 12.5%;
+	padding-top: 10%;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.landingpage-container{
+	margin: auto;
+	min-height: 100vh;
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: relative;
+	justify-content: center;
+}
+
+.landingpage-logo-wrapper{
+	padding-top: 7.5%;
+	padding-right: 45%;
+	padding-left: 3%;
+	padding-bottom: 7.5%;
+	width: 100%;
+	position: relative;
+	justify-content: center;
+}
+
+.logo{
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 15%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.location-wrapper{
+	width: 100%;
+	justify-content: center;
+	position: relative;
+	padding-top: 2.5%;
+}
+
+.location{
+	text-align: center;
+	position: relative;
+	font-family: Lato;
+	font-style: normal;
+	line-height: 125%;
+	font-size: 1.5em;
+	font-weight: 350;
+	color: #FFFFFF;
+}
