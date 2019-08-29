@@ -40,8 +40,11 @@
 .icon{
 	padding-right: 25%;
 	padding-top: 7.5%;
+	width: 41px;
 }
 
 .mail{
 	padding-top: 7.5%;
+	padding-right: 25%;
+	width: 53px;
 }

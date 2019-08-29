@@ -13,31 +13,74 @@ html {
 	text-decoration: none;
 }
 
-.background-image-container{
-	background-image: url(images/LandingPicture.svg);
+/*.background-image-container{
+	background-image: url(images/LandingPicture.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 70% 0%;
+	background-attachment: fixed;
+	
+	min-height:100vh;
+	width: 100%;
 	position: relative;
 	display: block;
-	background-repeat: no-repeat;
-	background-size: cover;
 	justify-content: center;
-	width: 100%;
-	background-attachment: fixed;
 }
 .tint-container{
-  margin: auto;
-	min-height: 100vh;
-	display: block;
 	background-image: url(images/darkfilter.svg), url(images/gradient.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	min-height: 100vh;
 	width: 100%;
 	position: relative;
+	display: block;
 	justify-content: center;
-  background-attachment: fixed;
+}*/
 
+.background-image-container{
+	
+}
+
+.background-image-container:after{
+	content:"";
+	position:fixed;
+	top:0;
+	min-height:100vh; 
+	left:0;
+	right:0;
+	z-index:-1; 
+	background-image: url(images/LandingPicture.png), url(images/darkfilter.svg), url(images/gradient.svg);
+	background-attachment: center;
+	background-position: 70% 0%;
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.tint-container{
+	background-image: url(images/darkfilter.svg), url(images/gradient.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	display: block;
+	justify-content: center;
 }
 
 @media only screen and (max-width: 1080px){
+	
+	/*Top Banner*/
+	.nav-tabs{
+		padding-right: 20px;
+		width: auto;
+	}
+	
 	.landingpage-logo-wrapper{
 		padding-right: 10%;
 		padding-left: 10%;
@@ -46,8 +89,10 @@ html {
 	.location{
 		font-size: 1.25em;
 	}
-
-
+	
+	.sponsor-box-top{
+		margin-top: 5%;
+	}
 
 	.sponsortxt{
 		font-size: 1em;
@@ -129,7 +174,7 @@ html {
 		padding-top: 9%;
 		padding-bottom: 9%;
 	}
-
+	
 	.pitch-level-txt-1{
 		width: 100%;
 		margin-left: 7%;
@@ -196,14 +241,12 @@ html {
 
 @media only screen and (max-width: 500px){
 
-	.background-image-container{
+	/*.background-image-container{
 		 background-image:url(images/LandingPicturemobile.svg);
 	}
 	/* Landing Page Section */
 
-	.landingpage-container{
-		background-image: url(images/darkfilter.svg), url(images/gradientmobile.svg)
-	}
+	
 
 	.landingpage-logo-wrapper{
 		padding-top: 45%;
@@ -216,6 +259,11 @@ html {
 	}
 
 	/* Sponsors Section */
+	
+	.sponsor-box-top{
+		margin-top: 6%;
+	}
+	
 	.pitch-company-logo{
 		padding-top: 7.5%;
 		padding-bottom: 8.5%;
@@ -247,5 +295,9 @@ html {
 	}
 	.schedule-subsection-line{
 		height: 40px;
+	}
+	
+	.sponsor-box-top{
+		margin-top: 7%;
 	}
 }
