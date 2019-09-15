@@ -5,9 +5,11 @@
   <link rel="stylesheet" type="text/css" href="LandingPageStyle.css">
   <link rel="stylesheet" type="text/css" href="AboutStyle.css">
   <link rel="stylesheet" type="text/css" href="ScheduleStyle.css">
-  <link rel="stylesheet" type="text/css" href="SponsorStyle.css">
+  <link rel="stylesheet" type="text/css" href="SupportStyle.css">
   <link rel="stylesheet" type="text/css" href="BottomBannerStyle.css">
+  <link rel="stylesheet" type="text/css" href="SpeakerStyle.css">
   <link rel="stylesheet" type="text/css" href="OverallStyle.css">
+  
   
   <script type="text/javascript" src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -47,13 +49,27 @@
       <div class="nav-tabs-container">
         <a href="#about"><div class="nav-tabs">ABOUT</div></a>
         <a href="#schedule"><div class="nav-tabs">SCHEDULE</div></a>
+        <a href="#speakers"><div class="nav-tabs">SPEAKERS</div></a>
         <a href="#biospons"><div class="nav-tabs">SPONSORS</div></a>
+        <a href="https://forms.gle/WFxYUMxjgsC4pYp77" target="_blank"><div class="apply-button">APPLY</div></a>
       </div>
     </header>
 
     <div class="landingpage-logo-wrapper">
       <img src="images/BioTECLogoWhite_WithDate_NoShadow.svg" class="logo">
+
+      <img src="images/BioTECLogoWhite.svg" class="mobile-logo">
       <!--<object type="image/svg+xml" data="images/BioTECLogoWhite_WithDate_WithShadow.svg" class="logo"> </object>-->
+      <div class="apply-button-wrapper">
+        <a href="https://forms.gle/WFxYUMxjgsC4pYp77" target="_blank"><div class="apply-button-mobile">APPLY</div></a>        
+      </div>
+
+      <div class="mobile-date-wrapper">
+        <div class="mobile-date">
+            November 16, 2019        
+        </div>
+      </div> 
+
       <div class="location-wrapper">
         <a href="https://goo.gl/maps/vGpYyL5sMyec1oRG8" target="_blank">
 		<div class="location">
@@ -105,23 +121,288 @@
   </div>
   <!--ScheduleSection END-->
 </div>
-  <!--SponsorSection START-->
-  <div class="sponsors-box" id="biospons">
-    <div class="sponsors-container">
-    <div class="sponsor-title-wrapper">
-      <div class="sponsor-title">SPONSORS</div>
+
+<!--SpeakerSection START-->
+<div class="speaker-box" id="speakers">
+  <div class="speaker-container">
+    <div class="speaker-title-wrapper">
+      <div class="speaker-title">SPEAKERS</div>
     </div>
-    <div class="sponsortxt-wrapper">
-      <div class="sponsortxt">Interested in becoming a sponsor? <strong><a href="mailto: uwbiotec.main@gmail.com" style="color: #FFFFFF">Let's chat!</a></strong></div>
+
+    <div class="row-speakers-wrapper">
+      <div class="speaker-wrapper1">
+        
+        <img src="images/speakers/victor.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">KEYNOTE</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Victor Hanson-Smith</div>
+            <div class="speaker-position">CTO, Verge Genomics</div>
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="speaker-wrapper">
+        
+        <img src="images/speakers/meaghan.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">BREAKOUT SESSION</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Meaghan O'Reilly</div>
+            <div class="speaker-position">Professor, University of Toronto</div>
+          </div>
+    
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row-speakers-wrapper">
+      <div class="speaker-wrapper1">
+        
+        <img src="images/speakers/adam.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">BREAKOUT SESSION</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Adam Shlien</div>
+            <div class="speaker-position">Professor, University of Toronto</div>
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="speaker-wrapper">
+        
+        <img src="images/speakers/shideh.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">BREAKOUT SESSION</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Shideh Ameri</div>
+            <div class="speaker-position">Professor, Queen's University</div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="row-speakers-wrapper">
+      <div class="speaker-wrapper1">
+        
+        <img src="images/speakers/amr.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">CLINICAL TECHNOLOGY PANEL</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Amr Abdelgawad</div>
+            <div class="speaker-position">COO, NERv</div>
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="speaker-wrapper">
+        
+        <img src="images/speakers/brian.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">CLINICAL TECHNOLOGY PANEL</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Brian Courtney</div>
+            <div class="speaker-position">Co-Founder, Conavi Medical</div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="row-speakers-wrapper">
+      <!--div class="speaker-wrapper">
+        
+        <img src="images/speakers/ken.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">CLINCAL TECHNOLOGY PANEL</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Ken Pritzker</div>
+            <div class="speaker-position">Professor/CEO, University of Toronto/York MedTech Ventures</div>
+          </div>
+    
+        </div>
+      </div-->
+
+      <div class="speaker-wrapper1">
+        
+        <img src="images/speakers/ed.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">CLINICAL TECHNOLOGY PANEL</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Ed Harvey</div>
+            <div class="speaker-position">Professor/Co-Founder, McGill University/MY01</div>
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="speaker-wrapper">
+        
+        <img src="images/speakers/cari.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">CLINICAL TECHNOLOGY PANEL</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Cari Whyne</div>
+            <div class="speaker-position">Professor, University of Toronto</div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="row-speakers-wrapper">
+      <div class="speaker-wrapper1">
+        
+        <img src="images/speakers/michael.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">CLINICAL TECHNOLOGY PANEL</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Michael Winter</div>
+            <div class="speaker-position">Director of Product, Mavencare</div>
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="speaker-wrapper">
+        
+        <img src="images/speakers/ricky.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">PITCH COMPETITION</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Ricky Mehra</div>
+            <div class="speaker-position">General Partner, Continuum Ventures</div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="row-speakers-wrapper">
+      <div class="speaker-wrapper1">
+        
+        <img src="images/speakers/allan.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">PITCH COMPETITION</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Allan Miranda</div>
+            <div class="speaker-position">Head of JLABS Canada</div>
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="speaker-wrapper">
+        
+        <img src="images/speakers/Amine.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">PITCH COMPETITION</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Amine Benmoussa</div>
+            <div class="speaker-position">Principal, BDC</div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="row-speakers-wrapper">
+      <div class="speaker-wrapper1">
+        
+        <img src="images/speakers/nikhil.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">PITCH COMPETITION</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Nikhil Thatte</div>
+            <div class="speaker-position">Princiapl, Lumira Ventures</div>
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="speaker-wrapper">
+        
+        <img src="images/speakers/armen.png" class="speaker-img">
+        
+        <div class="speaker-info-wrapper">
+          
+          <div class="speaker-role">PITCH COMPETITION</div>
+          
+          <div class="speaker-spec-wrapper">
+            <div class="speaker-name">Armen Bakirtzian</div>
+            <div class="speaker-position">CEO & Co-Founder, Intellijoint Surgical</div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--SpeakerSection END-->
+  <!--supportSection START-->
+  <div class="supports-box" id="biospons">
+    <div class="supports-container">
+    <div class="support-title-wrapper">
+      <div class="support-title">SPONSORS</div>
+    </div>
+    <div class="supporttxt-wrapper">
+      <div class="supporttxt">Interested in becoming a sponsor? <strong><a href="mailto: uwbiotec.main@gmail.com" style="color: #FFFFFF">Let's chat!</a></strong></div>
     </div>
 
     <!--Diamond Level-->
-    <div class="sponsor-level-box">
+    <div class="support-level-box">
       <div class="top-box">
-        <div class="sponsor-level-txt">DIAMOND</div>
-        <div class="sponsor-box-top"></div>
+        <div class="support-level-txt">DIAMOND</div>
+        <div class="support-box-top"></div>
       </div>
-      <div class="sponsor-box">
+      <div class="support-box">
         <div class="company-logo-wrapper1">
           <a href="https://www.intellijointsurgical.com/" target="_blank"><img src="images/intellijoint.svg" class="company-logo"></a>
           <a href="https://www.relaymedical.com/" target="_blank"><img src="images/relay.svg" class="company-logo"></a>
@@ -135,12 +416,12 @@
     <!-- Diamond Level End-->
 
     <!--Gold Level-->
-    <div class="sponsor-level-box">
+    <div class="support-level-box">
       <div class="top-box">
-        <div class="sponsor-level-txt">GOLD</div>
-        <div class="sponsor-box-top"></div>
+        <div class="support-level-txt">GOLD</div>
+        <div class="support-box-top"></div>
       </div>
-      <div class="sponsor-box" style="display: block;">
+      <div class="support-box" style="display: block;">
         <div class="company-logo-wrapper2">
           <a href="http://conavi.com/" target="_blank"><img src="images/conavi.svg" class="company-logo"></a>
           <a href="https://starfishmedical.com/" target="_blank"><img src="images/starfish.svg" class="company-logo"></a>
@@ -152,10 +433,21 @@
     </div>
     <!--Gold Level End-->
 
-    <!--Pitch Sponsors-->
-    <div class="pitch-sponsor-container">
+    <div class="pitch-apply-txt-wrapper">
+      <div class="pitch-apply-txt">Applications for the pitch competition are now open!</div>      
+    </div>
+
+    <div class="pitch-button-wrapper">
+      <a href="https://forms.gle/SwH9yWVoT5cnMxnU9" target="_blank">
+        <div class="pitch-apply-button">APPLY TO PITCH YOUR IDEA</div>
+      </a>      
+    </div>
+
+
+    <!--Pitch supports-->
+    <div class="pitch-support-container">
       <!--Pitch Place 1-->
-      <div class="pitch-sponsor-place">
+      <div class="pitch-support-place">
         <div class="top-box">
           <div class="pitch-level-txt-1">PITCH SPONSOR:<br> 1ST PLACE PRIZE</div>
           <div class="pitch-box-top-1"></div>
@@ -170,7 +462,7 @@
       <!-- Pitch Place 1 End-->
 
       <!--Pitch Place 2-->
-      <div class="pitch-sponsor-place">
+      <div class="pitch-support-place">
         <div class="top-box">
           <div class="pitch-level-txt-2">PITCH SPONSOR:<br> 2ND PLACE PRIZE</div>
           <div class="pitch-box-top-2"></div>
@@ -184,9 +476,10 @@
       </div>
       <!--Pitch Place 2 End-->
     </div>
+
     </div>
   </div>
-  <!--SponsorSection END-->
+  <!--supportSection END-->
 
   <!--BottomBannerSection START-->
   <div class="bottom-banner">

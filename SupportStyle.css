@@ -1,0 +1,325 @@
+
+.supports-container{
+	background-image: url(images/supportfilter.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	display: block;
+}
+
+.supports-box{
+	width:100%;
+}
+
+.support-title-wrapper{
+	width: 100%;
+	position: relative;
+	padding-top: 5%;
+	padding-bottom: 2%;
+	justify-content: center;
+}
+
+.support-title{
+	text-align: left;
+	position: relative;
+	font-family: Lato;
+	font-style: normal;
+	font-size: 1.75em;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-left: 7%;
+	line-height:74px;
+}
+
+.supporttxt-wrapper{
+	justify-content: center;
+	width: 100%;
+	position: relative;
+}
+
+.supporttxt{
+	text-align: left;
+	position: relative;
+	font-family: Lato;
+	font-style: normal;
+	font-size: 0.85em;
+	font-weight: 400;
+	color: #FFFFFF;
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.supports{
+	background-size: auto;
+	position: relative;
+	justify-content: center;
+	display: block;
+	height: 569px;
+	background-repeat: no-repeat;
+	margin-left: 7%;
+	padding-right: 5%;
+	margin-top: 2.5%;
+}
+
+.support-level-box{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.top-box{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.support-level-txt{
+	text-align: left;
+	position: relative;
+	font-family: Lato;
+	font-size: 1.15em;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.644);
+	margin-left: 7%;
+	padding-right: 2.5%;
+	padding-bottom: 1.5%;
+	padding-top: 3.5%;
+	display: inline-block;
+	float: left;
+	white-space: nowrap;
+}
+
+.support-box-top{
+	border-top: 4.5px solid rgba(255, 255, 255, 0.43);
+	border-right: 4.5px solid rgba(255, 255, 255, 0.43);
+	margin-top: 4.85%;
+	width: 100%;
+	margin-right: 7%;
+}
+
+.support-box{
+	position: relative;
+	margin-left: 7%;
+	border-left: 4.5px solid rgba(255, 255, 255, 0.43);
+	border-bottom: 4.5px solid rgba(255, 255, 255, 0.43);
+	margin-right: 7%;
+	border-right: 4.5px solid rgba(255, 255, 255, 0.43);
+	display: flex;
+} 
+
+.company-logo-wrapper1{
+	padding-bottom: 1.5%;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	display: block;
+	width: 50%;
+	height: 100%;
+}
+.company-logo-wrapper2{
+	padding-top: 1%;
+	padding-bottom: 3%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 100%;
+	height: 50%;
+}
+.company-logo{
+	position: relative;
+	padding-left: 12%;
+	padding-right: 12%;
+	padding-top: 9%;
+	padding-bottom: 9%;
+	width: 100%;
+}
+.company-logo2{
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	position: relative;
+	padding-left: 12%;
+	padding-right: 12%;
+	width: 100%;
+}
+
+.company-logo3{
+	padding-top: 12%;
+	padding-bottom: 9%;
+	width: 100%;
+	position: relative;
+	padding-left: 12%;
+	padding-right: 12%;
+}
+
+.pitch-support-container{
+	position: relative;
+	width: 100%;
+	display: flex;
+	padding-bottom: 4.5%;
+}
+
+.pitch-support-place{
+	width: 50%;
+	position: relative;
+}
+
+.pitch-level-txt-1{
+	text-align: left;
+	position: relative;
+	font-family: Lato;
+	font-size: 1.15em;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.644);
+	margin-left: 14%;
+	padding-right: 3.5%;
+	padding-bottom: 3.5%;
+	padding-top: 7%;
+	display: inline-block;
+	float: left;
+	white-space: nowrap;
+}
+
+.pitch-level-txt-2{
+	text-align: left;
+	position: relative;
+	font-family: Lato;
+	font-size: 1.15em;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.644);
+	margin-left: 7%;
+	padding-right: 3.5%;
+	padding-bottom: 3.5%;
+	padding-top: 7%;
+	display: inline-block;
+	float: left;
+	white-space: nowrap;
+}
+
+.pitch-box-top-1{
+	border-top: 4.5px solid rgba(255, 255, 255, 0.43);
+	border-right: 4.5px solid rgba(255, 255, 255, 0.43);
+	margin-top: 12%;
+	width: 100%;
+	margin-right: 7%;
+	
+}
+
+.pitch-box-top-2{
+	border-top: 4.5px solid rgba(255, 255, 255, 0.43);
+	border-right: 4.5px solid rgba(255, 255, 255, 0.43);
+	margin-top: 12%;
+	width: 100%;
+	margin-right: 14%;
+}
+
+.pitch-box-1{
+	position: relative;
+	margin-left: 14%;
+	border-left: 4.5px solid rgba(255, 255, 255, 0.43);
+	border-bottom: 4.5px solid rgba(255, 255, 255, 0.43);
+	margin-right: 7%;
+	border-right: 4.5px solid rgba(255, 255, 255, 0.43);
+	height: 370px;
+} 
+
+.pitch-box-2{
+	position: relative;
+	margin-left: 7%;
+	border-left: 4.5px solid rgba(255, 255, 255, 0.43);
+	border-bottom: 4.5px solid rgba(255, 255, 255, 0.43);
+	margin-right: 14%;
+	border-right: 4.5px solid rgba(255, 255, 255, 0.43);
+	height: 370px;
+	align-items: center;
+}
+
+.pitch-company-logo-wrapper{
+	padding-top: 1%;
+	padding-bottom: 3%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+.pitch-company-logo{
+	position: relative;
+	padding-left: 8%;
+	padding-right: 6%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	width: 100%;
+	height: 100%;
+}
+
+.pitch-company-logo2{
+	position: absolute;
+	top: 25%;
+	padding-left: 8%;
+	padding-right: 6%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: 100%;
+}
+
+.pitch-apply-txt-wrapper{
+	text-align: center;
+	position: relative;
+	padding-bottom: 1.5%;
+	padding-top: 3%;	
+}
+
+.pitch-apply-txt{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Lato;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+.pitch-button-wrapper{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-bottom: 1%;
+}
+
+
+.pitch-apply-button{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Lato;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: 500;
+	color: #FFFFFF;
+	border-radius: 10px;
+	border: 1.75px solid #FFFFFF;
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+
+.supports-box::before {
+	display: block; 
+	content: " "; 
+	margin-top: -80px; 
+	height: 80px; 
+	visibility: hidden; 
+	pointer-events: none;
+  }

@@ -82,19 +82,19 @@ html {
 	}
 	
 	.landingpage-logo-wrapper{
-		padding-right: 10%;
+		padding-right: 20%;
 		padding-left: 10%;
-		}
+	}
 
 	.location{
 		font-size: 1.25em;
 	}
 	
-	.sponsor-box-top{
+	.support-box-top{
 		margin-top: 5%;
 	}
 
-	.sponsortxt{
+	.supporttxt{
 		font-size: 1em;
 		padding-bottom: 3.5%;
 		padding-top: 3.5%;
@@ -126,7 +126,7 @@ html {
 		height: 50%;
 	}
 
-	.sponsor-box{
+	.support-box{
 		display: block;
 	}
 
@@ -152,13 +152,30 @@ html {
 		display: none;
 	}
 
-	.landingpage-logo-wrapper{
-		padding-top: 30%;
+	.apply-button-wrapper{
+		display: block;
 	}
+
+	.landingpage-logo-wrapper{
+		padding-top: 20%;
+		padding-right: 10%;
+		justify-content: center;
+	}
+
 	.logo{
-		padding-top: 2.5%;
-		padding-left: 2.5%;
-		padding-right: 7.5%;
+		display: none;
+	}
+
+	.mobile-logo{
+		display: inline-block;
+	}
+
+	.mobile-date-wrapper{
+		display: block;
+	}
+
+	.location{
+		font-size: 1.05em;
 	}
 
 	.company-logo{
@@ -198,13 +215,13 @@ html {
 		margin-right: 7%;
 	}
 
-	.pitch-sponsor-container{
+	.pitch-support-container{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 
-	.pitch-sponsor-place{
+	.pitch-support-place{
 		width: 100%;
 	}
 
@@ -237,6 +254,35 @@ html {
 	.schedule-subsection-line{
 		height: 47px;
 	}
+
+	.row-speakers-wrapper{
+		flex-direction: column;
+	}
+
+	.speaker-wrapper1{
+		width: 100%;
+		padding-bottom: 2.25%;
+	}
+
+	.speaker-wrapper{
+		width: 100%;
+		padding-top: 2.25%;
+	}
+
+	.speaker-role{
+		font-size: 1em;
+		padding-bottom: 15px;
+		padding-top: 10px;
+	}
+
+	.speaker-name{
+		font-size: 0.85em;
+	}
+
+	.speaker-position{
+		font-size: 0.75em;
+	}
+
 }
 
 @media only screen and (max-width: 500px){
@@ -249,7 +295,7 @@ html {
 	
 
 	.landingpage-logo-wrapper{
-		padding-top: 45%;
+		padding-top: 30%;
 	}
 
 	.logo{
@@ -258,9 +304,17 @@ html {
 		padding-top: 0%;
 	}
 
-	/* Sponsors Section */
+	.apply-button-wrapper{
+		padding-top: 5%;
+	}
+
+	.mobile-date-wrapper{
+		padding-top: 12.5%;
+	}
+
+	/* supports Section */
 	
-	.sponsor-box-top{
+	.support-box-top{
 		margin-top: 6%;
 	}
 	
@@ -287,6 +341,20 @@ html {
 	.schedule-subsection-line{
 		height: 42px;
 	}
+
+	.speaker-role{
+		font-size: 0.875em;
+		padding-bottom: 15px;
+		padding-top: 10px;
+	}
+
+	.speaker-name{
+		font-size: 0.775em;
+	}
+
+	.speaker-position{
+		font-size: 0.675em;
+	}
 }
 
 @media only screen and (max-width: 325px){
@@ -297,7 +365,7 @@ html {
 		height: 40px;
 	}
 	
-	.sponsor-box-top{
+	.support-box-top{
 		margin-top: 7%;
 	}
 }
