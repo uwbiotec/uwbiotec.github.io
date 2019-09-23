@@ -259,14 +259,18 @@ html {
 		flex-direction: column;
 	}
 
+	.row-speakers-wrapper{
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
 	.speaker-wrapper1{
 		width: 100%;
-		padding-bottom: 2.25%;
 	}
 
 	.speaker-wrapper{
 		width: 100%;
-		padding-top: 2.25%;
+		padding-top: 5%;
 	}
 
 	.speaker-role{
@@ -281,6 +285,10 @@ html {
 
 	.speaker-position{
 		font-size: 0.75em;
+	}
+
+	.speaker-bio-wrapper{
+		display: block;
 	}
 
 }

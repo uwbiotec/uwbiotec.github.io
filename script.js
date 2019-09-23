@@ -53,3 +53,28 @@ function setContent(){
 	}
 
 }
+
+function showBio(div){
+	var bios = document.getElementsByClassName("speaker-bio-wrapper");
+	var i;
+
+	for(i=0; i<bios.length; i++){
+		bios[i].classList.remove('open')
+	}
+
+	div.nextSibling.nextSibling.classList.toggle("open");
+
+}
+
+window.onclick = function(event){
+
+	if(!event.target.matches('.speaker-wrapper')){
+		var bios = document.getElementsByClassName("speaker-bio-wrapper");
+		var i;
+		for(i=0; i<bios.length; i++){
+			if (bios[i].classList.contains('open')){
+				bios[i].classList.remove('open');
+			}
+		}
+	}
+}

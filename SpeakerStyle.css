@@ -1,18 +1,8 @@
 
-/*.speaker-vector-wrapper{
-	width: 100%;
-	padding-top: 2.5%;
-	padding-bottom: 2.5%;
-	display: flex;
-}
-
-.speaker-vector{
-	padding: 2.5%;
-}*/
-
 .speaker-box{
 	width: 100%;
 }
+
 .speaker-container{
 	background-image: url(images/supportfilter.svg);
 	background-size: cover;
@@ -42,6 +32,13 @@
 	padding-bottom: 1.5%;
 }
 
+.keynote-wrapper{
+	width: 100%;
+	padding-top: 2.25%;
+	padding-bottom: 2.25%;
+	padding-right: 4%;
+}
+
 .row-speakers-wrapper{
 	padding-top: 2.25%;
 	padding-bottom: 2.25%;
@@ -49,18 +46,20 @@
 	padding-right: 4%;
 }
 
-.speaker-wrapper1{
-	width: 50%;
-	padding-left: 7%;
-	height: 150px;
-	display: flex;
-}
-
 .speaker-wrapper{
 	width: 50%;
 	padding-left: 7%;
-	height: 150px;
 	display: flex;
+	padding-top: 1.25%;
+	z-index: 15;
+}
+
+.speaker-wrapper > *{
+	pointer-events: none;
+}
+
+.speaker-wrapper1 > *{
+	pointer-events: none;
 }
 
 .speaker-img{
@@ -108,8 +107,38 @@
 	font-family: Lato;
 	font-style: normal;
 	font-size: 0.6em;
-	font-weight: 250;
+	font-weight: 300;
 	color: #FFFFFF;
+}
+
+.speaker-bio-wrapper{
+	width: 93%;
+	margin-left: 7%;
+	max-height: 0px;
+	height: auto;
+	display: none;
+	overflow: hidden;
+	transition: max-height 1.25s linear;
+	background-color: rgba(84, 25, 17, 0.4);
+}
+
+.keynote-bio-wrapper{
+	width: 100%;
+	background-color: rgba(84, 25, 17, 0.4);
+}
+
+.speaker-bio{
+	position: relative;
+	font-family: Lato;
+	font-style: normal;
+	font-size: 0.8em;
+	color: #FFFFFF;
+	text-align: justify;
+	padding: 2.5%;
+}
+
+.open{
+	max-height: 1000px;
 }
 
 .speaker-box::before{
