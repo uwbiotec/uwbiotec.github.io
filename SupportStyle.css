@@ -13,6 +13,7 @@
 
 .supports-box{
 	width:100%;
+	padding-right: 2px;
 }
 
 .support-title-wrapper{
@@ -137,6 +138,7 @@
 	padding-bottom: 9%;
 	width: 100%;
 }
+
 .company-logo2{
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;

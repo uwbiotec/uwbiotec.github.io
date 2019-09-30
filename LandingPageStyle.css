@@ -28,6 +28,10 @@
 	padding-right: 45px;
 }
 
+.nav-tabs:hover{
+	color: rgba(255, 255, 255, 0.43);
+}
+
 .apply-button{
 	font-family: Lato;
 	font-style: normal;
@@ -41,6 +45,12 @@
 	padding-left: 14.5px;
 	border-radius: 10px;
 	border: 1.5px solid #FFFFFF;
+}
+
+.apply-button:hover{
+	color: #3C130D;
+	border: 1.5px solid #3C130D;
+	background-color: #FFFFFF;
 }
 
 .apply-button-wrapper{
@@ -195,4 +205,8 @@
 	font-size: 1.5em;
 	font-weight: 350;
 	color: #FFFFFF;
+}
+
+.location:hover{
+	color: rgba(255, 255, 255, 0.43);
 }
