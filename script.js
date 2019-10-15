@@ -206,6 +206,7 @@ function navigate(a){
 		midbar.style.display="block";
 		navtabs.style.display="none";
 		banner.style.height = "60px";
+		document.body.classList.remove("noScroll");
 	}
 
 	
