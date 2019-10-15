@@ -62,8 +62,8 @@
 
 .speaker-wrapper{
 	width: 100%;
-	padding-left: 23px;
-	padding-right: 23px;
+	padding-left: 3.5%;
+	padding-right: 3.5%;
 	display: flex;
 	padding-top: 33px;
 	z-index: 15;
@@ -99,7 +99,6 @@
 .speaker-img{
 	width: 125px;
 	height: 150px;
-	z-index: 10;
 }
 
 .speaker-img:hover{

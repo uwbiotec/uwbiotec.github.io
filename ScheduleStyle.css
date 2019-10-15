@@ -33,24 +33,36 @@
   margin-bottom: 20px;
   float: left;
 
-  border-right: 2px solid #FFFFFF;
+  border-right: 2px solid rgba(255, 255, 255, 0.7);
   font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 0.85em;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.7);
 
 }
-.schedule-subsection-titleblock {
+.schedule-subsection-titleblock-high-impact {
   padding-left: 3%;
   margin-bottom: 20px;
   float:left;
 
   font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   font-size: 0.85em;
   color: #FFFFFF;
+}
+
+.schedule-subsection-titleblock-low-impact {
+  padding-left: 3%;
+  margin-bottom: 20px;
+  float:left;
+
+  font-family: Lato;
+  font-style: italic;
+  font-weight: 300; 
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85em;
 }
 
 .schedule-box::before {

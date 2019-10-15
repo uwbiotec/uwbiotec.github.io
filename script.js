@@ -9,28 +9,50 @@ window.onresize = function(){setContent();};
 
 var stickbanner_func = function stickBanner() {
 		var sticky = document.getElementById("topbanner").offsetTop;
-		if (window.pageYOffset > sticky) {
-		  	
-		    document.getElementById("topbanner").classList.add("sticky");
-		  } else {
-		    document.getElementById("topbanner").classList.remove("sticky");
-		  }
+		
+		if(screen.width>700){	
+
+			if (window.pageYOffset > sticky) {
+			  	
+			    document.getElementById("topbanner").classList.add("sticky");
+			  } else {
+			    document.getElementById("topbanner").classList.remove("sticky");
+			  }
+		} else{
+			document.getElementById("topbanner").classList.add("sticky");
+		}
 }
 
 
 function showHideBanner(){
 	var abouttop = document.getElementById("about").offsetTop;
 	
-	if (window.pageYOffset >= abouttop-100){
-		document.getElementById("bannerlogo").classList.add("fade");
-		document.getElementById("topbanner").classList.add("bannerbackground");
-		stickbanner_func();
-	}
-	else{
-		document.getElementById("bannerlogo").classList.remove("fade");
-		document.getElementById("topbanner").classList.remove("bannerbackground");
-		document.getElementById("topbanner").classList.add("bannerbackground-out");
-		stickbanner_func();
+	if (screen.width>700){
+
+		if (window.pageYOffset >= abouttop-100){
+			document.getElementById("bannerlogo").classList.add("fade");
+			document.getElementById("topbanner").classList.add("bannerbackground");
+			stickbanner_func();
+		}
+		else{
+			document.getElementById("bannerlogo").classList.remove("fade");
+			document.getElementById("topbanner").classList.remove("bannerbackground");
+			document.getElementById("topbanner").classList.add("bannerbackground-out");
+			stickbanner_func();
+		}
+	} else{
+
+		if (window.pageYOffset >= window.innerHeight-150){
+			document.getElementById("bannerlogo").classList.add("fade");
+			document.getElementById("topbanner").classList.add("bannerbackground");
+			stickbanner_func();
+		}
+		else{
+			document.getElementById("bannerlogo").classList.remove("fade");
+			document.getElementById("topbanner").classList.remove("bannerbackground");
+			document.getElementById("topbanner").classList.add("bannerbackground-out");
+			stickbanner_func();
+		}
 	}
 }
 
@@ -38,18 +60,18 @@ function setContent(){
 	if (screen.width < 700){
 		document.getElementById("Registration").textContent = "Registration";
 		document.getElementById("PitchComp").textContent = "Pitch Competition";
-		document.getElementById("Lunch").textContent = "Lunch | Posters & Booths";
+		document.getElementById("Lunch").textContent = "Lunch";
 		document.getElementById("Workshops").textContent = "Industry Workshops";
 		document.getElementById("Breakouts").textContent = "Research Breakouts";
 		document.getElementById("Panel").textContent = "Academic Panel";
 	}
 	else{
-		document.getElementById("Registration").textContent = "Registration & Refreshments";
-		document.getElementById("PitchComp").textContent = "Medical Innovation Pitch Competition";
-		document.getElementById("Lunch").textContent = "Lunch | Poster Session & Company Booths";
+		document.getElementById("Registration").textContent = "Registration";
+		document.getElementById("PitchComp").textContent = "Capstone Pitch Competition";
+		document.getElementById("Lunch").textContent = "Lunch Session";
 		document.getElementById("Workshops").textContent = "Industry Innovation Workshops";
-		document.getElementById("Breakouts").textContent = "Research Breakout Sessions";
-		document.getElementById("Panel").textContent = "Technology Solutions in Healthcare Panel";;
+		document.getElementById("Breakouts").textContent = "Breakout Sessions";
+		document.getElementById("Panel").textContent = "Clinical Technology Panel";;
 	}
 
 }
@@ -126,6 +148,77 @@ window.onclick = function(event){
 			}
 		}
 	}
+}
 
+function menuToggle(){
+
+	var topbar = document.getElementById("topline");
+	var midbar = document.getElementById("middleline");
+	var botbar = document.getElementById("bottomline");
+	var navtabs = document.getElementById("navtabs");
+	var banner = document.getElementById("topbanner");
+	var logo = document.getElementById("bannerlogo");
+
+	if (topbar.classList.contains("rotate45") && botbar.classList.contains("rotate135")
+		&& midbar.style.display=="none" && navtabs.style.display=== "flex"){
+
+		topbar.classList.remove("rotate45");
+		botbar.classList.remove("rotate135");
+		midbar.style.display="block";
+		navtabs.style.display="none";
+
+		banner.style.height = "60px";
+		
+		if (window.pageYOffset >= window.innerHeight-150){
+			logo.classList.add("fade");
+		}
+		
+		if (window.pageYOffset <= window.innerHeight-150){
+			banner.classList.remove("bannerbackground");
+			banner.classList.add("bannerbackground-out");
+		}
+
+		document.body.classList.remove("noScroll");
+
+	} else{
+		topbar.classList.add("rotate45");
+		botbar.classList.add("rotate135");
+		midbar.style.display = "none";
+		navtabs.style.display = "flex";
+		banner.style.height = "100vh";
+		banner.classList.add("bannerbackground");
+		logo.classList.remove("fade");
+		document.body.classList.add("noScroll");
+	}
 
 }
+
+function navigate(a){
+	var topbar = document.getElementById("topline");
+	var midbar = document.getElementById("middleline");
+	var botbar = document.getElementById("bottomline");
+	var navtabs = document.getElementById("navtabs");
+	var banner = document.getElementById("topbanner");
+
+	if (screen.width <= 700){
+		topbar.classList.remove("rotate45");
+		botbar.classList.remove("rotate135");
+		midbar.style.display="block";
+		navtabs.style.display="none";
+		banner.style.height = "60px";
+	}
+
+	
+}
+
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash;
+        $('html, body').stop().animate({
+            'scrollTop':  $(target).offset().top
+        }, 750, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+});
