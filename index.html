@@ -11,9 +11,9 @@
   <link rel="stylesheet" type="text/css" href="OverallStyle.css">
   
   
-  <script type="text/javascript" src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <script type="text/javascript" src="script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title> BioTEC </title>
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -39,19 +39,28 @@
 <div class="background-image-container">
 <div class="tint-container">
   <!--LandingPageSection START-->
-  <div class="landingpage-container">
+  <div class="landingpage-container" id="index">
 
     <header  class="top-banner" id="topbanner">
       <div class="mini-logo-container" id="bannerlogo">
         <!--<img src="images/BioTECLogoWhite.svg" class="mini-logo">-->
-        <object type="image/svg+xml" data="images/BioTECLogoWhite.svg" class="mini-logo"> </object>
-
+        <a href="#index">
+	        <object type="image/svg+xml" data="images/BioTECLogoWhite.svg" class="mini-logo"> </object>
+	        <img src="images/mobile-logo.png" class="mobile-mini-logo">
+	    </a>
       </div>
-      <div class="nav-tabs-container">
-        <a href="#about"><div class="nav-tabs">ABOUT</div></a>
-        <a href="#schedule"><div class="nav-tabs">SCHEDULE</div></a>
-        <a href="#speakers"><div class="nav-tabs">SPEAKERS</div></a>
-        <a href="#biospons"><div class="nav-tabs">SPONSORS</div></a>
+
+      <a class="mobile-menu-container" href="#" id="mobilemenu" onclick="menuToggle()">
+        <div class="mobile-line1" id="topline"></div>
+        <div class="mobile-line2" id="middleline"></div>
+        <div class="mobile-line3" id="bottomline"></div>
+      </a>
+
+      <div class="nav-tabs-container" id="navtabs">
+        <a href="#about"  onclick="navigate(this)"><div class="nav-tabs">ABOUT</div></a>
+        <a href="#schedule" onclick="navigate(this)"><div class="nav-tabs">SCHEDULE</div></a>
+        <a href="#speakers" onclick="navigate(this)"><div class="nav-tabs">SPEAKERS</div></a>
+        <a href="#biospons" onclick="navigate(this)"><div class="nav-tabs">SPONSORS</div></a>
         <a href="https://forms.gle/WFxYUMxjgsC4pYp77" target="_blank"><div class="apply-button">APPLY</div></a>
       </div>
     </header>
@@ -105,18 +114,18 @@
         SCHEDULE
       </div>
       <div class="schedule-subsection-content">
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:00</div> <div class = "schedule-subsection-titleblock" id = "Registration"> Registration & Refreshments </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:30</div> <div class = "schedule-subsection-titleblock"> Opening Remarks </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:45</div> <div class = "schedule-subsection-titleblock"> Keynote Speaker </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 10:45</div> <div class = "schedule-subsection-titleblock"> Morning Break </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 11:00</div> <div class = "schedule-subsection-titleblock" id = "PitchComp"> Medical Innovation Pitch Competition </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 12:00</div> <div class = "schedule-subsection-titleblock" id = "Lunch"> Lunch | Poster Session & Company Booths </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 13:50</div> <div class = "schedule-subsection-titleblock" id = "Workshops"> Industry Innovation Workshops </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 14:35</div> <div class = "schedule-subsection-titleblock" id = "Breakouts"> Research Breakout Sessions </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 15:15</div> <div class = "schedule-subsection-titleblock"> Afternoon Break </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 15:30</div> <div class = "schedule-subsection-titleblock" id = "Panel"> Technology Solutions in Healthcare Panel </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 16:30</div> <div class = "schedule-subsection-titleblock"> Closing Remarks </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 17:00</div> <div class = "schedule-subsection-titleblock"> Networking Session </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:00</div> <div class = "schedule-subsection-titleblock-low-impact" id = "Registration"> Registration</div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:30</div> <div class = "schedule-subsection-titleblock-low-impact"> Opening Remarks </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:45</div> <div class = "schedule-subsection-titleblock-high-impact"> Keynote </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 10:45</div> <div class = "schedule-subsection-titleblock-low-impact">Break </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 11:00</div> <div class = "schedule-subsection-titleblock-high-impact" id = "PitchComp"> Capstone Pitch Competition </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 12:00</div> <div class = "schedule-subsection-titleblock-low-impact" id = "Lunch"> Lunch Session </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 13:50</div> <div class = "schedule-subsection-titleblock-high-impact" id = "Workshops"> Industry Innovation Workshops </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 14:35</div> <div class = "schedule-subsection-titleblock-high-impact" id = "Breakouts"> Breakout Sessions </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 15:15</div> <div class = "schedule-subsection-titleblock-low-impact">Break </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 15:30</div> <div class = "schedule-subsection-titleblock-high-impact" id = "Panel"> Clinical Technology Panel </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 16:30</div> <div class = "schedule-subsection-titleblock-low-impact"> Closing Remarks </div> </div>
+        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 17:00</div> <div class = "schedule-subsection-titleblock-low-impact"> Networking </div> </div>
       </div>
     </div>
   </div>
@@ -133,6 +142,7 @@
   <div class="desktop-speaker-container">
     <div class="column-one-speakers-wrapper"> <!--Desktop Speakers 1 Col Start-->
       <div class="speaker-wrapper" id="speaker" onclick="showBio1(this)">
+        
         
         <img src="images/speakers/victor.png" class="speaker-img">
         
@@ -155,6 +165,7 @@
       </div>
 
       <div class="speaker-wrapper" onclick="showBio1(this)">
+        
         
         <img src="images/speakers/adam.png" class="speaker-img">
         
@@ -609,7 +620,7 @@
       	</div>
    	</div>
    	<div class="speaker-bio-wrapper" id="speakerbiowrap2">
-            	<div class="speaker-bio" id="speakerbio">Dr. Shideh Kabiri Ameri is an Assistant Professor in the Department of Electrical and Computer Engineering at Queen’s University. Her research is mainly focused on two dimensional materials based electronics with applications in sensing, bioelectronics, wearables, internet of things (HMI) and human machine interfaces (HMI). Her research work has been recognized internationally and repeatedly highlighted by media and news outlets including BBC, IEEE Spectrum, Phys.Org, International Business Times UK and many more.</div>
+            	<div class="speaker-bio" id="speakerbio">Dr. Shideh Kabiri Ameri is an Assistant Professor in the Department of Electrical and Computer Engineering at Queen's University. Her research is mainly focused on two dimensional materials based electronics with applications in sensing, bioelectronics, wearables, internet of things (HMI) and human machine interfaces (HMI). Her research work has been recognized internationally and repeatedly highlighted by media and news outlets including BBC, IEEE Spectrum, Phys.Org, International Business Times UK and many more.</div>
               <div class="arrow-wrapper">
                 <div class="arrow-left"></div>
                 <div class="arrow-right"></div>
@@ -870,7 +881,7 @@
         </div>
       </div>
       <div class="speaker-bio-wrapper" id="speakerbiowrap2">
-            	<div class="speaker-bio" id="speakerbio">Allan Miranda is the Head of Johnson & Johnson Innovation, JLABS in Canada where he leads the translation of science and technology into solutions across the pharmaceutical, medical device, consumer, and healthtech sectors. He spent 12 years at Janssen Canada where he led market access strategy for a >$1B product portfolio. He has also worked on technology transfer and business development for various Canadian biotech companies. Allan received his PhD from Queen’s and his MBA from McGill.</div>
+            	<div class="speaker-bio" id="speakerbio">Allan Miranda is the Head of Johnson & Johnson Innovation, JLABS in Canada where he leads the translation of science and technology into solutions across the pharmaceutical, medical device, consumer, and healthtech sectors. He spent 12 years at Janssen Canada where he led market access strategy for a >$1B product portfolio. He has also worked on technology transfer and business development for various Canadian biotech companies. Allan received his PhD from Queen's and his MBA from McGill.</div>
               <div class="arrow-wrapper">
                 <div class="arrow-left"></div>
                 <div class="arrow-right"></div>

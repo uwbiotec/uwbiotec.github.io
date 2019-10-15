@@ -4,7 +4,6 @@ body{
 }
 html {
 	font-size: calc(1em + 1vw);
-	scroll-behavior: smooth;
 }
 
 * {
@@ -149,9 +148,37 @@ html {
 }
 
 @media only screen and (max-width: 700px){
-	
+
+	header .mini-logo-container a{
+		height: 60px;
+		width: 85px;
+	}
+
 	.top-banner{
+		height: 60px;
+	}
+
+	.nav-tabs-container{
+		position: relative;
 		display: none;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		height: 300px;
+		align-items: center;
+		-webkit-box-align: center;
+	}
+
+	.nav-tabs{
+		padding-right: 0px;
+	}
+
+	.apply-button{
+		margin-right: 0px;
+	}
+
+	.mobile-menu-container{
+		display: inline-flex;
 	}
 
 	.apply-button-wrapper{
@@ -159,7 +186,7 @@ html {
 	}
 
 	.landingpage-logo-wrapper{
-		padding-top: 20%;
+		padding-top: 10%;
 		padding-right: 10%;
 		justify-content: center;
 	}
@@ -172,12 +199,41 @@ html {
 		display: inline-block;
 	}
 
+	.mini-logo{
+		display: none;
+	}
+
+	.mobile-mini-logo{
+		display: inline-block;
+		margin-left: 20px;
+	}
+
 	.mobile-date-wrapper{
 		display: block;
 	}
 
 	.location{
 		font-size: 1.05em;
+	}
+
+	.about-box::before {
+		height: 60px;
+		margin-top: -60px;
+	}
+
+	.schedule-box::before {
+		height: 60px;
+		margin-top: -60px;
+	}
+
+	.speaker-box::before {
+		height: 60px;
+		margin-top: -60px;
+	}
+
+	.supports-box::before {
+		height: 60px;
+		margin-top: -60px;
 	}
 
 	.company-logo{

@@ -10,6 +10,20 @@
 	overflow: hidden;
 }
 
+header .mini-logo-container a{
+	display: block;
+	height: 60px;
+	width: 177px;
+}
+
+header .mini-logo-container a >*{
+	pointer-events: none;
+}
+
+.noScroll{
+	overflow: hidden;
+}
+
 .nav-tabs-container{
 	position: absolute;
 	display: inline-flex;
@@ -17,6 +31,15 @@
 	display: -webkit-inline-flex;
  	-webkit-align-items: center;
 	right: 0%;
+}
+
+.mobile-menu{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
 .nav-tabs{
@@ -30,6 +53,54 @@
 
 .nav-tabs:hover{
 	color: rgba(255, 255, 255, 0.43);
+}
+
+.mobile-menu-container{
+	position: absolute;
+	display: none;
+	right: 33px;
+	z-index: 12;
+	width: 33px;
+	height: 21px;
+}
+
+.mobile-line1{
+	position: absolute;
+	top: 0px;
+	margin: 0;
+	height: 2px;
+	width: 33px;
+	background-color: #FFFFFF;
+}
+
+.rotate45{
+	transform: rotate(45deg);
+	transition: all 0.5s ease-out 0s;
+}
+
+.mobile-line2{
+	position: absolute;
+	top: 9px;
+	margin: 0;
+	height: 2px;
+	width: 33px;
+	background-color: #FFFFFF;
+	display: block;
+}
+
+.mobile-line3{
+	position: absolute;
+	top: 18px;
+	margin: 0;
+	height: 2px;
+	width: 33px;
+	background-color: #FFFFFF;
+}
+
+.rotate135{
+	transform: rotate(-45deg);
+	transition: all 0.5s ease-out 0s;
+	top: 0px; 
 }
 
 .apply-button{
@@ -136,18 +207,18 @@
 	transition: 1.05s;
 }
 
-.mini-logo-container{
-	position: absolute;
-	left: 0%;
-	align-items: center;
-	height:60px;
-	width:142px;
-}
-
 .mini-logo{
 	height:60px;
 	width:142px;
 	margin-left:20px;
+}
+
+.mobile-mini-logo{
+	height: 37.5px;
+	width: 37.5px;
+	margin-left: 35px;
+	margin-top: 10px;
+	display: none;
 }
 
 .sticky {
