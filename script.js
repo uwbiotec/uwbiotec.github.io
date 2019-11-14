@@ -148,6 +148,17 @@ window.onclick = function(event){
 			}
 		}
 	}
+
+	if(event.target.matches('.keynote-arrow-wrapper')){
+		var keynoteBio = document.getElementsByClassName("keynote-bio-wrapper");
+		var i;
+		
+		for(i=0; i<keynoteBio.length; i++){
+			if (keynoteBio[i].classList.contains('open')){
+				keynoteBio[i].classList.remove('open');
+			}
+		}
+	}
 }
 
 function menuToggle(){

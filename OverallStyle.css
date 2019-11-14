@@ -90,6 +90,17 @@ html {
 	.location{
 		font-size: 1.25em;
 	}
+
+	.keynote-role{
+		font-size: 1.75em;
+		padding-top: 150px;
+	}
+
+	.keynote-name{
+		font-size: 1.25em;
+	}
+
+
 	
 	.support-box-top{
 		margin-top: 5%;
