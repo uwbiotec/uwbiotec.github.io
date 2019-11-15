@@ -53,6 +53,62 @@
   color: #FFFFFF;
 }
 
+.workshop-blurb-wrapper{
+  width: 100%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.company-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.company-name{
+  font-family: Lato;
+  font-style: italic;
+  font-weight: 500; 
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75em;
+
+  margin-bottom: 30px;
+  text-align: right;
+  white-space: nowrap;
+  padding-right: 3%;
+}
+
+.vector-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.vector{
+  height: 40px;
+  width: 45px;
+  padding-left: 10px;
+  padding-right: 10px; 
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+
+.workshop-title-wrapper{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.workshop-title{
+  font-family: Lato;
+  font-weight: 300; 
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.70em;
+  padding-right: 2%;
+  margin-bottom: 30px;
+  padding-left: 2%;
+  white-space: nowrap;
+}
+
 .schedule-subsection-titleblock-low-impact {
   padding-left: 3%;
   margin-bottom: 20px;
