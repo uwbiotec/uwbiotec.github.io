@@ -100,7 +100,15 @@ html {
 		font-size: 1.25em;
 	}
 
+	.workshop-blurb-wrapper{
+		padding-right: 0;
+		padding-left: 12.5%;
+		justify-content: flex-start;
+	}
 
+	.vector{
+		margin-bottom: 15px;
+	}
 	
 	.support-box-top{
 		margin-top: 5%;
@@ -221,6 +229,18 @@ html {
 
 	.mobile-date-wrapper{
 		display: block;
+	}
+
+	.workshop-blurb-wrapper{
+		padding-left: 10%;
+	}
+
+	.vector{
+		margin-bottom: 12.5px;
+	}
+
+	.company-name{
+		text-align: left;
 	}
 
 	.location{
@@ -433,6 +453,14 @@ html {
 		height: 42px;
 	}
 
+	.workshop-blurb-wrapper{
+		padding-left: 15%;
+	}
+
+	.vector{
+		margin-bottom: 10px;
+	}
+
 	.speaker-role{
 		font-size: 0.875em;
 		padding-bottom: 15px;
@@ -455,7 +483,15 @@ html {
 	.schedule-subsection-line{
 		height: 40px;
 	}
+
+	.workshop-blurb-wrapper{
+		padding-left: 3%;
+	}
 	
+	.vector{
+		margin-bottom: 7.5px;
+	}
+
 	.support-box-top{
 		margin-top: 7%;
 	}

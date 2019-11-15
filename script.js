@@ -74,6 +74,16 @@ function setContent(){
 		document.getElementById("Panel").textContent = "Clinical Technology Panel";;
 	}
 
+	if (screen.width < 1000){
+		document.getElementById("baylisTitle").textContent = "Beyond R&D";
+		document.getElementById("relayTitle").textContent = "The Cathedral Model";
+		document.getElementById("intelliTitle").textContent = "Hurdles in the Market";
+	} else{
+		document.getElementById("baylisTitle").textContent = "Going Beyond R&D in Biotech";
+		document.getElementById("relayTitle").textContent = "Applying the 'Cathedral Model' to Medtech Ventures";
+		document.getElementById("intelliTitle").textContent = "Jumping Hurdles in the Medtech Market";
+	}
+
 }
 
 function showBio(div){
