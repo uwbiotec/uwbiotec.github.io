@@ -78,10 +78,12 @@ function setContent(){
 		document.getElementById("baylisTitle").textContent = "Beyond R&D";
 		document.getElementById("relayTitle").textContent = "The Cathedral Model";
 		document.getElementById("intelliTitle").textContent = "Hurdles in the Market";
+		document.getElementById("biotecTitle").textContent = "Canada's Biotech Ecosystem"
 	} else{
 		document.getElementById("baylisTitle").textContent = "Going Beyond R&D in Biotech";
 		document.getElementById("relayTitle").textContent = "Applying the 'Cathedral Model' to Medtech Ventures";
 		document.getElementById("intelliTitle").textContent = "Jumping Hurdles in the Medtech Market";
+		document.getElementById("biotecTitle").textContent = "Explore the Possibilities of Canada's Biotech Ecosystem"
 	}
 
 }

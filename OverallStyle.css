@@ -102,12 +102,16 @@ html {
 
 	.workshop-blurb-wrapper{
 		padding-right: 0;
-		padding-left: 12.5%;
+		padding-left: 7.5%;
 		justify-content: flex-start;
 	}
 
 	.vector{
 		margin-bottom: 15px;
+	}
+
+	.workshop-title{
+		margin-bottom: 32.5px;
 	}
 	
 	.support-box-top{
@@ -237,6 +241,7 @@ html {
 
 	.vector{
 		margin-bottom: 12.5px;
+		
 	}
 
 	.company-name{
