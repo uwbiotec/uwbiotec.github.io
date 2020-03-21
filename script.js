@@ -1,11 +1,16 @@
 window.onload = function() {
 	showHideBanner();
-	setContent();
+	fadeLogo();
 };
 
-window.onscroll = function() {showHideBanner()};
+window.onscroll = function() {
+	showHideBanner()
+	// statsAnimate();
+};
 
-window.onresize = function(){setContent();};
+function fadeLogo(){
+	document.getElementById("landingLogo").classList.add("fade");
+}
 
 var stickbanner_func = function stickBanner() {
 		var sticky = document.getElementById("topbanner").offsetTop;
@@ -32,12 +37,14 @@ function showHideBanner(){
 		if (window.pageYOffset >= abouttop-100){
 			document.getElementById("bannerlogo").classList.add("fade");
 			document.getElementById("topbanner").classList.add("bannerbackground");
+			document.getElementById("navtabs").classList.add("fade");
 			stickbanner_func();
 		}
 		else{
 			document.getElementById("bannerlogo").classList.remove("fade");
 			document.getElementById("topbanner").classList.remove("bannerbackground");
 			document.getElementById("topbanner").classList.add("bannerbackground-out");
+			document.getElementById("navtabs").classList.remove("fade");
 			stickbanner_func();
 		}
 	} else{
@@ -56,37 +63,85 @@ function showHideBanner(){
 	}
 }
 
-function setContent(){
-	if (screen.width < 700){
-		document.getElementById("Registration").textContent = "Registration";
-		document.getElementById("PitchComp").textContent = "Pitch Competition";
-		document.getElementById("Lunch").textContent = "Lunch";
-		document.getElementById("Workshops").textContent = "Industry Workshops";
-		document.getElementById("Breakouts").textContent = "Research Breakouts";
-		document.getElementById("Panel").textContent = "Academic Panel";
-	}
-	else{
-		document.getElementById("Registration").textContent = "Registration";
-		document.getElementById("PitchComp").textContent = "Capstone Pitch Competition";
-		document.getElementById("Lunch").textContent = "Lunch Session";
-		document.getElementById("Workshops").textContent = "Industry Innovation Workshops";
-		document.getElementById("Breakouts").textContent = "Breakout Sessions";
-		document.getElementById("Panel").textContent = "Clinical Technology Panel";;
-	}
+/*Img slides*/
 
-	if (screen.width < 1000){
-		document.getElementById("baylisTitle").textContent = "Beyond R&D";
-		document.getElementById("relayTitle").textContent = "The Cathedral Model";
-		document.getElementById("intelliTitle").textContent = "Reaching a Final Product";
-		document.getElementById("biotecTitle").textContent = "Canada's Biotech Ecosystem";
-	} else{
-		document.getElementById("baylisTitle").textContent = "Going Beyond R&D in Biotech";
-		document.getElementById("relayTitle").textContent = "Applying the 'Cathedral Model' to Medtech Ventures";
-		document.getElementById("intelliTitle").textContent = "An Idea and the Steps to Reach a Final Product";
-		document.getElementById("biotecTitle").textContent = "Explore the Possibilities of Canada's Biotech Ecosystem"
-	}
+if(screen.width > 325){
+	$("#imgs-wrapper1 > div:gt(0)").hide();
+
+	setInterval(function(){
+		$('#imgs-wrapper1 > div:first')
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('#imgs-wrapper1')
+	}, 6000);
+
+	$("#imgs-wrapper2 > div:gt(0)").hide();
+
+	setInterval(function(){
+		$('#imgs-wrapper2 > div:first')
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('#imgs-wrapper2')
+	}, 10000);
+
+	$("#imgs-wrapper3 > div:gt(0)").hide();
+
+	setInterval(function(){
+		$('#imgs-wrapper3 > div:first')
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('#imgs-wrapper3')
+	}, 8000);
 
 }
+
+/*Bar graph*/
+
+var bar_func = function (){
+	$('.bar').each(function(i){  
+	    var $bar = $(this);
+	    setTimeout(function(){
+	      $bar.css('width', $bar.attr('data-percent'));      
+	    }, i*100);
+	  });
+}
+
+/*Counter*/
+var counter_func = function(){ $('.count').each(function () {
+	$(this).prop('Counter',0).animate({
+		Counter: $(this).text()
+	}, {
+		duration: 3000,
+		easing: 'swing',
+		step: function (now) {
+		$(this).text(Math.ceil(now));
+		
+		}
+	});
+});
+}
+
+// On scroll stats functions
+
+var fired = false;
+
+$(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = document.getElementById('schedule').offsetTop;             // set to whatever you want it to be
+if(fired==false){
+    if(y_scroll_pos > scroll_pos_test) {
+        console.log("swag");
+ 		counter_func();
+		bar_func();
+		fired = true
+    }
+}
+});
+
+/*Speaker Bios*/
 
 function showBio(div){
 	var bios = document.getElementsByClassName("speaker-bio-wrapper");

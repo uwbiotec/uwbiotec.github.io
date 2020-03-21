@@ -4,6 +4,7 @@ body{
 }
 html {
 	font-size: calc(1em + 1vw);
+	font-family: Lato;
 }
 
 * {
@@ -91,6 +92,20 @@ html {
 		font-size: 1.25em;
 	}
 
+	.about-subsection-wrapper{
+		display: block;
+	}
+
+	.about-subsection-text{
+		width: 100%;
+		padding-right: 7%;
+		padding-left: 7%;
+	}
+
+	.about-subsection-imgs{
+		margin-left: 10%;
+	}
+
 	.keynote-role{
 		font-size: 1.75em;
 		padding-top: 150px;
@@ -138,6 +153,7 @@ html {
 		padding-top: 9%;
 		padding-bottom: 9%;
 	}
+
 
 	.company-logo-wrapper1{
 		padding-top: 1%;
@@ -211,6 +227,7 @@ html {
 	.landingpage-logo-wrapper{
 		padding-top: 10%;
 		padding-right: 10%;
+		padding-top: 27.5%;
 		justify-content: center;
 	}
 
@@ -234,6 +251,58 @@ html {
 	.mobile-date-wrapper{
 		display: block;
 	}
+
+	.about-subsection-imgs{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-left: 0;
+		padding-bottom: 20px;
+	}
+
+	.slide-img{
+		height: 100px;
+		width: 100px;
+	}
+
+	#imgs-wrapper1{
+		height: 100px;
+		width: 100px;
+		float: none;
+		margin: 0;
+	}
+
+	#imgs-wrapper2{
+		height: 100px;
+		width: 100px;
+		margin:0;
+		float: none;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#imgs-wrapper3{
+		height: 100px;
+		width: 100px;
+		margin:0;
+		float: none;
+	}
+
+	.schedule-subsection-content{
+		flex-direction: column;
+	}
+
+	.break-by-school-wrapper{
+		width: 100%;
+		padding-right: 7%;
+	}
+
+	.break-by-delegate-wrapper{
+		width: 100%;
+		padding-left: 7%;
+	}
+
 
 	.workshop-blurb-wrapper{
 		padding-left: 10%;
@@ -411,7 +480,7 @@ html {
 	
 
 	.landingpage-logo-wrapper{
-		padding-top: 30%;
+		padding-top: 50%;
 	}
 
 	.logo{
@@ -489,8 +558,17 @@ html {
 		height: 40px;
 	}
 
+	.about-subsection-imgs{
+		display: none;
+	}
+
 	.workshop-blurb-wrapper{
 		padding-left: 3%;
+	}
+
+	.stat-attend-wrap{
+		padding:2.5%;
+		padding-right: 7%;
 	}
 	
 	.vector{

@@ -4,15 +4,12 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,350,400,400italic,700,700italic,900,900italic,normal" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="LandingPageStyle.css">
   <link rel="stylesheet" type="text/css" href="AboutStyle.css">
-  <link rel="stylesheet" type="text/css" href="ScheduleStyle.css">
+  <link rel="stylesheet" type="text/css" href="StatsStyle.css">
   <link rel="stylesheet" type="text/css" href="SupportStyle.css">
   <link rel="stylesheet" type="text/css" href="BottomBannerStyle.css">
   <link rel="stylesheet" type="text/css" href="SpeakerStyle.css">
   <link rel="stylesheet" type="text/css" href="OverallStyle.css">
   
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title> BioTEC </title>
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -58,36 +55,29 @@
 
       <div class="nav-tabs-container" id="navtabs">
         <a href="#about"  onclick="navigate(this)"><div class="nav-tabs">ABOUT</div></a>
-        <a href="#schedule" onclick="navigate(this)"><div class="nav-tabs">SCHEDULE</div></a>
+        <!-- <a href="#schedule" onclick="navigate(this)"><div class="nav-tabs">SCHEDULE</div></a> -->
         <a href="#speakers" onclick="navigate(this)"><div class="nav-tabs">SPEAKERS</div></a>
         <a href="#biospons" onclick="navigate(this)"><div class="nav-tabs">SPONSORS</div></a>
-        <a href="https://forms.gle/WFxYUMxjgsC4pYp77" target="_blank"><div class="apply-button">APPLY</div></a>
       </div>
     </header>
 
-    <div class="landingpage-logo-wrapper">
-      <img src="images/BioTECLogoWhite_WithDate_NoShadow.svg" class="logo">
+    <div class="landingpage-logo-wrapper" id="landingLogo">
+      <img src="images/BioTECLogoWhite2.svg" class="logo">
 
       <img src="images/BioTECLogoWhite.svg" class="mobile-logo">
       <!--<object type="image/svg+xml" data="images/BioTECLogoWhite_WithDate_WithShadow.svg" class="logo"> </object>-->
       <div class="apply-button-wrapper">
-        <a href="https://forms.gle/WFxYUMxjgsC4pYp77" target="_blank"><div class="apply-button-mobile">APPLY</div></a>        
+        <div class="apply-button-mobile">2020</div>
       </div>
-
-      <div class="mobile-date-wrapper">
-        <div class="mobile-date">
-            November 16, 2019        
-        </div>
-      </div> 
-
-      <div class="location-wrapper">
+      <!-- <div class="location-wrapper">
         <a href="https://goo.gl/maps/vGpYyL5sMyec1oRG8" target="_blank">
 		<div class="location">
-			Engineering 7 <br>University of Waterloo
+			University of Waterloo
 		</div>
 	</a>
-      </div>
+      </div> -->
     </div>
+
   </div>
   <!--LandingPageSection END-->
 
@@ -95,99 +85,128 @@
   <div class="about-box" id ="about">
     <div class="about-subsection-box">
       <div class="about-subsection-title">
-        ABOUT
+        Meet BioTEC
       </div>
-      <div class="about-subsection-text">
-          The Biotechnology and Bioengineering Conference (BioTEC) is Canada's premier student-run conference focused on the intersection of healthcare and technology. BioTEC connects students, researchers, investors, professionals, and entrepreneurs who share a passion for advances in biomedical technology.
-          <br>
-          <br>
-          Through engaging talks, innovative demos, and numerous networking opportunities, BioTEC exposes attendees to world leaders in academia and industry, challenges them to broaden their perspectives, and enables them to make an impact in this exciting and rapidly growing field.
-      </div>
+      <div class="about-subsection-wrapper">
+	      <div class="about-subsection-text">
+	          The Biotechnology and Bioengineering Conference (BioTEC) is Canada's premier student-run conference focused on the intersection of healthcare and technology. BioTEC connects students, researchers, investors, professionals, and entrepreneurs who share a passion for advances in biomedical technology.
+	          <br>
+	          <br>
+	          Through engaging talks, innovative demos, and numerous networking opportunities, BioTEC exposes attendees to world leaders in academia and industry, challenges them to broaden their perspectives, and enables them to make an impact in this exciting and rapidly growing field.
+	      </div>
+	      <div class="about-subsection-imgs">
+		      <div id="imgs-wrapper1">
+		      	<div> <img class="slide-img" src="images/1.png"/></div>
+		      	<div> <img class="slide-img" src="images/8.png"/></div>
+		      	<div> <img class="slide-img" src="images/3.png"/></div>
+		      </div>
+
+		      <div id="imgs-wrapper2">
+		      	<div> <img class="slide-img" src="images/4.png"/></div>
+		      	<div> <img class="slide-img" src="images/2.png"/></div>
+		      	<div> <img class="slide-img" src="images/10.png"/></div>
+		      </div>
+
+		      <div id="imgs-wrapper3">
+		      	<div> <img class="slide-img" src="images/6.png"/></div>
+		      	<div> <img class="slide-img" src="images/7.png"/></div>
+		      	<div> <img class="slide-img" src="images/9.png"/></div>
+		      </div>
+		  </div>
+	  </div>
     </div>
   </div>
   <!--AboutSection END-->
 
-  <!--ScheduleSection START-->
+  <!--StatsSection START-->
   <div class="schedule-box" id="schedule">
     <div class="schedule-subsection-box">
-      <div class="schedule-subsection-title">
-        SCHEDULE
-      </div>
-      <div class="schedule-subsection-content">
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:00</div> <div class = "schedule-subsection-titleblock-low-impact" id = "Registration"> Registration</div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:30</div> <div class = "schedule-subsection-titleblock-low-impact"> Opening Remarks </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 09:45</div> <div class = "schedule-subsection-titleblock-high-impact"> Keynote </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 10:45</div> <div class = "schedule-subsection-titleblock-low-impact">Break </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 11:00</div> <div class = "schedule-subsection-titleblock-high-impact" id = "PitchComp"> Capstone Pitch Competition </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 12:00</div> <div class = "schedule-subsection-titleblock-low-impact" id = "Lunch"> Lunch Session </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 13:50</div> <div class = "schedule-subsection-titleblock-high-impact" id = "Workshops"> Industry Innovation Workshops </div> </div>
-        <div class="workshop-blurb-wrapper">
-        	<div class="company-wrapper">
-        		<div class="company-name">Baylis Medical</div>
-        		<div class="company-name">Relay Medical</div>
-        		<div class="company-name">Intellijoint Surgical</div>
-        		<div class="company-name">BIOTECanada</div>
-        	</div>
-
-	        <div class="vector-wrapper">
-	        	<img class="vector" src="images/vector.svg" id="vector">
-	        	<img class="vector" src="images/vector.svg" id="vector">
-	        	<img class="vector" src="images/vector.svg" id="vector">
-	        	<img class="vector" src="images/vector.svg" id="vector">
-	        </div>
-
-	        <div class="workshop-title-wrapper">
-	        	<div class="workshop-title" id="baylisTitle">Going Beyond R&D in Biotech</div>
-	        	<div class="workshop-title" id="relayTitle">Applying the "Cathedral Model" to Medtech Ventures</div>
-	        	<div class="workshop-title" id="intelliTitle">An Idea and the Steps to Reach a Final Product</div>
-	        	<div class="workshop-title" id="biotecTitle">Explore the Possibilities of Canada's Biotech Ecosystem</div>
-	        </div>
-        </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 14:35</div> <div class = "schedule-subsection-titleblock-high-impact" id = "Breakouts"> Breakout Sessions </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 15:15</div> <div class = "schedule-subsection-titleblock-low-impact">Break </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 15:30</div> <div class = "schedule-subsection-titleblock-high-impact" id = "Panel"> Clinical Technology Panel </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 16:30</div> <div class = "schedule-subsection-titleblock-low-impact"> Closing Remarks </div> </div>
-        <div class="schedule-subsection-line"> <div class="schedule-subsection-timeblock"> 17:00</div> <div class = "schedule-subsection-titleblock-low-impact"> Networking </div> </div>
-      </div>
+    	<div class="schedule-subsection-title">2019</div>
+    	<div class="schedule-subsection-content">
+    		<div class="break-by-school-wrapper">
+    			<div class="break-by-title">ATTENDEES BY SCHOOL</div>
+    			<div class="stat-bar-wrap">
+    				<div class="bar" data-percent="95%"><div class="label">University of Waterloo</div></div>
+    				<div class="bar" data-percent="20%"><div class="label">University of Western Ontario</div></div>
+    				<div class="bar" data-percent="65%"><div class="label second">McMaster University</div></div>
+    				<div class="bar" data-percent="55%"><div class="label">University of Toronto</div></div>
+    				<div class="bar" data-percent="55%"><div class="label second">University of Guelph</div></div>
+    				
+    			</div>
+    		</div>
+    		<div class="break-by-delegate-wrapper">
+    			<div class="break-by-title">ATTENDEES BY PROGRAM</div>
+    			<div class="stat-wrap">
+    				<div class="stat-attend-wrap" style="border-right: 2px solid  rgba(255,255,255,0.5)">
+	    				<div class="break-tot-wrap">
+	    					<div><img src="images/students.svg"></div>
+	    					<div class="break-by-prog">Total Attendees</div>
+	    					<span class="count">150</span>    					
+	    				</div>
+	    			</div>
+	    			<div class="stat-attend-wrap" style="margin-left: 5%">
+	    				<div class="break-attend-wrap">
+	    					<div class="count">80</div> 
+	    					<div class="break-by-prog">in Biomedical Engineering</div>
+	    					   					
+	    				</div>
+	    				<div class="hr"></div>
+	    				<div class="break-attend-wrap">
+	    					<div class="count">30</div>
+		    				<div class="break-by-prog">in Biomedical Sciences</div>
+							
+		    			</div>
+		    			<div class="hr"></div>
+		    			<div class="break-attend-wrap">
+		    				<div class="count">40</div>
+		    				<div class="break-by-prog">in other Engineering</div>
+		    				
+		    			</div>
+		    		</div>
+    			</div>
+    		</div>
+    	</div>
     </div>
   </div>
-  <!--ScheduleSection END-->
+  <!--StatsSection END-->
 </div>
 
 <!--SpeakerSection START-->
 <div class="speaker-box" id="speakers">
   <div class="speaker-container">
     <div class="speaker-title-wrapper">
-      <div class="speaker-title">SPEAKERS</div>
+      <div class="speaker-title">PAST SPEAKERS</div>
     </div>
 
   <div class="desktop-speaker-container">
 
-  	<div class="keynote-box">
-  		<div class="keynote-wrapper" id="speaker" onclick="showBio(this)">
-  			<img src="images/speakers/victor.png" class="keynote-img">
-  			<div class="keynote-info-wrapper">
-  				
-  				<div class="keynote-role"> KEYNOTE</div>
-
-  				<div class="keynote-spec-wrapper">
-  					<div class="keynote-name">Victor Hanson-Smith</div>
-  					<div class="keynote-position">CTO, Verge Genomics</div>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="keynote-bio-wrapper" id="keynotebiowrap">
-  			<div class="keynote-bio" id="keynotebio">Victor Hanson-Smith is the Head of Computational Biology at Verge Genomics in South San Francisco, California. Victor and his team combine machine learning with a systems biology approach to discover new drugs for neurodegenerative diseases, including ALS and Parkinson's Disease. His work has focused on genome evolution since his Ph.D. thesis at the University of Oregon in the Department of Computer and Information Science, and postdoctoral research at the University of California San Francisco.</div>
-  			<div class="keynote-arrow-wrapper">
-                <div class="keynote-arrow-left"></div>
-                <div class="keynote-arrow-right"></div>
-            </div>
-  		</div>
-  	</div>
-
   	<div class="column-container">
 
 	    <div class="column-one-speakers-wrapper"> <!--Desktop Speakers 1 Col Start-->
+	    	<div class="speaker-wrapper" onclick="showBio1(this)">
+	        
+	        
+	        <img src="images/speakers/victor.png" class="speaker-img">
+	        
+	        <div class="speaker-info-wrapper" >
+	          
+	          <div class="speaker-role">KEYNOTE</div>
+	          
+	          <div class="speaker-spec-wrapper">
+	            <div class="speaker-name">Victor Hanson-Smith</div>
+	            <div class="speaker-position">CTO, Verge Genomics</div>
+	          </div>
+	    
+	        </div>
+	      </div>
+	       <div class="speaker-bio-wrapper-col1" id="speakerbiowrap2">
+	              <div class="speaker-bio" id="speakerbio">Victor Hanson-Smith is the Head of Computational Biology at Verge Genomics in South San Francisco, California. Victor and his team combine machine learning with a systems biology approach to discover new drugs for neurodegenerative diseases, including ALS and Parkinson's Disease. His work has focused on genome evolution since his Ph.D. thesis at the University of Oregon in the Department of Computer and Information Science, and postdoctoral research at the University of California San Francisco.</div>
+	              <div class="arrow-wrapper-col1">
+	                <div class="arrow-left"></div>
+	                <div class="arrow-right"></div>
+	              </div>
+	      </div>
+
 
 	      <div class="speaker-wrapper" onclick="showBio1(this)">
 	        
@@ -351,28 +370,7 @@
 	              </div>
 	      </div>
 
-	      <div class="speaker-wrapper" onclick="showBio1(this)">
-	        
-	        <img src="images/speakers/bharat.png" class="speaker-img">
-	        
-	        <div class="speaker-info-wrapper">
-	          
-	          <div class="speaker-role">PITCH COMPETITION</div>
-	          
-	          <div class="speaker-spec-wrapper">
-	            <div class="speaker-name">Bharat Srinivasa</div>
-	            <div class="speaker-position">Principal & Co-Founder, Amplitude Ventures</div>
-	          </div>
-	    
-	        </div>
-	      </div>
-	      <div class="speaker-bio-wrapper-col1" id="speakerbiowrap2">
-	              <div class="speaker-bio" id="speakerbio">Dr. Bharat Srinivasa is a Co-founder and Principal at Amplitude Ventures. He was previously on the investment team at the BDC Healthcare Fund. Before this, he was a consultant in the forecasting and valuation practice at Foster Rosenblatt, an international life science consulting firm for biotech and pharma companies. Bharat was responsible for providing forecasting, commercial analytics and pricing & market access analysis. Bharat has a PhD in Experimental Medicine and Masters of Science in Microbiology and Immunology from McGill University.</div>
-	              <div class="arrow-wrapper-col1">
-	                <div class="arrow-left"></div>
-	                <div class="arrow-right"></div>
-	              </div>
-	      </div>
+	      
 
 	    </div> <!--Desktop Speakers 1 Col End-->
 
@@ -517,29 +515,6 @@
 
 	      <div class="speaker-wrapper" onclick="showBio2(this)">
 	        
-	        <img src="images/speakers/amine.png" class="speaker-img">
-	        
-	        <div class="speaker-info-wrapper">
-	          
-	          <div class="speaker-role">PITCH COMPETITION</div>
-	          
-	          <div class="speaker-spec-wrapper">
-	            <div class="speaker-name">Amine Benmoussa</div>
-	            <div class="speaker-position">Principal, BDC</div>
-	          </div>
-	    
-	        </div>
-	      </div>
-	      <div class="speaker-bio-wrapper-col2" id="speakerbiowrap2">
-	              <div class="speaker-bio" id="speakerbio">Amine Benmoussa is Principal in BDC Capital's Healthcare Venture Fund and has 10+ years of venture capital experience. Before joining BDC Capital in 2011, Amine was on the Life Science investment team at FSTQ. He is currently on the board of directors of BlueDot, Hacking Health Accelerator, and Swift Medical. Amine studied Computer Science at Concordia University and received his MBA from HEC Montreal. He has also completed programs at Harvard Business School and the Rotman School of Management.</div>
-	              <div class="arrow-wrapper-col2">
-	                <div class="arrow-left"></div>
-	                <div class="arrow-right"></div>
-	              </div>
-	      </div>
-
-	      <div class="speaker-wrapper" onclick="showBio2(this)">
-	        
 	        <img src="images/speakers/armen.png" class="speaker-img">
 	        
 	        <div class="speaker-info-wrapper">
@@ -556,6 +531,29 @@
 	      <div class="speaker-bio-wrapper-col2" id="speakerbiowrap2">
 	              <div class="speaker-bio" id="speakerbio">Armen Bakirtzian is the CEO and Co-Founder of Intellijoint Surgical. He led the growth of Intellijoint Surgical's flagship product from a fourth-year design project to a globally-adopted surgical navigation system that has been used in over 10,000 hip replacements. Armen spearheaded the creation of <a href="http://www.medicalinnovationxchange.com/" target="_blank" style="color: #FFFFFF; text-decoration: underline">Canada's first industry-led innovative hub</a> to help medtech companies scale within Canada. He is a member of the Health/Biosciences Economic Strategy Table with the Federal Government of Canada.</div>
 	              <div class="arrow-wrapper-col2">
+	                <div class="arrow-left"></div>
+	                <div class="arrow-right"></div>
+	              </div>
+	      </div>
+
+	      <div class="speaker-wrapper" onclick="showBio2(this)">
+	        
+	        <img src="images/speakers/bharat.png" class="speaker-img">
+	        
+	        <div class="speaker-info-wrapper">
+	          
+	          <div class="speaker-role">PITCH COMPETITION</div>
+	          
+	          <div class="speaker-spec-wrapper">
+	            <div class="speaker-name">Bharat Srinivasa</div>
+	            <div class="speaker-position">Principal & Co-Founder, Amplitude Ventures</div>
+	          </div>
+	    
+	        </div>
+	      </div>
+	      <div class="speaker-bio-wrapper-col1" id="speakerbiowrap2">
+	              <div class="speaker-bio" id="speakerbio">Dr. Bharat Srinivasa is a Co-founder and Principal at Amplitude Ventures. He was previously on the investment team at the BDC Healthcare Fund. Before this, he was a consultant in the forecasting and valuation practice at Foster Rosenblatt, an international life science consulting firm for biotech and pharma companies. Bharat was responsible for providing forecasting, commercial analytics and pricing & market access analysis. Bharat has a PhD in Experimental Medicine and Masters of Science in Microbiology and Immunology from McGill University.</div>
+	              <div class="arrow-wrapper-col1">
 	                <div class="arrow-left"></div>
 	                <div class="arrow-right"></div>
 	              </div>
@@ -937,35 +935,6 @@
               </div>
       </div>
 
-      <div class="speaker-wrapper" onclick="showBio(this)">
-        
-        <img src="images/speakers/amine.png" class="speaker-img">
-        
-        <div class="speaker-info-wrapper">
-          
-          <div class="speaker-role">PITCH COMPETITION</div>
-          
-          <div class="speaker-spec-wrapper">
-            <div class="speaker-name">Amine Benmoussa</div>
-            <div class="speaker-position">Principal, BDC</div>
-          </div>
-
-          <div class="arrow-wrapper-open" id="openArrow">
-            <div class="arrow-right-open"></div>
-            <div class="arrow-left-open"></div>
-          </div>
-    
-        </div>
-      </div>
-      <div class="speaker-bio-wrapper" id="speakerbiowrap2">
-            	<div class="speaker-bio" id="speakerbio">Amine Benmoussa is Principal in BDC Capital's Healthcare Venture Fund and has 10+ years of venture capital experience. Before joining BDC Capital in 2011, Amine was on the Life Science investment team at FSTQ. He is currently on the board of directors of BlueDot, Hacking Health Accelerator, and Swift Medical. Amine studied Computer Science at Concordia University and received his MBA from HEC Montreal. He has also completed programs at Harvard Business School and the Rotman School of Management.</div>
-              <div class="arrow-wrapper">
-                <div class="arrow-left"></div>
-                <div class="arrow-right"></div>
-              </div>
-      </div>
-    </div>
-
     <div class="row-speakers-wrapper">
       <div class="speaker-wrapper" onclick="showBio(this)">
         
@@ -1053,8 +1022,9 @@
               </div>
       </div>
     </div>
-    <div class="speaker-padding"></div>
+    
   </div>
+  <div class="speaker-padding"></div>
 </div>
   <!--SpeakerSection END-->
   <!--supportSection START-->
@@ -1064,7 +1034,14 @@
       <div class="support-title">SPONSORS</div>
     </div>
     <div class="supporttxt-wrapper">
-      <div class="supporttxt">Interested in becoming a sponsor? <strong><a href="mailto: uwbiotec.main@gmail.com" style="color: #FFFFFF">Let's chat!</a></strong></div>
+      <div class="supporttxt">BioTEC wouldn't be possible with our incredible sponsors! Help BioTEC grow by sponsoring us.</div>
+	    <div class="support-btn-wrap">
+	      <a href="mailto: uwbiotec.main@gmail.com" style="color: #FFFFFF">
+	      	<div class="support-btn">
+	      		<div class="get-involved">Get involved!</div>
+	      	</div>
+	      </a>
+	 	</div>
     </div>
 
     <!--Diamond Level-->
@@ -1140,17 +1117,6 @@
     </div>
     <!--Academic Level End-->
 
-    <div class="pitch-apply-txt-wrapper">
-      <div class="pitch-apply-txt">Applications for the pitch competition are now open!</div>      
-    </div>
-
-    <div class="pitch-button-wrapper">
-      <a href="https://forms.gle/SwH9yWVoT5cnMxnU9" target="_blank">
-        <div class="pitch-apply-button">APPLY TO PITCH YOUR IDEA</div>
-      </a>      
-    </div>
-
-
     <!--Pitch supports-->
     <div class="pitch-support-container">
       <!--Pitch Place 1-->
@@ -1210,5 +1176,8 @@
   <!--BottomBannerSection END-->
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
