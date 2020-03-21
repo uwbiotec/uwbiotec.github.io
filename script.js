@@ -266,6 +266,7 @@ function menuToggle(){
 		banner.style.height = "100vh";
 		banner.classList.add("bannerbackground");
 		logo.classList.remove("fade");
+		navtabs.classList.add("fade");
 		document.body.classList.add("noScroll");
 	}
 
